@@ -3,47 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moss Creek Landscaping</title>
+  <title>Moss Creek Landscaping — Website UI Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: system-ui, sans-serif;
-      background: #f4f1eb;
-      color: #1a1a1a;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      color: #3a5a3a;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.125rem;
-      color: #555;
-      max-width: 480px;
-      line-height: 1.6;
-    }
-    .badge {
-      margin-top: 2rem;
-      display: inline-block;
-      background: #3a5a3a;
-      color: #fff;
-      padding: 0.5rem 1.25rem;
-      border-radius: 4px;
-      font-size: 0.875rem;
-      letter-spacing: 0.05em;
-    }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { background: #f4f1eb; }
+    #root { display: flex; flex-direction: column; min-height: 100vh; }
   </style>
 </head>
 <body>
-  <h1>Moss Creek Landscaping</h1>
-  <p>Beautiful outdoor spaces, crafted with care. Full site coming soon.</p>
-  <span class="badge">mosscreeklandscaping.com</span>
+  <div id="root"></div>
+
+  <script type="text/babel" src="Nav.jsx"></script>
+  <script type="text/babel" src="Hero.jsx"></script>
+  <script type="text/babel" src="Services.jsx"></script>
+  <script type="text/babel" src="About.jsx"></script>
+  <script type="text/babel" src="Contact.jsx"></script>
+  <script type="text/babel" src="Footer.jsx"></script>
+
+  <script type="text/babel">
+    // ── Project Gallery Section ──────────────────────────────
+    const ProjectGallery = ({ setPage }) => {
+      const projects = [
+        { img: '../../assets/pool-hardscape.webp', label: 'Pool Deck & Pavers', loc: 'University Park' },
+        { img: '../../assets/rose-arch-garden.webp', label: 'Rose Arch Garden', loc: 'Highland Park' },
+        { img: '../../assets/modern-backyard.webp', label: 'Modern Backyard', loc: 'Plano' },
+        { img: '../../assets/retaining-wall.webp', label: 'Retaining Wall', loc: 'Richardson' },
+        { img: '../../assets/outdoor-kitchen.webp', label: 'Outdoor Kitchen', loc: 'Allen' },
+        { img: '../../assets/espalier-wall.webp', label: 'Espalier Feature Wall', loc: 'Frisco' },
+      ];
+
+      return (
+        <section style={{ background: '#1e3b1e', padding: '80px 40px' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 40 }}>
+              <div>
+                <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 12 }}>Recent Work</div>
+                <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(30px,3.5vw,44px)', fontWeight: 400, color: '#f4f1eb', lineHeight: 1.15 }}>
+                  Built across DFW.
+                </h2>
+              </div>
+              <button onClick={() => setPage('Services')} style={{
+                fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600,
+                letterSpacing: '0.08em', textTransform: 'uppercase',
+                background: 'transparent', color: '#f4f1eb',
+                border: '2px solid rgba(244,241,235,0.4)', borderRadius: 4,
+                padding: '10px 22px', cursor: 'pointer',
+              }}>View All Work</button>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 3 }}>
+              {projects.map(({ img, label, loc }) => (
+                <div key={label} style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden', cursor: 'pointer' }}
+                  onMouseEnter={e => { e.currentTarget.querySelector('img').style.transform = 'scale(1.06)'; e.currentTarget.querySelector('.overlay').style.opacity = 1; }}
+                  onMouseLeave={e => { e.currentTarget.querySelector('img').style.transform = 'scale(1)'; e.currentTarget.querySelector('.overlay').style.opacity = 0; }}
+                >
+                  <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 500ms ease' }} />
+                  <div className="overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(20,45,20,0.6)', opacity: 0, transition: 'opacity 300ms ease', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: 20 }}>
+                    <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 18, fontWeight: 500, color: '#f4f1eb' }}>{label}</div>
+                    <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a8c49a', marginTop: 4 }}>{loc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    };
+
+    // ── CTA Banner ───────────────────────────────────────────
+    const CTABanner = ({ setPage }) => (
+      <section style={{ background: '#ede8dc', padding: '72px 40px', textAlign: 'center', borderTop: '1px solid #c4b99a' }}>
+        <div style={{ maxWidth: 600, margin: '0 auto' }}>
+          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Ready to Start?</div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(28px,4vw,44px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, marginBottom: 16 }}>
+            Your outdoor space is waiting.
+          </h2>
+          <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 15, fontStyle: 'italic', color: '#6b4f35', lineHeight: 1.7, marginBottom: 32 }}>
+            Free estimates. No pressure. Just a conversation about what your space could become.
+          </p>
+          <button onClick={() => setPage('Contact')} style={{
+            fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600,
+            letterSpacing: '0.08em', textTransform: 'uppercase',
+            background: '#2d5626', color: '#f4f1eb',
+            border: '2px solid #2d5626', borderRadius: 4,
+            padding: '14px 40px', cursor: 'pointer', boxShadow: '0 4px 16px rgba(30,59,30,0.22)',
+          }}>Get a Free Estimate</button>
+        </div>
+      </section>
+    );
+
+    // ── Services Page ────────────────────────────────────────
+    const ServicesPage = ({ setPage }) => (
+      <div style={{ paddingTop: 72 }}>
+        <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Our Services</div>
+            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
+              What we build.<br /><em>How we work.</em>
+            </h1>
+          </div>
+        </div>
+        <ServicesSection full={true} setPage={setPage} />
+        <ProjectGallery setPage={setPage} />
+        <CTABanner setPage={setPage} />
+        <Footer setPage={setPage} />
+      </div>
+    );
+
+    // ── About Page ───────────────────────────────────────────
+    const AboutPage = ({ setPage }) => (
+      <div style={{ paddingTop: 72 }}>
+        <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>About Us</div>
+            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
+              Family-rooted.<br /><em>Craft-forward.</em>
+            </h1>
+          </div>
+        </div>
+        <AboutSection full={true} setPage={setPage} />
+        <CTABanner setPage={setPage} />
+        <Footer setPage={setPage} />
+      </div>
+    );
+
+    // ── Contact Page ─────────────────────────────────────────
+    const ContactPageFull = ({ setPage }) => (
+      <div style={{ paddingTop: 72 }}>
+        <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Contact</div>
+            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
+              Start a conversation.
+            </h1>
+          </div>
+        </div>
+        <ContactPage />
+        <Footer setPage={setPage} />
+      </div>
+    );
+
+    // ── Home Page ────────────────────────────────────────────
+    // Order: Hero → Our Story → Recent Work → What We Do → CTA → Footer
+    const HomePage = ({ setPage }) => (
+      <div>
+        <Hero setPage={setPage} />
+        <AboutSection full={false} setPage={setPage} />
+        <ProjectGallery setPage={setPage} />
+        <ServicesSection full={false} setPage={setPage} />
+        <CTABanner setPage={setPage} />
+        <Footer setPage={setPage} />
+      </div>
+    );
+
+    // ── App Root ─────────────────────────────────────────────
+    const App = () => {
+      const [page, setPage] = React.useState('Home');
+
+      // Scroll to top on page change
+      React.useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, [page]);
+
+      const changePage = (p) => setPage(p);
+
+      return (
+        <div>
+          <Nav page={page} setPage={changePage} />
+          {page === 'Home'     && <HomePage     setPage={changePage} />}
+          {page === 'Services' && <ServicesPage setPage={changePage} />}
+          {page === 'About'    && <AboutPage    setPage={changePage} />}
+          {page === 'Contact'  && <ContactPageFull setPage={changePage} />}
+        </div>
+      );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
 </body>
 </html>
