@@ -15,6 +15,66 @@
     html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
     body { background: #f4f1eb; }
     #root { display: flex; flex-direction: column; min-height: 100vh; }
+    img { max-width: 100%; height: auto; }
+
+    /* ── Mobile (≤ 768px) ─────────────────────────────────────── */
+    @media (max-width: 768px) {
+
+      /* Nav: tighten and hide page links (keep logo + Free Estimate) */
+      nav { padding: 0 16px !important; height: 64px !important; }
+      nav > button:first-child img { width: 36px !important; height: 36px !important; }
+      nav > button:first-child div > div:first-child { font-size: 14px !important; }
+      nav > button:first-child div > div:last-child { font-size: 7px !important; }
+      nav > div { gap: 8px !important; }
+      nav > div > button:not(:last-child) { display: none !important; }
+      nav > div > button:last-child {
+        font-size: 10px !important;
+        padding: 8px 14px !important;
+      }
+
+      /* Sections: reduce padding everywhere except full-bleed hero */
+      section:not([style*="100vh"]) { padding: 56px 20px !important; }
+
+      /* Hero — smaller padding, fluid type */
+      section > div[style*="padding: 0 60px"] {
+        padding: 0 22px !important;
+      }
+      section h1 { font-size: clamp(34px, 9vw, 56px) !important; }
+
+      /* Hero/anywhere flex button rows: wrap, full width */
+      [style*="display: flex"][style*="gap: 16px"] { flex-wrap: wrap !important; }
+      [style*="display: flex"][style*="gap: 16px"] > button { flex: 1 1 100% !important; }
+
+      /* 2-column grids → stack */
+      [style*="grid-template-columns: 1fr 1fr"],
+      [style*="grid-template-columns:1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+      }
+
+      /* 3-column grids (project gallery, services) → stack */
+      [style*="repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+
+      /* Inner page header bands */
+      [style*="padding: 64px 40px 56px"] {
+        padding: 48px 20px 36px !important;
+      }
+      [style*="padding: 80px 40px 100px"] {
+        padding: 56px 20px 72px !important;
+      }
+
+      /* Headline scaling for inner pages */
+      h2 { font-size: clamp(24px, 6vw, 36px) !important; }
+
+      /* Contact form: shrink padding so it fits */
+      #estimate-form { padding: 24px !important; }
+      #estimate-form [style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+      }
+
+      /* CTA banner button: tighter padding */
+      [style*="padding: 14px 40px"] { padding: 12px 24px !important; }
+    }
   </style>
 </head>
 <body>
