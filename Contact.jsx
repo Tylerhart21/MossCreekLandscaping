@@ -1,6 +1,6 @@
 // Contact.jsx — Contact Page & CTA Section
 const ContactPage = () => {
-  const [form, setForm] = React.useState({ name: '', email: '', phone: '', service: '', message: '' });
+  const [form, setForm] = React.useState({ name: '', email: '', phone: '', address: '', service: '', message: '' });
   const [sent, setSent] = React.useState(false);
 
   const handle = (k, v) => setForm(f => ({ ...f, [k]: v }));
@@ -75,6 +75,10 @@ const ContactPage = () => {
               <div>
                 <label style={labelStyle}>Email</label>
                 <input style={inputStyle} type="email" placeholder="you@email.com" value={form.email} onChange={e => handle('email', e.target.value)} required />
+              </div>
+              <div>
+                <label style={labelStyle}>Property Address</label>
+                <input style={inputStyle} type="text" placeholder="1234 Oak St, Richardson, TX 75080" value={form.address} onChange={e => handle('address', e.target.value)} />
               </div>
               <div>
                 <label style={labelStyle}>Service Interested In</label>
