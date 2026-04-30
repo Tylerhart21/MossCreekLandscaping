@@ -54,7 +54,7 @@ const ContactPage = () => {
         </div>
 
         {/* Right — form */}
-        <div style={{ background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4, padding: 36, boxShadow: '0 2px 12px rgba(30,59,30,0.08)' }}>
+        <div id="estimate-form" style={{ background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4, padding: 36, boxShadow: '0 2px 12px rgba(30,59,30,0.08)', scrollMarginTop: 100 }}>
           {sent ? (
             <div style={{ textAlign: 'center', padding: '40px 20px' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 36, color: '#2d5626', marginBottom: 12 }}>Thank you.</div>

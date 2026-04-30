@@ -35,7 +35,7 @@ const Hero = ({ setPage }) => {
           Third-generation craftsmanship, applied to your backyard. Custom garden design, hardscaping, tree care, and irrigation — built to last.
         </p>
         <div style={{ display: 'flex', gap: 16 }}>
-          <button onClick={() => setPage('Contact')} style={{
+          <button onClick={() => { setPage('Contact'); setTimeout(() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120); }} style={{
             fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600,
             letterSpacing: '0.08em', textTransform: 'uppercase',
             background: '#2d5626', color: '#f4f1eb',
