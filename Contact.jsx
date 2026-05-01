@@ -5,8 +5,29 @@ const ContactPage = () => {
 
   const handle = (k, v) => setForm(f => ({ ...f, [k]: v }));
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
+    const [first, ...rest] = form.name.trim().split(' ');
+    const payload = {
+      full_name:  form.name,
+      first_name: first || '',
+      last_name:  rest.join(' '),
+      email:      form.email,
+      phone:      form.phone,
+      address1:   form.address,
+      service:    form.service,
+      message:    form.message,
+      source:     'mosscreeklandscaping.com — Contact Form',
+    };
+    try {
+      await fetch('https://services.leadconnectorhq.com/hooks/DqW4feqWBgKDwEzZljwR/webhook-trigger/50648063-465b-4423-9915-b4e2285a23f7', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+    } catch (err) {
+      console.error('Form submission failed:', err);
+    }
     setSent(true);
   };
 
