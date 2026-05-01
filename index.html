@@ -218,14 +218,53 @@
       </div>
     );
 
+    // ── Home Page Contact Form ───────────────────────────────
+    const HomeContactForm = () => (
+      <section id="home-estimate-form" style={{ background: '#f4f1eb', padding: '80px 40px', borderTop: '1px solid #e0d9c8' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'start' }}>
+          <div>
+            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Request a Free Estimate</div>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(30px,4vw,46px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 20 }}>
+              Tell us about<br />your project.
+            </h2>
+            <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 15, color: '#6b4f35', lineHeight: 1.75, marginBottom: 28 }}>
+              Share a few details and we'll be in touch within one business day to schedule a walk-through and provide a detailed estimate.
+            </p>
+            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#3d2b1f', marginBottom: 8 }}>Or call us directly</div>
+            <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 24, color: '#2d5626' }}>(972) 800-0155</div>
+          </div>
+          <div>
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/vjiK7W9QloqY9ug2d8qm"
+              style={{ width: '100%', height: 933, border: 'none', borderRadius: 4 }}
+              id="inline-vjiK7W9QloqY9ug2d8qm-home"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Lead Intake Form"
+              data-height="933"
+              data-layout-iframe-id="inline-vjiK7W9QloqY9ug2d8qm-home"
+              data-form-id="vjiK7W9QloqY9ug2d8qm"
+              title="Lead Intake Form"
+            />
+          </div>
+        </div>
+      </section>
+    );
+
     // ── Home Page ────────────────────────────────────────────
-    // Order: Hero → Our Story → Recent Work → What We Do → CTA → Footer
+    // Order: Hero → Our Story → Recent Work → What We Do → Contact Form → CTA → Footer
     const HomePage = ({ setPage }) => (
       <div>
         <Hero setPage={setPage} />
         <AboutSection full={false} setPage={setPage} />
         <ProjectGallery setPage={setPage} />
         <ServicesSection full={false} setPage={setPage} />
+        <HomeContactForm />
         <CTABanner setPage={setPage} />
         <Footer setPage={setPage} />
       </div>
