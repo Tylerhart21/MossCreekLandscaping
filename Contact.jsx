@@ -65,24 +65,24 @@ const ContactPage = () => {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                 <div>
                   <label style={labelStyle}>Your Name</label>
-                  <input style={inputStyle} type="text" placeholder="Jane Smith" value={form.name} onChange={e => handle('name', e.target.value)} required />
+                  <input style={inputStyle} type="text" name="full_name" autoComplete="name" placeholder="Jane Smith" value={form.name} onChange={e => handle('name', e.target.value)} required />
                 </div>
                 <div>
                   <label style={labelStyle}>Phone</label>
-                  <input style={inputStyle} type="tel" placeholder="(972) 800-0155" value={form.phone} onChange={e => handle('phone', e.target.value)} />
+                  <input style={inputStyle} type="tel" name="phone" autoComplete="tel" placeholder="(972) 800-0155" value={form.phone} onChange={e => handle('phone', e.target.value)} />
                 </div>
               </div>
               <div>
                 <label style={labelStyle}>Email</label>
-                <input style={inputStyle} type="email" placeholder="you@email.com" value={form.email} onChange={e => handle('email', e.target.value)} required />
+                <input style={inputStyle} type="email" name="email" autoComplete="email" placeholder="you@email.com" value={form.email} onChange={e => handle('email', e.target.value)} required />
               </div>
               <div>
                 <label style={labelStyle}>Property Address</label>
-                <input style={inputStyle} type="text" placeholder="1234 Oak St, Richardson, TX 75080" value={form.address} onChange={e => handle('address', e.target.value)} />
+                <input style={inputStyle} type="text" name="address" autoComplete="street-address" placeholder="1234 Oak St, Richardson, TX 75080" value={form.address} onChange={e => handle('address', e.target.value)} />
               </div>
               <div>
                 <label style={labelStyle}>Service Interested In</label>
-                <select style={{ ...inputStyle, appearance: 'none' }} value={form.service} onChange={e => handle('service', e.target.value)}>
+                <select style={{ ...inputStyle, appearance: 'none' }} name="service" value={form.service} onChange={e => handle('service', e.target.value)}>
                   <option value="">Select a service…</option>
                   <option>Custom Garden Design</option>
                   <option>Hardscaping</option>
@@ -93,7 +93,7 @@ const ContactPage = () => {
               </div>
               <div>
                 <label style={labelStyle}>Tell Us About Your Project</label>
-                <textarea style={{ ...inputStyle, resize: 'vertical', minHeight: 110 }} placeholder="Describe your space and what you're hoping to achieve…" value={form.message} onChange={e => handle('message', e.target.value)} />
+                <textarea style={{ ...inputStyle, resize: 'vertical', minHeight: 110 }} name="message" placeholder="Describe your space and what you're hoping to achieve…" value={form.message} onChange={e => handle('message', e.target.value)} />
               </div>
               <button type="submit" style={{
                 fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600,
