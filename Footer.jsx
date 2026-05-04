@@ -38,12 +38,16 @@ const Footer = ({ setPage }) => (
         </div>
       </div>
 
-      <div style={{ paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div style={{ paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
         <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, color: 'rgba(244,241,235,0.35)', letterSpacing: '0.04em' }}>
           © 2025 Moss Creek Landscaping. All rights reserved.
         </div>
-        <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, color: 'rgba(244,241,235,0.35)', letterSpacing: '0.04em' }}>
-          Licensed & Insured · Richardson, TX
+        <div style={{ display: 'flex', gap: 18, alignItems: 'center', fontFamily: "'Montserrat', sans-serif", fontSize: 10, letterSpacing: '0.04em' }}>
+          <a href="/privacy-policy" style={{ color: 'rgba(244,241,235,0.55)', textDecoration: 'none' }}>Privacy Policy</a>
+          <span style={{ color: 'rgba(244,241,235,0.25)' }}>·</span>
+          <a href="/terms-of-service" style={{ color: 'rgba(244,241,235,0.55)', textDecoration: 'none' }}>Terms of Service</a>
+          <span style={{ color: 'rgba(244,241,235,0.25)' }}>·</span>
+          <span style={{ color: 'rgba(244,241,235,0.35)' }}>Licensed &amp; Insured · Richardson, TX</span>
         </div>
       </div>
     </div>

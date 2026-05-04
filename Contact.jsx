@@ -35,6 +35,13 @@ const ContactPage = () => {
 
         {/* Right — GHL embedded form */}
         <div id="estimate-form" style={{ scrollMarginTop: 100 }}>
+          <p style={{
+            fontFamily: "'Lora', Georgia, serif", fontSize: 12.5, fontStyle: 'italic',
+            color: '#6b4f35', lineHeight: 1.55, marginBottom: 14,
+            padding: '12px 14px', background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4,
+          }}>
+            By submitting this form you agree to receive SMS messages from Moss Creek Landscaping, LLC. Message and data rates may apply. Reply STOP to opt out.
+          </p>
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/vjiK7W9QloqY9ug2d8qm"
             style={{ width: '100%', height: 933, border: 'none', borderRadius: 4 }}
