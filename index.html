@@ -26,21 +26,6 @@
     #root { display: flex; flex-direction: column; min-height: 100vh; }
     img { max-width: 100%; height: auto; }
 
-    /* GoHighLevel chat widget — visible only when body has .show-chat */
-    chat-widget,
-    iframe[src*="widgets.leadconnectorhq.com"],
-    iframe[src*="leadconnectorhq.com/chat-widget"],
-    [id^="lc-chat"], [id^="lc_chat"],
-    [class*="lc-chat-widget"], [class*="lc_chat_widget"] {
-      display: none !important;
-    }
-    body.show-chat chat-widget,
-    body.show-chat iframe[src*="widgets.leadconnectorhq.com"],
-    body.show-chat iframe[src*="leadconnectorhq.com/chat-widget"],
-    body.show-chat [id^="lc-chat"], body.show-chat [id^="lc_chat"],
-    body.show-chat [class*="lc-chat-widget"], body.show-chat [class*="lc_chat_widget"] {
-      display: revert !important;
-    }
 
     /* ── Mobile (≤ 768px) ─────────────────────────────────────── */
     @media (max-width: 768px) {
@@ -184,9 +169,7 @@
     );
 
     // ── Services Page ────────────────────────────────────────
-    const ServicesPage = ({ setPage }) => {
-      useChatWidget();
-      return (
+    const ServicesPage = ({ setPage }) => (
       <div style={{ paddingTop: 72 }}>
         <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
@@ -201,50 +184,24 @@
         <CTABanner setPage={setPage} />
         <Footer setPage={setPage} />
       </div>
-      );
-    };
+    );
 
     // ── About Page ───────────────────────────────────────────
-    // Shared GHL chat widget loader — runs once, then visibility is purely CSS.
-    const useChatWidget = () => {
-      React.useEffect(() => {
-        document.body.classList.add('show-chat');
-
-        if (!document.getElementById('ghl-chat-script')) {
-          const script = document.createElement('script');
-          script.src = 'https://widgets.leadconnectorhq.com/loader.js';
-          script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
-          script.setAttribute('data-widget-id', '69f91608397a1d223d253149');
-          script.setAttribute('data-source', 'WEB_USER');
-          script.id = 'ghl-chat-script';
-          document.body.appendChild(script);
-        }
-
-        return () => {
-          document.body.classList.remove('show-chat');
-        };
-      }, []);
-    };
-
-    const AboutPage = ({ setPage }) => {
-      useChatWidget();
-
-      return (
-        <div style={{ paddingTop: 72 }}>
-          <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
-            <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-              <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>About Us</div>
-              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
-                Family-rooted.<br /><em>Craft-forward.</em>
-              </h1>
-            </div>
+    const AboutPage = ({ setPage }) => (
+      <div style={{ paddingTop: 72 }}>
+        <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>About Us</div>
+            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
+              Family-rooted.<br /><em>Craft-forward.</em>
+            </h1>
           </div>
-          <AboutSection full={true} setPage={setPage} />
-          <CTABanner setPage={setPage} />
-          <Footer setPage={setPage} />
         </div>
-      );
-    };
+        <AboutSection full={true} setPage={setPage} />
+        <CTABanner setPage={setPage} />
+        <Footer setPage={setPage} />
+      </div>
+    );
 
     // ── Contact Page ─────────────────────────────────────────
     const ContactPageFull = ({ setPage }) => (
