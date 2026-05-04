@@ -26,7 +26,7 @@
     #root { display: flex; flex-direction: column; min-height: 100vh; }
     img { max-width: 100%; height: auto; }
 
-    /* GoHighLevel chat widget — visible only on About page (body.on-about) */
+    /* GoHighLevel chat widget — visible only when body has .show-chat */
     chat-widget,
     iframe[src*="widgets.leadconnectorhq.com"],
     iframe[src*="leadconnectorhq.com/chat-widget"],
@@ -34,11 +34,11 @@
     [class*="lc-chat-widget"], [class*="lc_chat_widget"] {
       display: none !important;
     }
-    body.on-about chat-widget,
-    body.on-about iframe[src*="widgets.leadconnectorhq.com"],
-    body.on-about iframe[src*="leadconnectorhq.com/chat-widget"],
-    body.on-about [id^="lc-chat"], body.on-about [id^="lc_chat"],
-    body.on-about [class*="lc-chat-widget"], body.on-about [class*="lc_chat_widget"] {
+    body.show-chat chat-widget,
+    body.show-chat iframe[src*="widgets.leadconnectorhq.com"],
+    body.show-chat iframe[src*="leadconnectorhq.com/chat-widget"],
+    body.show-chat [id^="lc-chat"], body.show-chat [id^="lc_chat"],
+    body.show-chat [class*="lc-chat-widget"], body.show-chat [class*="lc_chat_widget"] {
       display: revert !important;
     }
 
@@ -184,7 +184,9 @@
     );
 
     // ── Services Page ────────────────────────────────────────
-    const ServicesPage = ({ setPage }) => (
+    const ServicesPage = ({ setPage }) => {
+      useChatWidget();
+      return (
       <div style={{ paddingTop: 72 }}>
         <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
@@ -199,29 +201,33 @@
         <CTABanner setPage={setPage} />
         <Footer setPage={setPage} />
       </div>
-    );
+      );
+    };
 
     // ── About Page ───────────────────────────────────────────
-    const AboutPage = ({ setPage }) => {
-      // GHL chat widget: load script once on first About visit; visibility on
-      // every page is controlled by the body.on-about CSS class.
+    // Shared GHL chat widget loader — runs once, then visibility is purely CSS.
+    const useChatWidget = () => {
       React.useEffect(() => {
-        document.body.classList.add('on-about');
+        document.body.classList.add('show-chat');
 
-        if (!document.getElementById('ghl-about-chat-script')) {
+        if (!document.getElementById('ghl-chat-script')) {
           const script = document.createElement('script');
           script.src = 'https://widgets.leadconnectorhq.com/loader.js';
           script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
           script.setAttribute('data-widget-id', '69f91608397a1d223d253149');
           script.setAttribute('data-source', 'WEB_USER');
-          script.id = 'ghl-about-chat-script';
+          script.id = 'ghl-chat-script';
           document.body.appendChild(script);
         }
 
         return () => {
-          document.body.classList.remove('on-about');
+          document.body.classList.remove('show-chat');
         };
       }, []);
+    };
+
+    const AboutPage = ({ setPage }) => {
+      useChatWidget();
 
       return (
         <div style={{ paddingTop: 72 }}>
