@@ -26,6 +26,22 @@
     #root { display: flex; flex-direction: column; min-height: 100vh; }
     img { max-width: 100%; height: auto; }
 
+    /* GoHighLevel chat widget — visible only on About page (body.on-about) */
+    chat-widget,
+    iframe[src*="widgets.leadconnectorhq.com"],
+    iframe[src*="leadconnectorhq.com/chat-widget"],
+    [id^="lc-chat"], [id^="lc_chat"],
+    [class*="lc-chat-widget"], [class*="lc_chat_widget"] {
+      display: none !important;
+    }
+    body.on-about chat-widget,
+    body.on-about iframe[src*="widgets.leadconnectorhq.com"],
+    body.on-about iframe[src*="leadconnectorhq.com/chat-widget"],
+    body.on-about [id^="lc-chat"], body.on-about [id^="lc_chat"],
+    body.on-about [class*="lc-chat-widget"], body.on-about [class*="lc_chat_widget"] {
+      display: revert !important;
+    }
+
     /* ── Mobile (≤ 768px) ─────────────────────────────────────── */
     @media (max-width: 768px) {
 
@@ -187,22 +203,23 @@
 
     // ── About Page ───────────────────────────────────────────
     const AboutPage = ({ setPage }) => {
-      // Inject GHL chat widget — About page only.
+      // GHL chat widget: load script once on first About visit; visibility on
+      // every page is controlled by the body.on-about CSS class.
       React.useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://widgets.leadconnectorhq.com/loader.js';
-        script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
-        script.setAttribute('data-widget-id', '69f91608397a1d223d253149');
-        script.setAttribute('data-source', 'WEB_USER');
-        script.id = 'ghl-about-chat-script';
-        document.body.appendChild(script);
+        document.body.classList.add('on-about');
+
+        if (!document.getElementById('ghl-about-chat-script')) {
+          const script = document.createElement('script');
+          script.src = 'https://widgets.leadconnectorhq.com/loader.js';
+          script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+          script.setAttribute('data-widget-id', '69f91608397a1d223d253149');
+          script.setAttribute('data-source', 'WEB_USER');
+          script.id = 'ghl-about-chat-script';
+          document.body.appendChild(script);
+        }
 
         return () => {
-          // Remove our injected script + any chat-widget DOM the loader created
-          document.getElementById('ghl-about-chat-script')?.remove();
-          document.querySelectorAll(
-            'iframe[src*="widgets.leadconnectorhq.com"], iframe[src*="msgsndr.com/widget"], [id^="lc-chat"], [id^="lc_chat"], [class*="lc-chat-widget"], [class*="lc_chat_widget"]'
-          ).forEach(el => el.remove());
+          document.body.classList.remove('on-about');
         };
       }, []);
 
