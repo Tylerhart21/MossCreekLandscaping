@@ -272,7 +272,7 @@
         <AboutSection full={false} setPage={setPage} />
         <ProjectGallery setPage={setPage} />
         <ServicesSection full={false} setPage={setPage} />
-        <HomeContactForm />
+        {/* TEMPORARILY REMOVED FOR A2P COMPLIANCE — restore by uncommenting: <HomeContactForm /> */}
         <CTABanner setPage={setPage} />
         <Footer setPage={setPage} />
       </div>
@@ -303,5 +303,8 @@
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App />);
   </script>
+
+  <!-- GoHighLevel chat widget — site-wide -->
+  <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69f91608397a1d223d253149" data-source="WEB_USER"></script>
 </body>
 </html>

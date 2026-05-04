@@ -33,33 +33,51 @@ const ContactPage = () => {
           <img src="../../assets/modern-backyard.webp" alt="Our work" style={{ width: '100%', borderRadius: 4, marginTop: 16, objectFit: 'cover', height: 200, display: 'block' }} />
         </div>
 
-        {/* Right — GHL embedded form */}
-        <div id="estimate-form" style={{ scrollMarginTop: 100 }}>
-          <p style={{
-            fontFamily: "'Lora', Georgia, serif", fontSize: 12.5, fontStyle: 'italic',
-            color: '#6b4f35', lineHeight: 1.55, marginBottom: 14,
-            padding: '12px 14px', background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4,
-          }}>
-            By submitting this form you agree to receive SMS messages from Moss Creek Landscaping, LLC. Message and data rates may apply. Reply STOP to opt out.
+        {/* Right — TEMPORARILY: simple contact message (form removed for A2P compliance) */}
+        <div id="estimate-form" style={{
+          scrollMarginTop: 100,
+          background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4,
+          padding: '40px 36px', textAlign: 'center',
+          boxShadow: '0 2px 12px rgba(30,59,30,0.08)',
+        }}>
+          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 18 }}>How to Reach Us</div>
+          <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 22, fontWeight: 400, color: '#1e3b1e', lineHeight: 1.45, marginBottom: 24 }}>
+            Please call us at <a href="tel:9728000155" style={{ color: '#2d5626', fontWeight: 500, textDecoration: 'none' }}>(972) 800-0155</a> or email us at <a href="mailto:info@mosscreeklandscaping.com" style={{ color: '#2d5626', fontWeight: 500, textDecoration: 'none' }}>info@mosscreeklandscaping.com</a> to get in touch.
           </p>
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/form/vjiK7W9QloqY9ug2d8qm"
-            style={{ width: '100%', height: 933, border: 'none', borderRadius: 4 }}
-            id="inline-vjiK7W9QloqY9ug2d8qm"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Lead Intake Form"
-            data-height="933"
-            data-layout-iframe-id="inline-vjiK7W9QloqY9ug2d8qm"
-            data-form-id="vjiK7W9QloqY9ug2d8qm"
-            title="Lead Intake Form"
-          />
+          <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 14, fontStyle: 'italic', color: '#6b4f35', lineHeight: 1.7 }}>
+            We respond within one business day. Free estimates on all projects.
+          </p>
         </div>
+
+        {/*
+          ── ORIGINAL FORM CODE (restore by uncommenting this block and deleting the message above) ──
+          <div id="estimate-form" style={{ scrollMarginTop: 100 }}>
+            <p style={{
+              fontFamily: "'Lora', Georgia, serif", fontSize: 12.5, fontStyle: 'italic',
+              color: '#6b4f35', lineHeight: 1.55, marginBottom: 14,
+              padding: '12px 14px', background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4,
+            }}>
+              By submitting this form you agree to receive SMS messages from Moss Creek Landscaping, LLC. Message and data rates may apply. Reply STOP to opt out.
+            </p>
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/vjiK7W9QloqY9ug2d8qm"
+              style={{ width: '100%', height: 933, border: 'none', borderRadius: 4 }}
+              id="inline-vjiK7W9QloqY9ug2d8qm"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Lead Intake Form"
+              data-height="933"
+              data-layout-iframe-id="inline-vjiK7W9QloqY9ug2d8qm"
+              data-form-id="vjiK7W9QloqY9ug2d8qm"
+              title="Lead Intake Form"
+            />
+          </div>
+        */}
       </div>
     </section>
   );
