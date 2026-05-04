@@ -18,7 +18,7 @@ const ContactPage = () => {
           {[
             { icon: '📍', label: 'Location', val: 'Richardson, TX & DFW Area' },
             { icon: '📞', label: 'Phone', val: '(972) 800-0155' },
-            { icon: '✉', label: 'Email', val: 'regan@mosscreeklandscaping.com' },
+            { icon: '✉', label: 'Email', val: 'info@mosscreeklandscaping.com' },
           ].map(({ icon, label, val }) => (
             <div key={label} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', marginBottom: 20 }}>
               <span style={{ fontSize: 16, marginTop: 1 }}>{icon}</span>

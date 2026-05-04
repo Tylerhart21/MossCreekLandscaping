@@ -32,7 +32,7 @@ const Footer = ({ setPage }) => (
         {/* Contact */}
         <div>
           <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Contact</div>
-          {['(972) 800-0155', 'regan@mosscreeklandscaping.com', 'Richardson, TX & DFW'].map(t => (
+          {['(972) 800-0155', 'info@mosscreeklandscaping.com', 'Richardson, TX & DFW'].map(t => (
             <div key={t} style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 13, color: 'rgba(244,241,235,0.65)', padding: '4px 0', lineHeight: 1.5 }}>{t}</div>
           ))}
         </div>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moss Creek Landscaping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-font-smoothing: antialiased; }
+    body { background: #f4f1eb; font-family: 'Lora', Georgia, serif; }
+
+    @media print {
+      @page { size: letter portrait; margin: 0; }
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page-break { break-before: page; }
+      .no-print { display: none !important; }
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="About.jsx"></script>
+  <script type="text/babel" src="Services.jsx"></script>
+  <script type="text/babel" src="Contact.jsx"></script>
+
+  <script type="text/babel">
+
+    const noop = () => {};
+
+    // ── Shared helpers ───────────────────────────────────────
+    const Label = ({ children }) => (
+      <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>{children}</div>
+    );
+
+    // ── Page 1: Cover ────────────────────────────────────────
+    const Cover = () => (
+      <div style={{ position: 'relative', height: '100vh', minHeight: 700, overflow: 'hidden', breakInside: 'avoid' }}>
+        <img src="../../assets/rose-arch-garden.webp" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(20,45,20,0.58)' }} />
+        <div style={{ position: 'relative', zIndex: 1, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 72px' }}>
+          <img src="../../assets/MCL-logo-optimized.webp" alt="Moss Creek Landscaping" style={{ width: 100, height: 100, borderRadius: '50%', marginBottom: 32 }} />
+          <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#a8c49a', marginBottom: 16 }}>Richardson, TX &amp; DFW</div>
+          <h1 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 72, fontWeight: 300, lineHeight: 1.05, letterSpacing: '-0.02em', color: '#f4f1eb', marginBottom: 24 }}>
+            Rooted in Nature.<br /><em>Crafted for Living.</em>
+          </h1>
+          <p style={{ fontFamily: "'Lora',Georgia,serif", fontSize: 18, fontStyle: 'italic', color: 'rgba(244,241,235,0.85)', lineHeight: 1.7, maxWidth: 500 }}>
+            Third-generation craftsmanship, applied to your backyard.
+          </p>
+          <div style={{ marginTop: 48, display: 'flex', gap: 40 }}>
+            {['Custom Garden Design', 'Hardscaping', 'Tree Care', 'Irrigation'].map(s => (
+              <div key={s} style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a8c49a' }}>{s}</div>
+            ))}
+          </div>
+        </div>
+        <div style={{ position: 'absolute', bottom: 32, right: 48, fontFamily: "'Montserrat',sans-serif", fontSize: 10, letterSpacing: '0.1em', color: 'rgba(244,241,235,0.5)', textTransform: 'uppercase' }}>
+          mosscreeklandscaping.com
+        </div>
+      </div>
+    );
+
+    // ── Page 2: Our Story ────────────────────────────────────
+    const StoryPage = () => (
+      <div className="page-break" style={{ padding: '72px 72px 64px', background: '#f4f1eb', breakInside: 'avoid' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
+          <div>
+            <Label>Our Story</Label>
+            <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 44, fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 20 }}>
+              Three generations of knowing the land.
+            </h2>
+            <p style={{ fontFamily: "'Lora',Georgia,serif", fontSize: 15, color: '#3d2b1f', lineHeight: 1.8, marginBottom: 16 }}>
+              Moss Creek Landscaping was founded by Regan Keane, who carries on his family's third-generation tradition of integrity and creativity in every project. Based in Richardson, TX, we serve homeowners and businesses across the greater DFW area.
+            </p>
+            <p style={{ fontFamily: "'Lora',Georgia,serif", fontSize: 15, color: '#6b4f35', lineHeight: 1.8, marginBottom: 32 }}>
+              We take on fewer projects than most — because we believe your outdoor space deserves our full attention, from the first conversation to the final stone.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginTop: 8 }}>
+              {teamMembers.map(m => (
+                <div key={m.name} style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                  <img src={m.img} alt={m.name} style={{ width: '100%', aspectRatio: '1', objectFit: 'cover', objectPosition: 'top', borderRadius: 4 }} />
+                  <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 16, fontWeight: 600, color: '#1e3b1e' }}>{m.name}</div>
+                  <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6b8c5a' }} dangerouslySetInnerHTML={{ __html: m.title }} />
+                  <div style={{ fontFamily: "'Lora',Georgia,serif", fontSize: 12, color: '#6b4f35', lineHeight: 1.6 }}>{m.bio}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div style={{ position: 'relative' }}>
+            <img src="../../assets/espalier-wall.webp" alt="Craftsmanship" style={{ width: '100%', borderRadius: 4, objectFit: 'cover', height: 560 }} />
+            <div style={{ position: 'absolute', bottom: -16, left: -16, background: '#1e3b1e', padding: '16px 24px', borderRadius: 4 }}>
+              <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 28, fontWeight: 300, color: '#f4f1eb', lineHeight: 1 }}>3rd</div>
+              <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a8c49a', marginTop: 4 }}>Generation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+
+    // ── Page 3: Services ─────────────────────────────────────
+    const ServicesPage = () => (
+      <div className="page-break" style={{ padding: '72px 72px 64px', background: '#ede8dc' }}>
+        <Label>What We Do</Label>
+        <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 44, fontWeight: 400, color: '#1e3b1e', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 12 }}>
+          Every outdoor space tells a story.
+        </h2>
+        <p style={{ fontFamily: "'Lora',Georgia,serif", fontSize: 16, fontStyle: 'italic', color: '#6b4f35', lineHeight: 1.7, marginBottom: 40, maxWidth: 500 }}>
+          We offer four core services — and take on fewer projects so we can do each one right.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16 }}>
+          {servicesData.map(s => (
+            <div key={s.title} style={{ background: '#f4f1eb', border: '1px solid #c4b99a', borderRadius: 4, overflow: 'hidden' }}>
+              <img src={s.img} alt={s.title} style={{ width: '100%', height: 140, objectFit: 'cover', display: 'block' }} />
+              <div style={{ padding: '14px 16px' }}>
+                <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 6 }}>{s.tag}</div>
+                <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 18, fontWeight: 500, color: '#3d2b1f', lineHeight: 1.2, marginBottom: 8 }}>{s.title}</div>
+                <div style={{ fontFamily: "'Lora',Georgia,serif", fontSize: 12, color: '#6b4f35', lineHeight: 1.6 }}>{s.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+
+    // ── Page 4: Gallery ──────────────────────────────────────
+    const GalleryPage = () => {
+      const projects = [
+        { img: '../../assets/pool-hardscape.webp', label: 'Pool Deck & Pavers', loc: 'University Park' },
+        { img: '../../assets/rose-arch-garden.webp', label: 'Rose Arch Garden', loc: 'Highland Park' },
+        { img: '../../assets/modern-backyard.webp', label: 'Modern Backyard', loc: 'Plano' },
+        { img: '../../assets/retaining-wall.webp', label: 'Retaining Wall', loc: 'Richardson' },
+        { img: '../../assets/outdoor-kitchen.webp', label: 'Outdoor Kitchen', loc: 'Allen' },
+        { img: '../../assets/espalier-wall.webp', label: 'Espalier Feature Wall', loc: 'Frisco' },
+      ];
+      return (
+        <div className="page-break" style={{ background: '#1e3b1e', padding: '72px 72px 64px' }}>
+          <Label>Recent Work</Label>
+          <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 44, fontWeight: 400, color: '#f4f1eb', lineHeight: 1.1, marginBottom: 40 }}>Built across DFW.</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 3 }}>
+            {projects.map(({ img, label, loc }) => (
+              <div key={label} style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden' }}>
+                <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(20,45,20,0.75) 0%, transparent 55%)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '16px 18px' }}>
+                  <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 16, fontWeight: 500, color: '#f4f1eb' }}>{label}</div>
+                  <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 9, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a8c49a', marginTop: 3 }}>{loc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    };
+
+    // ── Page 5: Contact ──────────────────────────────────────
+    const ContactPrintPage = () => (
+      <div className="page-break" style={{ padding: '72px 72px 64px', background: '#f4f1eb' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
+          <div>
+            <Label>Get in Touch</Label>
+            <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 44, fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 20 }}>
+              Let's talk about your outdoor space.
+            </h2>
+            <p style={{ fontFamily: "'Lora',Georgia,serif", fontSize: 15, color: '#6b4f35', lineHeight: 1.75, marginBottom: 36 }}>
+              We offer free estimates for all projects. Tell us a bit about your space and goals — we'll be in touch within one business day.
+            </p>
+            {[
+              { label: 'Location', val: 'Richardson, TX & DFW Area' },
+              { label: 'Phone', val: '(972) 800-0155' },
+              { label: 'Email', val: 'info@mosscreeklandscaping.com' },
+              { label: 'Website', val: 'mosscreeklandscaping.com' },
+            ].map(({ label, val }) => (
+              <div key={label} style={{ marginBottom: 20 }}>
+                <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a89878', marginBottom: 3 }}>{label}</div>
+                <div style={{ fontFamily: "'Lora',Georgia,serif", fontSize: 16, color: '#3d2b1f' }}>{val}</div>
+              </div>
+            ))}
+          </div>
+          <div>
+            <img src="../../assets/modern-backyard.webp" alt="Our work" style={{ width: '100%', borderRadius: 4, objectFit: 'cover', height: 280, display: 'block', marginBottom: 24 }} />
+            <img src="../../assets/garden-beds.webp" alt="Garden Design" style={{ width: '100%', borderRadius: 4, objectFit: 'cover', height: 200, display: 'block' }} />
+          </div>
+        </div>
+      </div>
+    );
+
+    // ── Back Cover ───────────────────────────────────────────
+    const BackCover = () => (
+      <div className="page-break" style={{ position: 'relative', height: '40vh', minHeight: 300, overflow: 'hidden', background: '#1e3b1e', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 }}>
+        <img src="../../assets/MCL-logo-optimized.webp" alt="MCL" style={{ width: 80, height: 80, borderRadius: '50%' }} />
+        <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 28, fontWeight: 400, color: '#f4f1eb' }}>Moss Creek Landscaping</div>
+        <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a' }}>Rooted in Nature. Crafted for Living.</div>
+        <div style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 11, color: 'rgba(244,241,235,0.5)', marginTop: 8 }}>(972) 800-0155 · info@mosscreeklandscaping.com · Richardson, TX</div>
+      </div>
+    );
+
+    // ── Root ─────────────────────────────────────────────────
+    const PrintDoc = () => (
+      <div>
+        <Cover />
+        <StoryPage />
+        <ServicesPage />
+        <GalleryPage />
+        <ContactPrintPage />
+        <BackCover />
+      </div>
+    );
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<PrintDoc />);
+
+    // Auto-print after fonts + React render settle
+    document.fonts.ready.then(() => {
+      setTimeout(() => window.print(), 500);
+    });
+
+  </script>
+</body>
+</html>
