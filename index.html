@@ -235,13 +235,16 @@
             <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 24, color: '#2d5626' }}>(972) 800-0155</div>
           </div>
           <div>
-            <p style={{
-              fontFamily: "'Lora', Georgia, serif", fontSize: 12.5, fontStyle: 'italic',
+            <div style={{
+              fontFamily: "'Lora', Georgia, serif", fontSize: 12.5,
               color: '#6b4f35', lineHeight: 1.55, marginBottom: 14,
-              padding: '12px 14px', background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4,
+              padding: '14px 16px', background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4,
             }}>
-              By submitting this form you agree to receive SMS messages from Moss Creek Landscaping, LLC. Message and data rates may apply. Reply STOP to opt out.
-            </p>
+              <strong style={{ display: 'block', fontFamily: "'Montserrat', sans-serif", fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#3d2b1f', marginBottom: 6 }}>SMS Consent</strong>
+              <span style={{ fontStyle: 'italic' }}>
+                Check the consent box in the form below to receive SMS messages from Moss Creek Landscaping, LLC about your inquiry, appointments, and quotes. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to purchase services. See our <a href="/privacy-policy" style={{ color: '#2d5626', textDecoration: 'underline' }}>Privacy Policy</a> and <a href="/terms-of-service" style={{ color: '#2d5626', textDecoration: 'underline' }}>Terms of Service</a>.
+              </span>
+            </div>
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/vjiK7W9QloqY9ug2d8qm"
               style={{ width: '100%', height: 933, border: 'none', borderRadius: 4 }}
@@ -272,7 +275,7 @@
         <AboutSection full={false} setPage={setPage} />
         <ProjectGallery setPage={setPage} />
         <ServicesSection full={false} setPage={setPage} />
-        {/* TEMPORARILY REMOVED FOR A2P COMPLIANCE — restore by uncommenting: <HomeContactForm /> */}
+        <HomeContactForm />
         <CTABanner setPage={setPage} />
         <Footer setPage={setPage} />
       </div>
@@ -304,7 +307,5 @@
     root.render(<App />);
   </script>
 
-  <!-- GoHighLevel chat widget — site-wide -->
-  <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69f91cafbde5e856e77b7c8d" data-source="WEB_USER"></script>
 </body>
 </html>
