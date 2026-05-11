@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /extracted/
+Disallow: /uploads/
+
+Sitemap: https://mosscreeklandscaping.com/sitemap.xml
