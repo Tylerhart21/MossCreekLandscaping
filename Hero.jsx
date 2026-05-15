@@ -18,7 +18,7 @@ const Hero = ({ setPage }) => {
         padding: '0 60px', maxWidth: 900,
       }}>
         <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#a8c49a', marginBottom: 20 }}>
-          Richardson, TX · Est. 2018
+          Richardson, TX · DFW Area
         </div>
         <h1 style={{
           fontFamily: "'Cormorant Garamond', Georgia, serif",

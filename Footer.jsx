@@ -40,7 +40,7 @@ const Footer = ({ setPage }) => (
 
       <div style={{ paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
         <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, color: 'rgba(244,241,235,0.35)', letterSpacing: '0.04em' }}>
-          © 2025 Moss Creek Landscaping. All rights reserved.
+          © 2026 Moss Creek Landscaping. All rights reserved.
         </div>
         <div style={{ display: 'flex', gap: 18, alignItems: 'center', fontFamily: "'Montserrat', sans-serif", fontSize: 10, letterSpacing: '0.04em' }}>
           <a href="/privacy-policy" style={{ color: 'rgba(244,241,235,0.55)', textDecoration: 'none' }}>Privacy Policy</a>
