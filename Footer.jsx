@@ -47,7 +47,7 @@ const Footer = ({ setPage }) => (
           <span style={{ color: 'rgba(244,241,235,0.25)' }}>·</span>
           <a href="/terms-of-service" style={{ color: 'rgba(244,241,235,0.55)', textDecoration: 'none' }}>Terms of Service</a>
           <span style={{ color: 'rgba(244,241,235,0.25)' }}>·</span>
-          <span style={{ color: 'rgba(244,241,235,0.35)' }}>Licensed &amp; Insured · Richardson, TX</span>
+          <span style={{ color: 'rgba(244,241,235,0.35)' }}>Family-Owned · Insured · Richardson, TX</span>
         </div>
       </div>
     </div>
