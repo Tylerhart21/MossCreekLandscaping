@@ -20,7 +20,7 @@ const Footer = ({ setPage }) => (
         {/* Nav */}
         <div>
           <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Navigation</div>
-          {['Home', 'About', 'Services', 'Contact'].map(link => (
+          {['Home', 'About', 'Services', 'Blog', 'Contact'].map(link => (
             <button key={link} onClick={() => setPage(link)} style={{
               display: 'block', fontFamily: "'Lora', Georgia, serif", fontSize: 14,
               color: 'rgba(244,241,235,0.75)', background: 'none', border: 'none',

@@ -8,7 +8,7 @@ const Nav = ({ page, setPage }) => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const links = ['Home', 'About', 'Services', 'Contact'];
+  const links = ['Home', 'About', 'Services', 'Blog', 'Contact'];
 
   return (
     <nav style={{

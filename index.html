@@ -241,6 +241,7 @@
   <script type="text/babel" src="Services.jsx"></script>
   <script type="text/babel" src="About.jsx"></script>
   <script type="text/babel" src="Contact.jsx"></script>
+  <script type="text/babel" src="Blog.jsx"></script>
   <script type="text/babel" src="Footer.jsx"></script>
 
   <script type="text/babel">
@@ -456,6 +457,7 @@
           {page === 'Home'     && <HomePage     setPage={changePage} />}
           {page === 'Services' && <ServicesPage setPage={changePage} />}
           {page === 'About'    && <AboutPage    setPage={changePage} />}
+          {page === 'Blog'     && <BlogPage     setPage={changePage} />}
           {page === 'Contact'  && <ContactPageFull setPage={changePage} />}
         </div>
       );
