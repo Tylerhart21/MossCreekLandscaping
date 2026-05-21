@@ -502,13 +502,16 @@ const BlogPost = ({ post, setPost, setPage }) => (
   </section>
 );
 
-const BlogPage = ({ setPage }) => {
-  const [activeSlug, setActiveSlug] = React.useState(null);
-  const activePost = activeSlug ? BLOG_POSTS.find((p) => p.slug === activeSlug) : null;
+const BlogPage = ({ setPage, activeSlug = null, setActiveSlug }) => {
+  // Controlled when caller provides activeSlug/setActiveSlug, uncontrolled otherwise.
+  const [internalSlug, setInternalSlug] = React.useState(null);
+  const slug = setActiveSlug ? activeSlug : internalSlug;
+  const updateSlug = setActiveSlug || setInternalSlug;
+  const activePost = slug ? BLOG_POSTS.find((p) => p.slug === slug) : null;
 
   React.useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [activeSlug]);
+  }, [slug]);
 
   return (
     <div style={{ paddingTop: 72 }}>
@@ -547,12 +550,12 @@ const BlogPage = ({ setPage }) => {
       )}
 
       {activePost
-        ? <BlogPost post={activePost} setPost={setActiveSlug} setPage={setPage} />
-        : <BlogIndex setPost={setActiveSlug} />}
+        ? <BlogPost post={activePost} setPost={updateSlug} setPage={setPage} />
+        : <BlogIndex setPost={updateSlug} />}
 
       <Footer setPage={setPage} />
     </div>
   );
 };
 
-Object.assign(window, { BlogPage });
+Object.assign(window, { BlogPage, BLOG_POSTS });

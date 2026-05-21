@@ -440,16 +440,113 @@
       </div>
     );
 
+    // ── Routing ──────────────────────────────────────────────
+    // Path-based routing using history.pushState. Static folders like
+    // /privacy-policy/ and /terms-of-service/ are served directly by Vercel
+    // and never reach this router.
+    const PATH_TO_PAGE = {
+      '/':         'Home',
+      '/about':    'About',
+      '/services': 'Services',
+      '/blog':     'Blog',
+      '/contact':  'Contact',
+    };
+    const PAGE_TO_PATH = {
+      Home:     '/',
+      About:    '/about',
+      Services: '/services',
+      Blog:     '/blog',
+      Contact:  '/contact',
+    };
+
+    const parseLocation = () => {
+      const raw = window.location.pathname.replace(/\/+$/, '') || '/';
+      if (raw.startsWith('/blog/')) {
+        return { page: 'Blog', blogSlug: raw.slice('/blog/'.length) };
+      }
+      return { page: PATH_TO_PAGE[raw] || 'Home', blogSlug: null };
+    };
+
+    // Per-page document metadata for SEO + social previews.
+    const PAGE_META = {
+      Home:     { title: 'Moss Creek Landscaping — Custom Landscape Design in Richardson, TX & DFW',
+                  description: 'Family-owned landscaping in Richardson, TX. Custom garden design, hardscaping, tree care, and irrigation across the DFW area. Free estimates.' },
+      About:    { title: 'About Moss Creek Landscaping — Three Generations in Richardson, TX',
+                  description: 'Family-rooted, craft-forward landscape design and installation in Richardson, TX and the DFW area. Meet the team behind Moss Creek.' },
+      Services: { title: 'Landscaping Services — Garden Design, Hardscaping & Tree Care in DFW',
+                  description: 'Custom garden design, hardscaping, outdoor kitchens, tree care, irrigation, and drainage solutions across Richardson, TX and the greater DFW area.' },
+      Blog:     { title: 'The Moss Creek Journal — Landscaping Tips for Richardson, TX & DFW',
+                  description: 'Expert landscaping advice from three generations in DFW. Seasonal planting, hardscape guides, tree care, and outdoor living tips for North Texas homeowners.' },
+      Contact:  { title: 'Contact Moss Creek Landscaping — Free Estimates in Richardson, TX',
+                  description: 'Start a conversation about your yard. Free landscape walk-throughs and estimates across Richardson, Plano, Frisco, Allen, Highland Park, and the DFW area.' },
+    };
+
+    const setDocumentMeta = (page, blogSlug) => {
+      let title, description;
+      if (page === 'Blog' && blogSlug) {
+        const post = (window.BLOG_POSTS || []).find((p) => p.slug === blogSlug);
+        if (post) {
+          title = post.title + ' | Moss Creek Landscaping';
+          description = post.excerpt;
+        }
+      }
+      if (!title) {
+        const meta = PAGE_META[page] || PAGE_META.Home;
+        title = meta.title;
+        description = meta.description;
+      }
+      document.title = title;
+      const descEl = document.querySelector('meta[name="description"]');
+      if (descEl && description) descEl.setAttribute('content', description);
+    };
+
     // ── App Root ─────────────────────────────────────────────
     const App = () => {
-      const [page, setPage] = React.useState('Home');
+      const initial = parseLocation();
+      const [page, setPage] = React.useState(initial.page);
+      const [blogSlug, setBlogSlug] = React.useState(initial.blogSlug);
 
-      // Scroll to top on page change
+      // Sync state ← URL on back/forward navigation.
       React.useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        const onPop = () => {
+          const next = parseLocation();
+          setPage(next.page);
+          setBlogSlug(next.blogSlug);
+        };
+        window.addEventListener('popstate', onPop);
+        return () => window.removeEventListener('popstate', onPop);
+      }, []);
+
+      // Sync document title + meta description whenever route changes.
+      React.useEffect(() => {
+        setDocumentMeta(page, blogSlug);
+      }, [page, blogSlug]);
+
+      // Scroll to top whenever we change top-level page (post-level scroll is
+      // handled inside BlogPage).
+      React.useEffect(() => {
+        if (page !== 'Blog' || !blogSlug) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
       }, [page]);
 
-      const changePage = (p) => setPage(p);
+      const pushPath = (path) => {
+        if (window.location.pathname !== path) {
+          window.history.pushState({}, '', path);
+        }
+      };
+
+      const changePage = (p) => {
+        const path = PAGE_TO_PATH[p] || '/';
+        pushPath(path);
+        setBlogSlug(null);
+        setPage(p);
+      };
+
+      const changeBlogSlug = (slug) => {
+        setBlogSlug(slug);
+        pushPath(slug ? `/blog/${slug}` : '/blog');
+      };
 
       return (
         <div>
@@ -457,7 +554,7 @@
           {page === 'Home'     && <HomePage     setPage={changePage} />}
           {page === 'Services' && <ServicesPage setPage={changePage} />}
           {page === 'About'    && <AboutPage    setPage={changePage} />}
-          {page === 'Blog'     && <BlogPage     setPage={changePage} />}
+          {page === 'Blog'     && <BlogPage     setPage={changePage} activeSlug={blogSlug} setActiveSlug={changeBlogSlug} />}
           {page === 'Contact'  && <ContactPageFull setPage={changePage} />}
         </div>
       );
