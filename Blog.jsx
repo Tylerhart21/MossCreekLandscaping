@@ -19,7 +19,7 @@ const BLOG_POSTS = [
     category: 'Homeowner Guides',
     readTime: '9 min read',
     body: [
-      { type: 'p', text: 'Knowing what professional landscaping costs in Richardson, TX helps homeowners and businesses plan smarter. Good landscaping boosts curb appeal, adds usable outdoor space, and can raise property value. This guide breaks down the cost drivers — service type, design complexity, and materials — and shares average prices for residential and commercial projects, lawn care, and hardscapes, so you can budget with confidence.' },
+      { type: 'p', text: 'Knowing what professional landscaping costs in Richardson, TX helps homeowners and businesses plan smarter. Good landscaping boosts curb appeal, adds usable outdoor space, and can raise property value. This guide breaks down the cost drivers — service type, design complexity, and materials — and shares average prices for residential and commercial projects, lawn care, and hardscapes, so you can budget with confidence. Moss Creek serves Richardson and the surrounding DFW area — including Plano, Frisco, Allen, Garland, McKinney, and Highland Park — so the ranges below reflect real North Texas pricing.' },
 
       { type: 'h2', text: 'Key Takeaways' },
       { type: 'ul', items: [
