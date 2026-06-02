@@ -5,8 +5,134 @@
 //   { type: 'h2' | 'h3' | 'h4' | 'p', text: '...' }
 //   { type: 'ul', items: ['...', '...'] }   // supports "**Lead-in:** rest" markup
 //   { type: 'img', src: '...', alt: '...' }
+//   { type: 'table', headers: ['...'], rows: [['...', '...'], ...] }
 
 const BLOG_POSTS = [
+  {
+    slug: 'landscaping-cost-richardson-tx',
+    title:
+      'How Much Does Professional Landscaping Cost in Richardson, TX? A Complete Pricing Guide',
+    excerpt:
+      'What landscaping really costs in Richardson — residential and commercial price ranges, lawn care and hardscape costs, and how to budget for your project without surprises.',
+    image: '../../assets/blog-pricing-hero.jpg',
+    date: 'June 2026',
+    category: 'Homeowner Guides',
+    readTime: '9 min read',
+    body: [
+      { type: 'p', text: 'Knowing what professional landscaping costs in Richardson, TX helps homeowners and businesses plan smarter. Good landscaping boosts curb appeal, adds usable outdoor space, and can raise property value. This guide breaks down the cost drivers — service type, design complexity, and materials — and shares average prices for residential and commercial projects, lawn care, and hardscapes, so you can budget with confidence.' },
+
+      { type: 'h2', text: 'Key Takeaways' },
+      { type: 'ul', items: [
+        'Professional landscaping costs in Richardson, TX vary based on property size, design complexity, and service type.',
+        'Residential landscaping projects typically range from $1,500 to $5,000, depending on services and materials.',
+        'Common residential services include lawn installation, garden design, hardscaping, irrigation, and tree planting.',
+        'Commercial landscaping costs depend on property size, project scope, and ongoing maintenance requirements.',
+        'Lawn care pricing averages $100 to $300 monthly, influenced by service frequency and seasonal maintenance.',
+        'Hardscape installations like patios and walkways range from $2,000 to $10,000 based on materials and design.',
+        'Sustainable landscaping may cost more upfront but offers long-term savings through reduced water and maintenance.',
+        'Choosing the right landscaper means weighing service offerings, company experience, and material quality.',
+      ]},
+
+      { type: 'h2', text: 'What Are the Average Residential Landscaping Costs in Richardson, TX?' },
+      { type: 'p', text: 'Costs for residential landscaping in Richardson vary with property size, design scope, and the services you need. Typical projects run between $1,500 and $5,000. Larger or more detailed designs can push the price higher.' },
+
+      { type: 'h3', text: 'Which Services Are Included in Residential Landscaping Pricing?' },
+      { type: 'img', src: '../../assets/blog-pricing-residential.jpg', alt: 'A Moss Creek landscaper kneeling in a Richardson, TX flower bed planting perennials, with hand tools and mulch nearby' },
+      { type: 'p', text: 'Residential pricing usually bundles several services that shape your yard’s look and function. Typical elements include lawn work, garden layout, hardscapes, irrigation, and tree and shrub planting. Here is a rough breakdown of what each tends to cost:' },
+      { type: 'table',
+        headers: ['Service', 'Cost Range', 'What It Covers'],
+        rows: [
+          ['Lawn Installation', '$1,000 – $3,000', 'Sod or seed for a new lawn.'],
+          ['Garden Design', '$500 – $2,000', 'Professional design of flower beds and gardens.'],
+          ['Hardscaping', '$2,000 – $5,000', 'Patios, walkways, and retaining walls.'],
+          ['Irrigation Systems', '$1,500 – $3,500', 'Sprinkler or drip system installation.'],
+          ['Tree & Shrub Planting', '$300 – $1,500', 'Planting of trees and shrubs.'],
+        ],
+      },
+      { type: 'p', text: 'Every property is different, and we tailor these services to your yard — which is what ultimately shapes the final price.' },
+
+      { type: 'h3', text: 'How Do Design Complexity and Materials Affect Residential Costs?' },
+      { type: 'p', text: 'Design detail and material choices move the number quickly. Custom layouts or specialty materials like natural stone cost more than basic concrete. Added features such as water elements or elaborate plantings raise the total as well.' },
+
+      { type: 'h2', text: 'What Factors Influence Commercial Landscaping Rates in Richardson?' },
+      { type: 'p', text: 'Commercial rates depend on property size, project scope, and ongoing maintenance needs. Businesses often need larger-scale work to keep their grounds welcoming for customers and staff.' },
+
+      { type: 'h3', text: 'How Do Project Size and Maintenance Needs Impact Commercial Pricing?' },
+      { type: 'p', text: 'Bigger commercial sites mean more labor and materials, so costs are higher. Regular maintenance and seasonal services add to the annual budget. Many businesses spend roughly $5,000 to $20,000 per year, depending on their needs and service level.' },
+
+      { type: 'h3', text: 'Are Sustainable Landscaping Solutions More Costly for Commercial Properties?' },
+      { type: 'p', text: 'Sustainable options usually require a larger initial outlay but can lower water use and maintenance over time. Drought-tolerant plantings, rain gardens, and efficient irrigation can reduce lifetime costs despite the higher upfront spend.' },
+      { type: 'p', text: 'There is real economic logic here, too. Most of Texas’s population growth this century has concentrated in the major metros like Dallas, and thoughtfully designed landscapes are increasingly seen as adding measurable value to commercial and mixed-use developments — not just curb appeal, but a genuine return on investment.' },
+
+      { type: 'h2', text: 'How Is Lawn Care Pricing Structured in Richardson, TX?' },
+      { type: 'p', text: 'Lawn care costs in Richardson reflect the services you pick and how often they’re provided. Most providers offer packages you can customize to match your lawn’s size and needs.' },
+
+      { type: 'h3', text: 'What Are Typical Monthly Lawn Care Service Costs?' },
+      { type: 'p', text: 'Most homeowners pay about $100 to $300 per month for lawn care. That usually covers mowing, fertilizing, and basic weed control. The final price depends on lawn size and the services you choose.' },
+
+      { type: 'h3', text: 'How Do Seasonal Maintenance and Service Frequency Affect Pricing?' },
+      { type: 'p', text: 'Seasonal tasks like spring clean-up or fall leaf removal change the annual cost. More frequent visits during peak growth also raise the total. Plan for those seasonal swings when you budget.' },
+
+      { type: 'h2', text: 'What Do Hardscape and Outdoor Living Installations Cost in Richardson?' },
+      { type: 'p', text: 'Hardscapes and outdoor living features add function and style, but costs vary widely. Materials and design complexity are the main price drivers.' },
+
+      { type: 'h3', text: 'Which Hardscape Features Influence Installation Pricing?' },
+      { type: 'p', text: 'Patios, walkways, and retaining walls are the most common hardscapes. Installation typically ranges from $2,000 to $10,000. A simple concrete patio costs less than a custom stone design with detailed work.' },
+
+      { type: 'h3', text: 'How Does Custom Outdoor Living Design Affect Overall Costs?' },
+      { type: 'p', text: 'Custom outdoor features like kitchens or fire pits cost more because they need additional materials and specialized labor. Match the features to your budget and how you actually live in your yard when you plan.' },
+
+      { type: 'h2', text: 'How Do You Choose the Right Landscaping Company in Richardson, TX?' },
+      { type: 'p', text: 'Finding reliable landscaping at a fair price means weighing service quality, company experience, and the value you get for what you pay.' },
+
+      { type: 'h3', text: 'What Should You Look for When Comparing Landscaping Prices?' },
+      { type: 'p', text: 'Compare companies using clear criteria so you can spot real value:' },
+      { type: 'ul', items: [
+        '**Service offerings:** Make sure the company actually provides the specific services you need.',
+        '**Experience and reputation:** Look for positive reviews and a solid track record.',
+        '**Quality of materials:** Ask about the materials they use and how well they hold up over time.',
+      ]},
+
+      { type: 'h3', text: 'How Does Moss Creek Deliver Value and Quality in Richardson?' },
+      { type: 'p', text: 'Moss Creek Landscaping is a Richardson-based, family-owned company handling both residential and commercial work — lawn care, outdoor living design, hardscape installation, and ongoing maintenance. Three generations of craftsmanship and honest, straightforward service are how we deliver lasting value, not just a low bid.' },
+
+      { type: 'h2', text: 'Common Questions About Landscaping Prices in Richardson, TX' },
+
+      { type: 'h3', text: 'What Are the Main Cost Factors Affecting Landscaping Services?' },
+      { type: 'p', text: 'A few drivers do most of the work in setting your price:' },
+      { type: 'ul', items: [
+        '**Labor:** The expertise and experience of the crew influences pricing.',
+        '**Materials:** The type and quality of materials shapes the overall budget.',
+        '**Design complexity:** More intricate designs take more time and resources.',
+      ]},
+
+      { type: 'h3', text: 'How Are Local Market Trends Influencing Pricing in 2026?' },
+      { type: 'p', text: 'Demand for sustainable landscaping continues to rise across North Texas. That shifts the mix of services homeowners ask for and can affect pricing going forward. Staying informed and comparing options is the best way to budget wisely.' },
+
+      { type: 'h2', text: 'Frequently Asked Questions' },
+
+      { type: 'h4', text: 'What types of landscaping services are available in Richardson, TX?' },
+      { type: 'p', text: 'Richardson offers a wide range: lawn installation, garden design, hardscaping (patios and walkways), irrigation systems, and tree and shrub planting. Many companies also provide maintenance like regular lawn care, seasonal clean-ups, and pest control. You can mix services to match your needs and budget.' },
+
+      { type: 'h4', text: 'How can I determine the right landscaping budget for my property?' },
+      { type: 'p', text: 'Start by measuring your outdoor space and listing the services you want. Research typical costs for those services and factor in material choices and design detail. Then get a few quotes to compare pricing and scope before you decide.' },
+
+      { type: 'h4', text: 'Are there financing options available for landscaping projects?' },
+      { type: 'p', text: 'Often, yes. Many landscaping companies offer payment plans, and some work with third-party lenders. Ask about options during your first consultation and review the terms and rates before committing.' },
+
+      { type: 'h4', text: 'What are the benefits of sustainable landscaping practices?' },
+      { type: 'p', text: 'Sustainable landscaping cuts water use, lowers upkeep costs, and supports biodiversity. Native or drought-tolerant plants and efficient irrigation improve soil health and reduce reliance on chemicals. Over time, those choices can save money and benefit the local environment.' },
+
+      { type: 'h4', text: 'How do I maintain my landscaped yard throughout the year?' },
+      { type: 'p', text: 'Keep up with routine tasks: mow regularly, water as needed, fertilize, and stay ahead of weeds and pests. Seasonal jobs — pruning, mulching, winter prep — matter too. A maintenance schedule, or a professional service, keeps the yard healthy year-round.' },
+
+      { type: 'h4', text: 'What should I consider when hiring a landscaping company?' },
+      { type: 'p', text: 'Check experience, reviews, and sample projects. Confirm the services they offer match your needs and discuss your budget upfront. Verify licensing and insurance. Clear communication about timelines and expectations is essential for a smooth project.' },
+
+      { type: 'h2', text: 'Conclusion' },
+      { type: 'p', text: 'Understanding the factors behind landscaping costs in Richardson, TX lets you plan a project that balances budget and impact. Compare services, materials, and company experience to find the right fit. When you’re ready for tailored solutions that combine quality and value, the Moss Creek team is here to help you plan your outdoor upgrade.' },
+    ],
+  },
   {
     slug: 'comprehensive-landscaping-services-richardson-tx',
     title:
@@ -428,6 +554,49 @@ const renderBodyParagraph = (block, i) => {
             }}>{block.caption}</figcaption>
           )}
         </figure>
+      );
+    case 'table':
+      return (
+        <div key={i} style={{ overflowX: 'auto', margin: '28px 0 30px 0' }}>
+          <table style={{
+            width: '100%', borderCollapse: 'collapse',
+            fontFamily: "'Lora', Georgia, serif", fontSize: 15,
+            color: '#3d2b1f', border: '1px solid #d9cfb8',
+          }}>
+            {block.headers && (
+              <thead>
+                <tr>
+                  {block.headers.map((h, k) => (
+                    <th key={k} style={{
+                      textAlign: 'left', padding: '12px 14px',
+                      background: '#1e3b1e', color: '#f4f1eb',
+                      fontFamily: "'Montserrat', sans-serif", fontSize: 12,
+                      fontWeight: 600, letterSpacing: '0.04em',
+                      textTransform: 'uppercase',
+                      borderRight: k < block.headers.length - 1 ? '1px solid #2f5630' : 'none',
+                    }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+            )}
+            <tbody>
+              {block.rows.map((row, r) => (
+                <tr key={r} style={{ background: r % 2 ? '#f4f1eb' : '#ede8dc' }}>
+                  {row.map((cell, c) => (
+                    <td key={c} style={{
+                      padding: '11px 14px', verticalAlign: 'top',
+                      borderTop: '1px solid #d9cfb8',
+                      borderRight: c < row.length - 1 ? '1px solid #d9cfb8' : 'none',
+                      fontWeight: c === 0 ? 600 : 400,
+                      color: c === 0 ? '#1e3b1e' : '#3d2b1f',
+                      whiteSpace: c === 1 ? 'nowrap' : 'normal',
+                    }}>{renderInline(cell)}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       );
     default:
       return null;
