@@ -9,6 +9,154 @@
 
 const BLOG_POSTS = [
   {
+    slug: 'drought-tolerant-plants-richardson-tx',
+    title:
+      'Best Drought-Tolerant Landscaping Plants for Richardson, TX Yards: A Guide to Water-Wise Native and Heat-Tolerant Plants',
+    excerpt:
+      'The native and heat-loving plants that thrive in Richardson with little water — plus xeriscape design ideas and simple maintenance tips for a beautiful, low-water yard.',
+    image: '../../assets/blog-drought-hero.jpg',
+    date: 'June 2026',
+    category: 'Homeowner Guides',
+    readTime: '8 min read',
+    body: [
+      { type: 'p', text: 'Creating a drought-tolerant landscape in Richardson, TX saves water and makes your yard easier to care for. Choosing the right plants is the key to a resilient, low-maintenance garden. This guide covers drought-tolerant species suited to Richardson’s climate, explains xeriscape design, and offers practical maintenance tips — the same water-wise approach we use when we install landscapes for Moss Creek clients across the DFW area.' },
+
+      { type: 'h2', text: 'Key Takeaways' },
+      { type: 'ul', items: [
+        'Drought-tolerant landscaping in Richardson, TX enhances sustainability by using native, water-wise, and heat-tolerant plants.',
+        'Native Texas plants like Texas Sage, Blackfoot Daisy, and Mexican Feather Grass thrive with minimal water and care.',
+        'Xeriscape principles reduce water use by grouping plants by water needs and incorporating mulch and hardscaping.',
+        'Heat-tolerant plants improve landscape resilience through layering, color coordination, and seasonal blooms.',
+        'Native plants require less maintenance and water than non-native species, while supporting local ecosystems.',
+        'Smart irrigation like drip systems and soil moisture sensors optimizes water efficiency in drought-tolerant landscapes.',
+        'Water-wise landscaping on commercial properties reduces costs and maintenance while enhancing curb appeal.',
+        'Proper watering technique and well-draining soil are essential to keeping drought-tolerant plants healthy.',
+      ]},
+
+      { type: 'h2', text: 'Which Native Texas Plants Thrive in Richardson, TX Yards?' },
+      { type: 'p', text: 'Native Texas plants are tuned to local weather and soil, so they need less water and care than many ornamentals. Use them to support pollinators and to build a garden that stays healthy through hot, dry spells.' },
+
+      { type: 'h3', text: 'Top Drought-Resistant Native Shrubs and Perennials' },
+      { type: 'p', text: 'Some of the best drought-resistant native shrubs and perennials for Richardson include:' },
+      { type: 'ul', items: [
+        '**Texas Sage (Leucophyllum frutescens):** This hardy shrub features silvery leaves and purple flowers, thriving in hot, dry conditions.',
+        '**Blackfoot Daisy (Melampodium leucanthum):** A perennial that produces cheerful white flowers — perfect for sunny spots and needing minimal water.',
+        '**Mexican Feather Grass (Nassella tenuissima):** This ornamental grass adds texture and movement while staying highly drought-tolerant.',
+      ]},
+      { type: 'p', text: 'These selections add color and structure while cutting your landscape’s water needs.' },
+
+      { type: 'h3', text: 'Botanical Names and Care Requirements for Texas Native Plants' },
+      { type: 'p', text: 'Knowing the botanical names and care needs of native plants makes for successful landscaping. Here’s a quick reference:' },
+      { type: 'table',
+        headers: ['Plant Name', 'Botanical Name', 'Care Requirements'],
+        rows: [
+          ['Texas Sage', 'Leucophyllum frutescens', 'Full sun, well-drained soil, minimal watering.'],
+          ['Blackfoot Daisy', 'Melampodium leucanthum', 'Full sun, drought-tolerant once established.'],
+          ['Mexican Feather Grass', 'Nassella tenuissima', 'Full sun, well-drained soil, low maintenance.'],
+        ],
+      },
+      { type: 'p', text: 'These plants are low-maintenance and reliable — a good fit for busy homeowners who want an attractive, water-wise garden.' },
+
+      { type: 'h2', text: 'How to Design a Water-Wise Landscape Using Xeriscape Principles in Richardson, TX' },
+      { type: 'p', text: 'Designing a water-wise landscape uses xeriscape principles to cut irrigation while keeping the yard attractive. Thoughtful plant selection, layout, and materials make these gardens both practical and beautiful in Richardson’s climate.' },
+      { type: 'img', src: '../../assets/blog-drought-xeriscape.jpg', alt: 'A Richardson, TX xeriscape garden with gravel pathways, agave and yucca, lavender, and ornamental grasses grouped in mulched beds' },
+
+      { type: 'h3', text: 'Key Water-Conserving Landscaping Ideas for Texas Gardens' },
+      { type: 'p', text: 'A few simple strategies can dramatically reduce water use:' },
+      { type: 'ul', items: [
+        '**Group plants by water needs:** Place drought-tolerant plants together so you’re not overwatering one to satisfy another.',
+        '**Use mulch:** A layer of mulch around plants helps retain moisture and suppress weeds.',
+        '**Incorporate hardscaping:** Stones, gravel, and pathways reduce the area that needs watering.',
+      ]},
+      { type: 'p', text: 'Group your plants, add mulch, and work in hardscape to cut irrigation and simplify maintenance.' },
+
+      { type: 'h3', text: 'Integrating Heat-Tolerant Plants into Your Richardson Yard Design' },
+      { type: 'p', text: 'Heat-tolerant plants are the backbone of a successful drought-tolerant landscape. A few ways to weave them in:' },
+      { type: 'ul', items: [
+        '**Layering:** Use taller plants at the back and shorter ones in front to create depth.',
+        '**Color coordination:** Choose plants with complementary colors to enhance visual interest.',
+        '**Seasonal blooms:** Select plants that bloom at different times to ensure year-round color.',
+      ]},
+      { type: 'p', text: 'Use layers and color to build visual interest while keeping the garden resilient through heat and drought.' },
+
+      { type: 'h2', text: 'What Are the Best Low-Water Plants for Residential and Commercial Yards in Richardson, TX?' },
+      { type: 'p', text: 'When selecting low-water plants, it’s worth weighing both native and non-native options. Each has its benefits and can contribute to a sustainable landscape.' },
+
+      { type: 'h3', text: 'Comparing Native vs. Non-Native Drought-Tolerant Plants' },
+      { type: 'p', text: 'Native plants generally require less maintenance and are better suited to local conditions. Non-native plants may offer unique looks but can need more water and care. Here’s a quick comparison:' },
+      { type: 'table',
+        headers: ['Plant Type', 'Advantages', 'Disadvantages'],
+        rows: [
+          ['Native Plants', 'Low maintenance, drought-resistant.', 'Limited variety in some cases.'],
+          ['Non-Native Plants', 'Unique aesthetics, diverse options.', 'Higher water needs, potential invasiveness.'],
+        ],
+      },
+      { type: 'p', text: 'Mixing natives with a few carefully chosen non-native drought-tolerant species gives you variety without wasting water.' },
+
+      { type: 'h3', text: 'Benefits of Heat-Tolerant and Xeriscape Plants in Commercial Landscaping' },
+      { type: 'p', text: 'On commercial properties, heat-tolerant and xeriscape plants lead to real cost savings and aesthetic gains:' },
+      { type: 'ul', items: [
+        '**Reduced water costs:** Drought-tolerant plants need less irrigation, lowering water bills.',
+        '**Lower maintenance:** These plants often need less care, reducing labor costs.',
+        '**Enhanced curb appeal:** A well-designed landscape attracts customers and adds property value.',
+      ]},
+      { type: 'p', text: 'Moss Creek designs commercial sites that save water and cut upkeep while improving how the property looks.' },
+
+      { type: 'h2', text: 'How to Maintain a Drought-Tolerant Landscape in Richardson, TX' },
+      { type: 'p', text: 'A drought-tolerant landscape takes specific care, but less work overall. The right watering, soil, and seasonal checks keep plants healthy and water use low.' },
+
+      { type: 'h3', text: 'Watering Techniques and Soil Preferences for Low-Water Plants' },
+      { type: 'p', text: 'Good watering technique is essential to the health of drought-tolerant plants:' },
+      { type: 'ul', items: [
+        '**Deep watering:** Water deeply but infrequently to encourage deep root growth.',
+        '**Soil quality:** Use well-draining soil to prevent root rot and promote healthy growth.',
+        '**Timing:** Water early in the morning or late in the evening to minimize evaporation.',
+      ]},
+      { type: 'p', text: 'Water deeply and less often, use well-draining soil, and water during the cooler hours to reduce evaporation and build stronger roots.' },
+
+      { type: 'h3', text: 'Smart Irrigation Technologies and Sustainable Practices for Texas Yards' },
+      { type: 'p', text: 'The right irrigation technology stretches every gallon further:' },
+      { type: 'ul', items: [
+        '**Drip irrigation:** Delivers water directly to the roots, minimizing waste.',
+        '**Soil moisture sensors:** Automatically adjust watering based on actual soil moisture.',
+        '**Rainwater harvesting:** Collects rainwater for irrigation, reducing reliance on municipal water.',
+      ]},
+      { type: 'p', text: 'Use drip systems, sensors, and rain catchment to cut waste and water only when your plants actually need it.' },
+
+      { type: 'h2', text: 'Real-World Results from Drought-Tolerant Landscaping in Richardson, TX' },
+      { type: 'p', text: 'Water-wise landscaping isn’t just good in theory — it lowers water use and upkeep while improving the space. Here’s what that looks like in practice.' },
+
+      { type: 'h3', text: 'Residential Drought-Tolerant Landscape Projects' },
+      { type: 'p', text: 'One of the most rewarding projects is converting a traditional thirsty lawn into a vibrant xeriscape garden built around native plants. The payoff is a meaningful drop in both water usage and routine maintenance — and homeowners consistently tell us the new yard looks better and costs less to run, with a noticeable dip in the water bill.' },
+
+      { type: 'h3', text: 'Commercial Property Transformations with Water-Wise Plant Selections' },
+      { type: 'p', text: 'On commercial sites, water-wise plant selections boost curb appeal while promoting sustainability. Redesigning a corporate campus landscape around native plants and xeriscaping techniques creates a polished, welcoming environment that draws clients in — and cuts water consumption at the same time.' },
+
+      { type: 'h2', text: 'Frequently Asked Questions' },
+
+      { type: 'h4', text: 'What are the benefits of using native plants in drought-tolerant landscaping?' },
+      { type: 'p', text: 'Native plants are adapted to local conditions, so they need less water and routine care. They also support pollinators and boost biodiversity. Overall, they lower maintenance and help cut water bills.' },
+
+      { type: 'h4', text: 'How can I improve soil quality for drought-tolerant plants?' },
+      { type: 'p', text: 'Mix compost or other organic matter into the soil to improve texture and drainage. Test your soil to check pH and nutrients, and amend as needed. Mulch helps retain moisture and keeps weeds down.' },
+
+      { type: 'h4', text: 'What are common mistakes to avoid when designing a drought-tolerant landscape?' },
+      { type: 'p', text: 'Avoid overwatering, overcrowding plants, and mixing species with very different water needs. Plan for mature plant size and seasonal changes, and group plants by water requirement to keep irrigation efficient.' },
+
+      { type: 'h4', text: 'How often should I water drought-tolerant plants?' },
+      { type: 'p', text: 'The goal is deep, infrequent watering. Let the soil dry between sessions to encourage deep roots. Newly planted specimens need more frequent watering until they establish.' },
+
+      { type: 'h4', text: 'Can I use non-native plants in a drought-tolerant landscape?' },
+      { type: 'p', text: 'Yes — if you select drought-resistant, non-invasive species. Non-native plants can add variety, but many need more water, so research each one to avoid unintended ecological impacts.' },
+
+      { type: 'h4', text: 'What role does hardscaping play in drought-tolerant landscaping?' },
+      { type: 'p', text: 'Hardscaping reduces the turf and planted areas that need irrigation. Paths, patios, and stones cut water use and add structure, and they help direct runoff toward planted zones where water can be absorbed.' },
+
+      { type: 'h2', text: 'Conclusion' },
+      { type: 'p', text: 'Drought-tolerant landscaping in Richardson, TX conserves water and lowers upkeep while improving curb appeal. Native plants like Texas Sage and Blackfoot Daisy offer reliable color and structure with little irrigation, and xeriscape principles paired with smart irrigation optimize how every drop is used. When you’re ready to plan and install a water-wise yard that looks great and performs even better, the Moss Creek team is here to help.' },
+    ],
+  },
+  {
     slug: 'landscaping-cost-richardson-tx',
     title:
       'How Much Does Professional Landscaping Cost in Richardson, TX? A Complete Pricing Guide',
