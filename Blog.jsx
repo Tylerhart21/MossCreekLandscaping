@@ -729,11 +729,11 @@ const BLOG_POSTS = [
       "**Start with the soil, not the plant.**",
       "DFW soils swing between heavy black clay and pockets of decomposed limestone. Before anything goes in the ground, we work the bed with compost and expanded shale to give roots a place to actually breathe. Skip this step and even the toughest natives will struggle.",
       "**Plant for the heat that's coming, not the weather that's here.**",
-      "It's tempting to fill beds with tender annuals in March, but Texas summer arrives fast. We lean on heat-proven perennials — salvias, gaura, lantana, agastache, Mexican bush sage — that look gentle in April and hold their own through August. Mix in native grasses like little bluestem or muhly for movement.",
+      "It's tempting to fill beds with tender annuals in March, but Texas summer arrives fast. We lean on [heat-proven perennials](/blog/drought-tolerant-plants-richardson-tx) — salvias, gaura, lantana, agastache, Mexican bush sage — that look gentle in April and hold their own through August. Mix in native grasses like little bluestem or muhly for movement.",
       "**Mulch deeply, water deeply.**",
       "Two to three inches of hardwood mulch insulates roots from the heat and keeps your water bill honest. When you water, water long and slow — short daily sprinkles train roots to stay shallow and thirsty.",
       "**Plan for shade now.**",
-      "If your yard cooks in July, this is the year to plant the tree that will save it. Live oaks, cedar elms, and lacebark elms are slow but worth every season.",
+      "If your yard cooks in July, this is the year to plant the tree that will save it. [Live oaks](/blog/caring-for-mature-texas-oaks), cedar elms, and lacebark elms are slow but worth every season.",
       "If you want help mapping out a planting plan for your yard, we offer free walk-throughs across the DFW area. We'll tell you honestly what will thrive and what won't waste your money.",
     ],
   },
@@ -756,7 +756,7 @@ const BLOG_POSTS = [
       "Modern pavers have come a long way. For driveways and large patios where budget matters, they're a smart choice. The key is base prep — pavers don't fail from above, they fail from below. We over-engineer the base every time.",
       "**What to avoid.**",
       "Soft sandstone in high-traffic areas. Anything described as 'pool coping' that isn't rated for chlorine. And mortared joints in a region where the clay moves an inch with the seasons — flexible polymeric sand is almost always the better answer.",
-      "If you're weighing options for a patio, walkway, or wall, we walk you through samples in person. Stone looks different in a brochure than it does in your yard at 6pm in July.",
+      "If you're weighing options for a [patio, walkway, or wall](/services), we walk you through samples in person. Stone looks different in a brochure than it does in your yard at 6pm in July.",
     ],
   },
   {
@@ -772,7 +772,7 @@ const BLOG_POSTS = [
       "If you have a mature oak in your yard, you have something money can't easily replace. A 60-year-old live oak adds real value to a property — shade that cools the house, structure that grounds the landscape, and beauty that no nursery tree can mimic for another half-century.",
       "Most homeowners never think about their oaks until something is wrong. By then, it's often too late. Here's what we tell every client with mature trees.",
       "**Prune in the right window.**",
-      "In North Texas, oak wilt is the threat that keeps arborists up at night. The pathogen spreads through fresh wounds, especially in spring. We prune oaks in mid-winter (December through February) or in the dead of summer (July through August), and we seal every cut on a red oak or live oak immediately.",
+      "In North Texas, oak wilt is the threat that keeps arborists up at night. The pathogen spreads through fresh wounds, especially in spring. We prune oaks in mid-winter (December through February) or in the dead of [summer](/blog/north-texas-summer-landscape-survival-guide) (July through August), and we seal every cut on a red oak or live oak immediately.",
       "**Mulch like the forest does.**",
       "An oak's feeder roots are in the top 12 inches of soil, extending well past the drip line. Lawn and aggressive irrigation right up to the trunk is one of the slowest, surest ways to weaken a mature tree. A wide ring of natural mulch — three inches deep, kept off the trunk itself — mimics the forest floor and lets roots breathe.",
       "**Don't bury the root flare.**",
@@ -940,7 +940,7 @@ const renderBodyParagraph = (block, i) => {
         <h3 key={i} style={headingStyles.h3}>{block.replace(/^\*\*|\*\*$/g, '')}</h3>
       );
     }
-    return <p key={i} style={paragraphStyle}>{block}</p>;
+    return <p key={i} style={paragraphStyle}>{renderInline(block)}</p>;
   }
 
   switch (block.type) {
