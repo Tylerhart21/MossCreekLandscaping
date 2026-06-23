@@ -9,6 +9,65 @@
 
 const BLOG_POSTS = [
   {
+    slug: 'north-texas-summer-landscape-survival-guide',
+    title:
+      'How to Keep Your Landscape Alive Through a North Texas Summer',
+    excerpt:
+      'Summer landscape survival tips for Richardson & DFW — smart watering, heat-tough plants, mulch, and tree care. Free estimates from Moss Creek Landscaping.',
+    image: '../../assets/north-texas-summer-landscape.jpg',
+    date: 'June 2026',
+    category: 'Seasonal Care',
+    readTime: '6 min read',
+    body: [
+      { type: 'p', text: 'Smart watering, the right plants, and a few inexpensive habits that carry your yard from May straight through August.' },
+      { type: 'p', text: 'By the middle of July, you can feel the Texas summer the moment you step outside — heat shimmering off the driveway, the lawn crisping at its edges, beds that looked lush in May beginning to struggle. Across Richardson and the greater Dallas–Fort Worth area, summer is the season that separates a landscape that was simply installed from one that was built to last.' },
+      { type: 'p', text: 'Every year, the calls come in July and August: beautiful spring landscapes wilting in the heat. The good news is that survival isn’t about luck or expensive rescues. With the right watering, the right plants, and a handful of low-cost habits, your yard can look as good in September as it did in April. As a family-owned company carrying on a three-generation tradition of craftsmanship, we’ve learned exactly what our clay soil and triple-digit afternoons demand. Here’s how to protect your investment this summer.' },
+
+      { type: 'h2', text: '01 — Water Smarter, Not More Often' },
+      { type: 'p', text: 'The most common summer mistake we see is a sprinkler running for a few minutes every single day. Short, frequent watering only wets the surface — and it trains roots to stay shallow, right where the heat does the most damage. Instead, water deeply and less often: a long, slow soak two or three times a week drives roots down into cooler soil where moisture lasts.' },
+      { type: 'p', text: 'Timing matters just as much. Water early in the morning, before the sun climbs, when evaporation is lowest and your lawn has all day to dry — which keeps fungus and disease at bay. And in Richardson’s tight clay soil, slow is the magic word: run water faster than the ground can absorb it and most of it simply sheets off into the street. A smart controller and properly spaced heads pay for themselves in a single summer of water bills.' },
+      { type: 'img', src: '../../assets/summer-lawn-irrigation-dfw.jpg', alt: 'Early-morning lawn irrigation in a DFW yard — efficient summer watering', caption: 'Deep, early-morning watering builds the strong roots that survive the heat.' },
+
+      { type: 'h2', text: '02 — Choose Plants That Can Take the Heat' },
+      { type: 'p', text: 'The secret to a bed that shrugs off a Texas July isn’t constant babysitting — it’s choosing plants built for the climate in the first place. Salvia, lantana, gaura, agastache, and Mexican bush sage look gentle in spring but hold their color through the hardest weeks of summer. Mix in native ornamental grasses like little bluestem for movement and texture that never needs coddling.' },
+      { type: 'p', text: 'Texas natives and well-adapted perennials don’t just survive the heat — they reward you with blooms when half the neighborhood’s beds have given up. When we design a landscape, we select every plant for your specific soil, sun exposure, and how much maintenance you actually want to do.' },
+      { type: 'img', src: '../../assets/drought-tolerant-summer-color-dfw.jpg', alt: 'Drought-tolerant summer color in a DFW garden — heat-tough blooms in full color', caption: 'The right plant choices keep a North Texas garden in full color through summer.' },
+
+      { type: 'h2', text: '03 — Mulch Is the Cheapest Insurance You Can Buy' },
+      { type: 'p', text: 'If you do only one thing for your beds this summer, do this. A simple two-to-three-inch layer of quality hardwood mulch insulates roots from the heat, slows evaporation so your watering goes further, and smothers the weeds that compete for every drop of moisture. It’s the lowest-cost, highest-impact move in the entire yard — and it makes everything else you plant work harder.' },
+      { type: 'img', src: '../../assets/mulched-bed-richardson-tx.jpg', alt: 'Fresh hardwood mulch in a raised planting bed protecting roots from the Texas summer heat in Richardson TX', caption: 'A fresh layer of mulch locks in moisture and keeps roots cool all summer.' },
+
+      { type: 'h2', text: '04 — Don’t Forget Your Trees' },
+      { type: 'p', text: 'Lawns and beds get all the attention in summer, but your trees are working just as hard — and they’re far more expensive to replace. A mature tree needs a deep, slow soak past its drip line, not the daily sprinkle the grass gets. Lay a soaker hose in a wide ring out toward the edge of the canopy and let it run for an hour every week or two during the worst of the heat.' },
+      { type: 'p', text: 'The same wide ring of mulch that helps your beds protects your trees — kept a few inches off the trunk, it keeps roots cool and holds moisture. This matters most for the mature live oaks that give a North Texas yard its shade and character. They take half a century to grow and a single bad summer to lose, so they’re worth the extra attention.' },
+      { type: 'img', src: '../../assets/mature-oak-tree-care-richardson-tx.jpg', alt: 'Mature oak tree in a freshly mulched landscaped bed with seasonal color — Richardson, TX', caption: 'A mature oak protected with deep mulch and thoughtful planting at its base — exactly what carries a tree through a Texas summer.' },
+
+      { type: 'h2', text: '05 — Learn to Spot Heat Stress Early' },
+      { type: 'p', text: 'The yards that come through summer in good shape are the ones whose owners catch trouble early. Watch for the warning signs: beds wilting through the afternoon even when the soil is moist, browning or scorched leaf edges, and a lawn that turns a dull blue-gray or holds your footprints long after you’ve walked across it. Caught early, most heat stress is easily corrected with a watering adjustment. Ignored, it’s how a landscape slips away one plant at a time.' },
+
+      { type: 'h2', text: 'Let Moss Creek Keep Your Landscape Thriving' },
+      { type: 'p', text: 'From irrigation tune-ups and smart controllers to seasonal color rotations, mulch refreshes, and tree care, we help Richardson and DFW homeowners protect what they’ve invested in their yards. Every project gets owner oversight and the same family standard we’ve held for three generations.' },
+      { type: 'p', text: 'Serving Richardson, Plano, Frisco, Allen, Highland Park, University Park, and surrounding communities.' },
+
+      { type: 'h2', text: 'Summer Landscape FAQ' },
+
+      { type: 'h4', text: 'How often should I water my lawn during a Texas summer?' },
+      { type: 'p', text: 'Aim for a deep soak two to three times a week rather than a little every day — roughly an inch of water total per week, adjusted up during triple-digit stretches. Deep, infrequent watering builds the strong, downward root system that survives the heat.' },
+
+      { type: 'h4', text: 'What’s the best time of day to water?' },
+      { type: 'p', text: 'Early morning, ideally before sunrise and finished by 9 a.m. You lose far less water to evaporation, and the grass dries through the day, which helps prevent fungus. Evening watering leaves lawns damp overnight and invites disease.' },
+
+      { type: 'h4', text: 'Can I plant new landscaping in the summer, or should I wait?' },
+      { type: 'p', text: 'Hardscape — patios, stonework, retaining walls — is perfect to build in summer. New plantings are possible with extra establishment watering and care, but fall is the ideal window for larger plant and tree installs in North Texas, when roots can settle in before the next summer. We’re happy to advise on timing for your specific project.' },
+
+      { type: 'h4', text: 'How do I know if my trees need water?' },
+      { type: 'p', text: 'Check the soil a few inches down near the drip line — if it’s dry, your tree is thirsty. Thinning canopy, early leaf drop, or browning edges are later warning signs. In peak summer, a deep soak every one to two weeks goes a long way for a mature tree.' },
+
+      { type: 'h4', text: 'Do you offer irrigation system checks?' },
+      { type: 'p', text: 'Yes. We inspect coverage, fix broken or misaligned heads, and can upgrade you to a smart controller that waters on the right schedule automatically. Call us for a free walk-through.' },
+    ],
+  },
+  {
     slug: 'how-to-choose-landscaping-company-richardson-tx',
     title:
       'How to Choose the Best Landscaping Company in Richardson, TX for Your Home',
