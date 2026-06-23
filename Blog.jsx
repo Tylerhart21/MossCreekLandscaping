@@ -30,7 +30,7 @@ const BLOG_POSTS = [
 
       { type: 'h2', text: '02 — Choose Plants That Can Take the Heat' },
       { type: 'p', text: 'The secret to a bed that shrugs off a Texas July isn’t constant babysitting — it’s choosing plants built for the climate in the first place. Salvia, lantana, gaura, agastache, and Mexican bush sage look gentle in spring but hold their color through the hardest weeks of summer. Mix in native ornamental grasses like little bluestem for movement and texture that never needs coddling.' },
-      { type: 'p', text: 'Texas natives and well-adapted perennials don’t just survive the heat — they reward you with blooms when half the neighborhood’s beds have given up. When we design a landscape, we select every plant for your specific soil, sun exposure, and how much maintenance you actually want to do.' },
+      { type: 'p', text: '[Texas natives and well-adapted perennials](/blog/drought-tolerant-plants-richardson-tx) don’t just survive the heat — they reward you with blooms when half the neighborhood’s beds have given up. When we design a landscape, we select every plant for your specific soil, sun exposure, and how much maintenance you actually want to do.' },
       { type: 'img', src: '../../assets/drought-tolerant-summer-color-dfw.jpg', alt: 'Drought-tolerant summer color in a DFW garden — heat-tough blooms in full color', caption: 'The right plant choices keep a North Texas garden in full color through summer.' },
 
       { type: 'h2', text: '03 — Mulch Is the Cheapest Insurance You Can Buy' },
@@ -39,14 +39,14 @@ const BLOG_POSTS = [
 
       { type: 'h2', text: '04 — Don’t Forget Your Trees' },
       { type: 'p', text: 'Lawns and beds get all the attention in summer, but your trees are working just as hard — and they’re far more expensive to replace. A mature tree needs a deep, slow soak past its drip line, not the daily sprinkle the grass gets. Lay a soaker hose in a wide ring out toward the edge of the canopy and let it run for an hour every week or two during the worst of the heat.' },
-      { type: 'p', text: 'The same wide ring of mulch that helps your beds protects your trees — kept a few inches off the trunk, it keeps roots cool and holds moisture. This matters most for the mature live oaks that give a North Texas yard its shade and character. They take half a century to grow and a single bad summer to lose, so they’re worth the extra attention.' },
+      { type: 'p', text: 'The same wide ring of mulch that helps your beds protects your trees — kept a few inches off the trunk, it keeps roots cool and holds moisture. This matters most for the [mature live oaks](/blog/caring-for-mature-texas-oaks) that give a North Texas yard its shade and character. They take half a century to grow and a single bad summer to lose, so they’re worth the extra attention.' },
       { type: 'img', src: '../../assets/mature-oak-tree-care-richardson-tx.jpg', alt: 'Mature oak tree in a freshly mulched landscaped bed with seasonal color — Richardson, TX', caption: 'A mature oak protected with deep mulch and thoughtful planting at its base — exactly what carries a tree through a Texas summer.' },
 
       { type: 'h2', text: '05 — Learn to Spot Heat Stress Early' },
       { type: 'p', text: 'The yards that come through summer in good shape are the ones whose owners catch trouble early. Watch for the warning signs: beds wilting through the afternoon even when the soil is moist, browning or scorched leaf edges, and a lawn that turns a dull blue-gray or holds your footprints long after you’ve walked across it. Caught early, most heat stress is easily corrected with a watering adjustment. Ignored, it’s how a landscape slips away one plant at a time.' },
 
       { type: 'h2', text: 'Let Moss Creek Keep Your Landscape Thriving' },
-      { type: 'p', text: 'From irrigation tune-ups and smart controllers to seasonal color rotations, mulch refreshes, and tree care, we help Richardson and DFW homeowners protect what they’ve invested in their yards. Every project gets owner oversight and the same family standard we’ve held for three generations.' },
+      { type: 'p', text: 'From [irrigation tune-ups](/services) and smart controllers to seasonal color rotations, mulch refreshes, and [tree care](/services), we help Richardson and DFW homeowners protect what they’ve invested in their yards. Every project gets owner oversight and the same family standard we’ve held for three generations.' },
       { type: 'p', text: 'Serving Richardson, Plano, Frisco, Allen, Highland Park, University Park, and surrounding communities.' },
 
       { type: 'h2', text: 'Summer Landscape FAQ' },
@@ -159,7 +159,7 @@ const BLOG_POSTS = [
       ]},
 
       { type: 'h2', text: 'How Can You Understand and Compare Landscaping Costs in Richardson, TX?' },
-      { type: 'p', text: 'To compare costs, focus on the main pricing drivers:' },
+      { type: 'p', text: 'To compare costs, focus on the main pricing drivers — and for typical price ranges in Richardson, our [landscaping cost guide](/blog/landscaping-cost-richardson-tx) breaks them down service by service:' },
       { type: 'ul', items: [
         '**Labor costs:** Project complexity and the expertise required affect labor.',
         '**Material costs:** The quality and type of materials shape the overall price.',
@@ -356,7 +356,7 @@ const BLOG_POSTS = [
       { type: 'p', text: 'Moss Creek designs commercial sites that save water and cut upkeep while improving how the property looks.' },
 
       { type: 'h2', text: 'How to Maintain a Drought-Tolerant Landscape in Richardson, TX' },
-      { type: 'p', text: 'A drought-tolerant landscape takes specific care, but less work overall. The right watering, soil, and seasonal checks keep plants healthy and water use low.' },
+      { type: 'p', text: 'A drought-tolerant landscape takes specific care, but less work overall. The right watering, soil, and seasonal checks keep plants healthy and water use low — especially through a [North Texas summer](/blog/north-texas-summer-landscape-survival-guide).' },
 
       { type: 'h3', text: 'Watering Techniques and Soil Preferences for Low-Water Plants' },
       { type: 'p', text: 'Good watering technique is essential to the health of drought-tolerant plants:' },
@@ -420,7 +420,7 @@ const BLOG_POSTS = [
     category: 'Homeowner Guides',
     readTime: '9 min read',
     body: [
-      { type: 'p', text: 'Knowing what professional landscaping costs in Richardson, TX helps homeowners and businesses plan smarter. Good landscaping boosts curb appeal, adds usable outdoor space, and can raise property value. This guide breaks down the cost drivers — service type, design complexity, and materials — and shares average prices for residential and commercial projects, lawn care, and hardscapes, so you can budget with confidence. Moss Creek serves Richardson and the surrounding DFW area — including Plano, Frisco, Allen, Garland, McKinney, and Highland Park — so the ranges below reflect real North Texas pricing.' },
+      { type: 'p', text: 'Knowing what professional landscaping costs in Richardson, TX helps homeowners and businesses plan smarter. Good landscaping boosts curb appeal, adds usable outdoor space, and can raise property value. This guide breaks down the cost drivers — service type, design complexity, and materials — and shares average prices for residential and commercial projects, lawn care, and hardscapes, so you can budget with confidence, and for a fuller look at what each service actually involves, see our [guide to landscaping services in Richardson](/blog/comprehensive-landscaping-services-richardson-tx). Moss Creek serves Richardson and the surrounding DFW area — including Plano, Frisco, Allen, Garland, McKinney, and Highland Park — so the ranges below reflect real North Texas pricing.' },
 
       { type: 'h2', text: 'Key Takeaways' },
       { type: 'ul', items: [
@@ -869,16 +869,43 @@ const BlogIndex = ({ setPost }) => (
   </section>
 );
 
-// Render inline "**lead-in:**" bold markup at the start of list items / paragraphs.
+// Internal links navigate client-side (pushState + popstate) so the app doesn't
+// fully reload and recompile. External/mailto/tel links behave normally.
+const navigateInternal = (e, href) => {
+  if (/^(https?:)?\/\//.test(href) || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) return;
+  e.preventDefault();
+  window.history.pushState({}, '', href);
+  window.dispatchEvent(new PopStateEvent('popstate'));
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+// Render inline markup in paragraphs / list items:
+//   **bold**           → bold span (e.g. "**Lead-in:** rest")
+//   [text](/path)      → link (internal links navigate client-side)
 const renderInline = (text) => {
-  const m = text.match(/^\*\*(.+?)\*\*(.*)$/);
-  if (!m) return text;
-  return (
-    <>
-      <strong style={{ color: '#1e3b1e', fontWeight: 700 }}>{m[1]}</strong>
-      {m[2]}
-    </>
-  );
+  if (typeof text !== 'string') return text;
+  const re = /\*\*(.+?)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
+  const nodes = [];
+  let last = 0, key = 0, m;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    if (m[1] !== undefined) {
+      nodes.push(<strong key={key++} style={{ color: '#1e3b1e', fontWeight: 700 }}>{m[1]}</strong>);
+    } else {
+      const href = m[3];
+      nodes.push(
+        <a
+          key={key++}
+          href={href}
+          onClick={(e) => navigateInternal(e, href)}
+          style={{ color: '#2d5626', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'rgba(45,86,38,0.45)', textUnderlineOffset: '2px' }}
+        >{m[2]}</a>
+      );
+    }
+    last = re.lastIndex;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes.length === 0 ? text : (nodes.length === 1 ? nodes[0] : nodes);
 };
 
 const headingStyles = {
