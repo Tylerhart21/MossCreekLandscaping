@@ -15,7 +15,7 @@ const BLOG_POSTS = [
     excerpt:
       'Front-yard design ideas for Richardson, TX — native and drought-tolerant plant picks, low-maintenance options, hardscape, and lighting that lift curb appeal and property value.',
     image: '../../assets/blog-front-yard-hero.jpg',
-    date: 'June 2026',
+    date: 'July 2026',
     category: 'Homeowner Guides',
     readTime: '8 min read',
     body: [

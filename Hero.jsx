@@ -32,7 +32,7 @@ const Hero = ({ setPage }) => {
           fontFamily: "'Lora', Georgia, serif", fontSize: 18, fontStyle: 'italic',
           color: 'rgba(244,241,235,0.88)', lineHeight: 1.7, maxWidth: 520, marginBottom: 40,
         }}>
-          Third-generation craftsmanship, applied to your backyard. Custom garden design, hardscaping, tree care, and irrigation — built to last.
+          Third-generation craftsmanship, applied to your backyard. Custom Landscaping, Stonework, Turf, Lighting, Fence and Design — built to last.
         </p>
         <div style={{ display: 'flex', gap: 16 }}>
           <button onClick={() => { setPage('Contact'); setTimeout(() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120); }} style={{
