@@ -22,12 +22,19 @@ const Hero = ({ setPage }) => {
         </div>
         <h1 style={{
           fontFamily: "'Cormorant Garamond', Georgia, serif",
-          fontSize: 'clamp(48px, 6vw, 82px)',
-          fontWeight: 300, lineHeight: 1.1, letterSpacing: '-0.02em',
-          color: '#f4f1eb', marginBottom: 24,
+          fontSize: 'clamp(38px, 5vw, 66px)',
+          fontWeight: 300, lineHeight: 1.12, letterSpacing: '-0.02em',
+          color: '#f4f1eb', marginBottom: 12,
         }}>
-          Rooted in Nature.<br /><em>Crafted for Living.</em>
+          Premier Landscaping &amp; Hardscaping in Richardson, TX
         </h1>
+        <div style={{
+          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontSize: 'clamp(20px, 2.4vw, 30px)', fontStyle: 'italic',
+          fontWeight: 300, color: 'rgba(244,241,235,0.9)', marginBottom: 22,
+        }}>
+          Rooted in Nature. Crafted for Living.
+        </div>
         <p style={{
           fontFamily: "'Lora', Georgia, serif", fontSize: 18, fontStyle: 'italic',
           color: 'rgba(244,241,235,0.88)', lineHeight: 1.7, maxWidth: 520, marginBottom: 40,

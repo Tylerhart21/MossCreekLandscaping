@@ -60,7 +60,7 @@ const ServicesSection = ({ full = false, setPage }) => {
         <div style={{ marginBottom: 52, maxWidth: full ? '100%' : 600 }}>
           <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>What We Do</div>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(32px,4vw,48px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 16 }}>
-            Every outdoor space<br />tells a story.
+            {full ? <>Every outdoor space<br />tells a story.</> : 'Professional Lawn Care & Maintenance Services'}
           </h2>
           <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 16, fontStyle: 'italic', color: '#6b4f35', lineHeight: 1.7, maxWidth: 480 }}>
             We offer four core services — and take on fewer projects so we can do each one right.

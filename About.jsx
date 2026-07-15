@@ -9,7 +9,7 @@ const AboutSection = ({ full = false, setPage }) => (
         <div>
           <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Our Story</div>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(30px,3.5vw,44px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 20 }}>
-            Three generations of knowing the land.
+            {full ? 'Three generations of knowing the land.' : 'Your Trusted Local Landscaper in Richardson'}
           </h2>
           <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 15, color: '#3d2b1f', lineHeight: 1.75, marginBottom: 16 }}>
             Moss Creek Landscaping was founded by Regan Keane, who carries on his family's third-generation tradition of integrity and creativity in every project. Based in Richardson, TX, we serve homeowners and businesses across the greater DFW area.
