@@ -9,6 +9,102 @@
 
 const BLOG_POSTS = [
   {
+    slug: 'texas-summer-lawn-care-clay-soil-richardson-tx',
+    title:
+      'Texas Summer Lawn Care Tips: How Heat and Clay Soil Affect Landscaping in Richardson, TX',
+    excerpt:
+      'How Richardson’s heat and heavy clay soil shape every lawn-care decision — soil prep, smart watering, heat-tough plant picks, and irrigation that keeps your landscape thriving all summer.',
+    image: '../../assets/blog-summer-lawn-hero.jpg',
+    date: 'July 2026',
+    category: 'Seasonal Care',
+    readTime: '7 min read',
+    body: [
+      { type: 'p', text: 'Richardson’s intense heat and heavy clay soil shape every landscaping decision. This guide explains how those conditions affect lawn care, plant health, and irrigation, so you can keep your landscape thriving through summer — the clay-soil traits to work with, the heat impacts to plan for, practical irrigation tips, and how Moss Creek can support year-round maintenance.' },
+
+      { type: 'h2', text: 'Key Takeaways' },
+      { type: 'ul', items: [
+        'Texas clay soil is dense and poorly drained, which challenges root development and landscape health.',
+        'Adding organic matter and aerating improves soil structure and drainage in clay-soil landscapes.',
+        'Texas summer heat causes plant stress, wilting, and stunted growth — lawns and gardens need careful care.',
+        'Lawns in Richardson need about 1 to 1.5 inches of water weekly to hold optimal moisture.',
+        'Drought-tolerant natives like Blackfoot Daisy and Texas Sage thrive in Texas clay soil.',
+        'Heat-resistant plants cut watering frequency and maintenance during the hottest months.',
+        'Smart irrigation optimizes watering with weather and soil-moisture data to conserve water.',
+        'In clay soil, watering deeply but less often encourages root growth and minimizes runoff.',
+      ]},
+
+      { type: 'h2', text: 'What Are the Characteristics of Texas Clay Soil and Its Impact on Landscaping?' },
+      { type: 'p', text: 'Texas clay soil is dense and poorly drained, with limited aeration. That makes it hard for roots to establish and for plants to grow. Recognizing these traits is the key to landscaping successfully in Richardson, TX.' },
+
+      { type: 'h3', text: 'How Does Clay Soil Affect Lawn Health and Plant Growth in Richardson, TX?' },
+      { type: 'p', text: 'Clay holds moisture but often becomes waterlogged, which can suffocate roots and limit their development. That raises disease risk and means some species simply won’t thrive — so choose plants suited to clay conditions.' },
+
+      { type: 'h3', text: 'What Soil Preparation Techniques Improve Landscaping on Texas Clay Soil?' },
+      { type: 'p', text: 'Improve clay soil by adding organic matter and using aeration. Compost and other amendments loosen soil structure and boost drainage, while core aeration relieves compaction — letting water infiltrate and roots grow, creating a healthier environment for plants.' },
+      { type: 'img', src: '../../assets/blog-clay-soil-amendment.jpg', alt: 'Amending heavy Richardson, TX clay soil with compost and organic matter using a shovel and wheelbarrow' },
+
+      { type: 'h2', text: 'How Does Texas Heat Influence Summer Lawn Care and Plant Maintenance?' },
+      { type: 'p', text: 'High summer temperatures cause [heat stress](/blog/north-texas-summer-landscape-survival-guide) — wilting, browning, and slowed growth. Managing those heat effects is essential to keep landscapes healthy during peak summer.' },
+
+      { type: 'h3', text: 'What Are the Effects of Texas Summer Heat on Turf and Garden Plants?' },
+      { type: 'p', text: 'Heat can lead to browning, wilting, and stunted turf and plants. Sensitive species may need extra water or shade, and choosing heat-tolerant varieties helps keep the whole landscape resilient.' },
+
+      { type: 'h3', text: 'How Often Should You Water Lawns and Gardens in Richardson During Summer?' },
+      { type: 'p', text: 'Aim for about 1 to 1.5 inches of water per week, from rainfall or irrigation. Overwatering shows up as yellowing grass and soggy soil; underwatering causes browning and wilting. Adjust your irrigation to the current weather to hold optimal moisture.' },
+
+      { type: 'h2', text: 'Which Drought-Tolerant and Heat-Resistant Plants Thrive in Richardson, TX?' },
+      { type: 'p', text: 'Choosing [drought- and heat-tolerant plants](/blog/drought-tolerant-plants-richardson-tx) lowers maintenance and conserves water while keeping the landscape attractive.' },
+
+      { type: 'h3', text: 'What Are the Best Native and Adapted Plants for Clay Soil and Texas Heat?' },
+      { type: 'p', text: 'Good choices for clay and Texas heat include Blackfoot Daisy, Texas Sage, and Red Yucca. These plants need less water and upkeep than many non-natives, and they help your landscape stay resilient and appealing.' },
+
+      { type: 'h3', text: 'How Do Heat-Resistant Plants Reduce Maintenance Needs in Summer?' },
+      { type: 'p', text: 'Heat-resistant plants need less frequent watering and stand up better to pests and disease — which cuts maintenance time and supports water conservation.' },
+
+      { type: 'h2', text: 'What Are Effective Irrigation Solutions for Managing Texas Heat?' },
+      { type: 'p', text: 'The right irrigation setup delivers water efficiently, so plants get what they need with minimal waste. Our [comprehensive services guide](/blog/comprehensive-landscaping-services-richardson-tx) covers irrigation and drainage in more depth.' },
+
+      { type: 'h3', text: 'How Can Smart Irrigation Systems Improve Lawn Care Efficiency in Richardson?' },
+      { type: 'p', text: 'Smart irrigation systems use real-time weather and soil-moisture data to adjust schedules automatically. They prevent overwatering, conserve water, and support healthier plant growth.' },
+      { type: 'img', src: '../../assets/blog-smart-irrigation.jpg', alt: 'A smart irrigation controller showing soil-moisture data and a watering schedule beside a sprinkler running on a green Richardson, TX lawn' },
+
+      { type: 'h3', text: 'What Are Best Practices for Irrigation Scheduling in Clay Soil?' },
+      { type: 'p', text: 'In clay soil, water deeply but less often to encourage deeper roots and reduce runoff. Water early morning or late evening to limit evaporation, and check soil moisture to decide when to irrigate.' },
+
+      { type: 'h2', text: 'How Does Moss Creek Provide Year-Round Landscaping Maintenance in Richardson, TX?' },
+      { type: 'p', text: 'Moss Creek delivers maintenance tailored to Richardson’s climate and soil, so landscapes stay healthy and vibrant all year.' },
+
+      { type: 'h3', text: 'What Customized Maintenance Plans Address Texas Heat and Clay Soil Challenges?' },
+      { type: 'p', text: 'Our plans include regular soil testing, customized irrigation schedules, and plant selection matched to your site conditions — all to optimize landscape health and appearance.' },
+
+      { type: 'h3', text: 'How Does Moss Creek Ensure Quality Workmanship and Client Satisfaction?' },
+      { type: 'p', text: 'We focus on personalized attention, thorough quality checks, and clear communication to meet expectations and build lasting relationships.' },
+
+      { type: 'h2', text: 'Frequently Asked Questions' },
+
+      { type: 'h4', text: 'What are the signs of heat stress in plants during the Texas summer?' },
+      { type: 'p', text: 'Look for wilting, browning leaf edges, curled or dropped leaves, stunted growth, and low vigor. To reduce heat stress, check your watering, add shade for sensitive plants, and act quickly when you spot symptoms.' },
+
+      { type: 'h4', text: 'How can I improve drainage in my clay soil?' },
+      { type: 'p', text: 'Add organic matter like compost or well-rotted manure to improve structure and aeration. Core aeration reduces compaction. For persistent problems, install drainage or use raised beds to manage excess water.' },
+
+      { type: 'h4', text: 'What is the best time of day to water my lawn in Richardson?' },
+      { type: 'p', text: 'Water early in the morning, ideally between 4 a.m. and 10 a.m., so it soaks in before the heat drives up evaporation. Evening watering can leave grass wet overnight and raise fungal-disease risk.' },
+
+      { type: 'h4', text: 'How do I choose the right plants for my clay-soil garden?' },
+      { type: 'p', text: 'Pick species adapted to heavy, moisture-retaining soil. Native, drought-tolerant options like Blackfoot Daisy, Texas Sage, and Red Yucca perform well. Consider growth habit and water needs, and consult local resources if you’re unsure.' },
+
+      { type: 'h4', text: 'What are the benefits of using a smart irrigation system?' },
+      { type: 'p', text: 'Smart systems optimize watering with weather and soil-moisture data, preventing over- and under-watering and saving water. Many also offer remote control for added convenience.' },
+
+      { type: 'h4', text: 'How can I reduce lawn maintenance during the summer months?' },
+      { type: 'p', text: 'Choose drought-tolerant plants, use deep, infrequent watering to build strong roots, apply mulch to retain moisture and suppress weeds, and run regular soil tests to target fertilization.' },
+
+      { type: 'h2', text: 'Conclusion' },
+      { type: 'p', text: 'Maintaining a vibrant Richardson landscape comes down to understanding clay soil and managing summer heat. Use efficient irrigation, pick drought-tolerant plants, and apply simple soil improvements to keep your yard resilient. When you’re ready for tailored solutions, the Moss Creek team is here to [help with your landscape](/services).' },
+    ],
+  },
+  {
     slug: 'front-yard-landscaping-ideas-richardson-tx',
     title:
       'Front Yard Landscaping Ideas for Richardson, TX: Best Designs to Boost Curb Appeal',
