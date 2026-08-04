@@ -9,6 +9,114 @@
 
 const BLOG_POSTS = [
   {
+    slug: 'landscaping-home-resale-value-richardson-tx',
+    title:
+      'Can Professional Landscaping in Richardson, TX Increase Your Home’s Resale Value?',
+    excerpt:
+      'How professional landscaping in Richardson, TX raises resale value — the highest-ROI features, why curb appeal matters, costs, and maintenance. Free estimates from Moss Creek Landscaping.',
+    image: '../../assets/pool-patio-outdoor-living-dfw.jpg',
+    date: 'July 2026',
+    category: 'Homeowner Guides',
+    readTime: '8 min read',
+    body: [
+      { type: 'p', text: 'The features that deliver the best return, why curb appeal matters in Texas, and what it costs to do right.' },
+      { type: 'p', text: 'Professional landscaping improves how your home looks and functions — and that often raises its resale value. Homeowners across Richardson, TX use landscaping to make their properties more marketable. This guide covers how landscaping increases resale value, which features deliver the best ROI, why curb appeal matters so much in the Texas market, the top improvements to consider, and how Moss Creek Landscaping can help you maximize your investment.' },
+
+      { type: 'h2', text: 'Key Takeaways' },
+      { type: 'ul', items: [
+        'Professional landscaping can meaningfully increase a home’s resale value — national studies point to gains of roughly 10–15% through enhanced curb appeal.',
+        'Hardscaping, outdoor kitchens, and irrigation systems tend to offer the highest return on investment.',
+        'Strong curb appeal in Texas homes can boost value and reduce time on the market.',
+        'Native plants, outdoor lighting, and quality fencing improve both aesthetics and function.',
+        'Outdoor living spaces like patios and fire pits add value by expanding usable entertainment areas.',
+        'Moss Creek Landscaping provides personalized designs and quality workmanship tailored to Richardson’s climate and market.',
+        'Regular maintenance — lawn care, pruning, and seasonal cleanups — preserves both landscape beauty and home value over time.',
+      ]},
+
+      { type: 'h2', text: 'How Does Professional Landscaping Improve Your Home’s Resale Value?' },
+      { type: 'p', text: 'Professional landscaping creates an inviting first impression that draws buyers in. Well-designed outdoor spaces boost curb appeal and signal a well-maintained property throughout. National real-estate research suggests that homes with professional landscaping can sell for a noticeable premium over comparable homes without it — often in the range of 10–12%. That emotional appeal frequently leads to quicker sales and stronger offers.' },
+
+      { type: 'h2', text: 'What Landscaping Features Offer the Highest Return on Investment?' },
+      { type: 'p', text: 'Some features deliver higher ROI than others. In the Richardson and greater DFW market, the strongest performers are typically:' },
+      { type: 'ul', items: [
+        '**Hardscaping** — patios, walkways, and retaining walls that add both function and lasting curb appeal.',
+        '**Outdoor kitchens** — a major draw for entertaining and outdoor dining.',
+        '**Irrigation systems** — efficient watering that keeps plants healthy and the yard attractive to buyers.',
+      ]},
+      { type: 'p', text: 'According to industry estimates, well-chosen improvements like these can return a large share of their cost at resale, which makes them smart choices for homeowners looking to increase property value. Explore our [hardscaping and irrigation services](/services) to see what fits your yard.' },
+      { type: 'img', src: '../../assets/outdoor-kitchen-dfw.jpg', alt: 'Custom outdoor kitchen and covered patio — high-ROI landscaping in the DFW area by Moss Creek Landscaping', caption: 'Outdoor kitchens and covered patios are among the highest-return additions for a Texas home.' },
+
+      { type: 'h2', text: 'How Does Enhanced Curb Appeal Influence Property Value in Texas?' },
+      { type: 'p', text: 'Curb appeal is a major factor in the Texas market because it shapes a buyer’s first impression before they ever walk inside. A well-kept landscape creates a welcoming feel and encourages buyers to look closer. Studies consistently show that homes with strong curb appeal tend to sell for more than comparable homes with weaker exteriors. In a competitive area like Richardson, great curb appeal can shorten time on market and strengthen your final sale — our [front-yard landscaping ideas](/blog/front-yard-landscaping-ideas-richardson-tx) are a good place to start.' },
+      { type: 'img', src: '../../assets/north-texas-summer-landscape.jpg', alt: 'Colorful professional garden landscaping boosting curb appeal on a Richardson, TX home', caption: 'A professionally landscaped front yard is one of the strongest signals of a well-kept home.' },
+
+      { type: 'h2', text: 'What Are the Top Landscaping Improvements That Boost Resale Value?' },
+      { type: 'p', text: 'Focus on improvements that add both function and visual appeal. Top upgrades include:' },
+      { type: 'ul', items: [
+        '**Native plant landscaping** — [Texas-native plants](/blog/drought-tolerant-plants-richardson-tx) lower water use and maintenance while thriving in our climate.',
+        '**Outdoor lighting** — improves safety and extends the evening use of your outdoor spaces.',
+        '**Quality fencing** — adds the privacy and security buyers value, especially with rising home density.',
+      ]},
+      { type: 'img', src: '../../assets/drought-tolerant-summer-color-dfw.jpg', alt: 'Seasonal color and healthy, well-designed garden beds boosting curb appeal in Richardson, TX', caption: 'Seasonal color and healthy, well-designed beds make a home stand out on the street.' },
+
+      { type: 'h2', text: 'Which Outdoor Living Solutions Add the Most Value?' },
+      { type: 'p', text: 'Outdoor living spaces like decks and patios are in high demand because they add usable square footage for relaxation and entertaining. Built-in seating, fire pits, and outdoor kitchens increase both usability and appeal. Adding these features creates inviting outdoor areas that attract a wider pool of buyers and can raise your home’s resale value.' },
+
+      { type: 'h2', text: 'How Can Moss Creek Landscaping Maximize Your Property’s Value?' },
+      { type: 'p', text: 'Moss Creek Landscaping offers tailored landscaping solutions for Richardson homes. As a family-owned company carrying on a three-generation tradition, our team knows the local market and designs landscapes that fit both your aesthetic and current outdoor-living trends. With an emphasis on quality workmanship and personalized service, we help ensure each project maximizes your property’s value.' },
+
+      { type: 'h3', text: 'What Personalized Designs Enhance Richardson Homes?' },
+      { type: 'p', text: 'Custom landscaping lifts curb appeal. We create garden designs built around local plant selections so your landscape thrives in the Texas climate, and we shape outdoor spaces that reflect your style and help your home stand out to buyers.' },
+
+      { type: 'h3', text: 'How Does Quality Workmanship Affect Long-Term Value?' },
+      { type: 'p', text: 'Quality workmanship determines how long your landscape features last. Well-built landscapes hold their value and require fewer repairs. We focus on durable construction and reliable service so your investment endures — and homeowners consistently report both higher property values and more enjoyment of their outdoor spaces after professional work.' },
+
+      { type: 'h2', text: 'What Is the ROI for Landscaping in Richardson and Texas Markets?' },
+      { type: 'p', text: 'Landscaping offers strong ROI in Richardson and across Texas. Homeowners can often recoup a large portion of their landscaping costs at sale, and industry studies suggest well-executed landscaping can increase home value by roughly 10–15%, depending on the features installed. That makes landscaping one of the most effective ways to boost property value — and homeowners who prioritize it tend to sell faster and receive stronger offers.' },
+
+      { type: 'h2', text: 'How Does Regular Maintenance Preserve Your Investment?' },
+      { type: 'p', text: 'Regular maintenance keeps your landscape healthy and attractive, while neglect quietly erodes curb appeal and resale value. The essentials:' },
+      { type: 'ul', items: [
+        '**Lawn care** — regular mowing, fertilization, and aeration keep the lawn lush.',
+        '**Pruning** — trimming shrubs and trees promotes healthy growth and clean shape.',
+        '**Seasonal cleanups** — clearing debris and spent plants keeps the landscape looking its best year-round.',
+      ]},
+      { type: 'p', text: 'Ongoing care directly influences value over time: well-maintained landscapes attract buyers, command higher prices, prevent costly repairs, and keep your property market-ready. [Ask us about a seasonal maintenance plan](/services).' },
+
+      { type: 'h2', text: 'How Much Do Landscaping Services Cost in Richardson?' },
+      { type: 'p', text: 'Landscaping costs in Richardson vary widely based on the scope of work, materials, design complexity, and timing. Our [full cost guide](/blog/landscaping-cost-richardson-tx) breaks it down, but as a general guide for the DFW market:' },
+      { type: 'ul', items: [
+        '**Routine maintenance** (mowing, pruning, seasonal cleanups) — typically billed per visit or on a monthly plan.',
+        '**Planting beds & seasonal color** — from a few hundred to a few thousand dollars, depending on size and plant selection.',
+        '**Irrigation installation** — commonly several thousand dollars for a full system.',
+        '**Hardscape projects** (patios, walkways, retaining walls) — from several thousand into the tens of thousands, depending on size and stone.',
+        '**Full outdoor-living builds** (outdoor kitchens, fire features, lighting) — larger investments that scale with the design.',
+      ]},
+      { type: 'p', text: 'The right investment depends on your goals — whether you’re maximizing resale value before a sale or building a space to enjoy for years. We provide a free, itemized estimate so you know exactly what your project costs before any work begins.' },
+
+      { type: 'h2', text: 'Maximize Your Home’s Value with Moss Creek Landscaping' },
+      { type: 'p', text: 'From curb-appeal refreshes to full outdoor-living builds, we help Richardson and DFW homeowners invest in landscaping that pays off — at resale and every day in between. Family-owned, three generations of craftsmanship, and every project overseen by the owner.' },
+      { type: 'p', text: 'Serving Richardson, Plano, Frisco, Allen, Highland Park, University Park, and surrounding communities.' },
+
+      { type: 'h2', text: 'Frequently Asked Questions' },
+
+      { type: 'h4', text: 'How much can landscaping increase my home’s market price?' },
+      { type: 'p', text: 'Depending on the quality and type of improvements, professional landscaping can raise a home’s market price by as much as roughly 12%. The effect is especially strong in competitive markets like Richardson, where curb appeal heavily influences buyer interest.' },
+
+      { type: 'h4', text: 'What are the benefits of using native plants?' },
+      { type: 'p', text: 'Native plants match our local climate and soil, so they need less water and care than non-natives. They support pollinators and local wildlife, and they appeal to environmentally conscious buyers while keeping maintenance low.' },
+
+      { type: 'h4', text: 'How can outdoor lighting enhance my property’s value?' },
+      { type: 'p', text: 'Outdoor lighting improves safety, extends the usable hours of your yard, highlights your best landscaping features, and can deter intruders — all of which make the property more attractive to buyers.' },
+
+      { type: 'h4', text: 'How does landscaping affect time on the market?' },
+      { type: 'p', text: 'Well-maintained, attractive landscapes create strong first impressions that draw buyers faster. Homes with high curb appeal tend to sell more quickly than those with weaker exteriors, so professional landscaping can both speed a sale and lift offers.' },
+
+      { type: 'h4', text: 'Is professional landscaping worth the investment in Richardson, TX?' },
+      { type: 'p', text: 'Yes. Between the potential resale uplift and the day-to-day enjoyment of a better outdoor space, quality professional landscaping is generally a worthwhile investment for Richardson homeowners.' },
+    ],
+  },
+  {
     slug: 'texas-summer-lawn-care-clay-soil-richardson-tx',
     title:
       'Texas Summer Lawn Care Tips: How Heat and Clay Soil Affect Landscaping in Richardson, TX',
