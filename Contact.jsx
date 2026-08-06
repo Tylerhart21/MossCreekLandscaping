@@ -17,7 +17,7 @@ const ContactPage = () => {
           {/* Contact details */}
           {[
             { icon: '📍', label: 'Location', val: 'Richardson, TX & DFW Area' },
-            { icon: '📞', label: 'Phone', val: '(469) 895-2780' },
+            { icon: '📞', label: 'Phone', val: '(972) 800-0155' },
             { icon: '✉', label: 'Email', val: 'info@mosscreeklandscaping.com' },
           ].map(({ icon, label, val }) => (
             <div key={label} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', marginBottom: 20 }}>
