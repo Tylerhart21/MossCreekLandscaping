@@ -217,8 +217,16 @@
       /* CTA banner button: tighter padding */
       [style*="padding: 14px 40px"] { padding: 12px 24px !important; }
 
-      /* Footer brand: hide "Moss Creek Landscaping" text + tagline beside the logo on mobile */
-      footer > div > div:first-child > div:first-child > div:last-child { display: none !important; }
+      /* Footer: reduce side padding and stack the 3-column grid so nothing overflows */
+      footer { padding: 44px 20px 28px !important; }
+      footer > div > div:first-child {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+      }
+      /* Show the brand name beside the logo (there's room once stacked) */
+      footer > div > div:first-child > div:first-child > div:last-child { display: block !important; }
+      /* Contact details (long email) must wrap, never run off the page */
+      footer > div > div:first-child > div:last-child > div { overflow-wrap: anywhere !important; }
 
       /* Footer bottom row: stack legal links cleanly on mobile */
       footer > div > div:last-child { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
