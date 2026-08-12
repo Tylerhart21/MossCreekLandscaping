@@ -9,6 +9,127 @@
 
 const BLOG_POSTS = [
   {
+    slug: 'best-time-to-start-landscaping-richardson-tx',
+    title:
+      'Best Time of Year to Start a Landscaping Project in Richardson, TX',
+    excerpt:
+      'When to break ground in Richardson — why spring and fall win, how to schedule an installation, the right plants by season, and soil prep timed to Texas’s humid subtropical climate.',
+    image: '../../assets/modern-backyard.webp',
+    date: 'July 2026',
+    category: 'Seasonal Care',
+    readTime: '8 min read',
+    body: [
+      { type: 'p', text: 'Timing matters for landscaping in Richardson, TX. The humid subtropical climate shapes the best windows for planting and installation. This guide explains the ideal seasons, compares spring and fall starts, and outlines how to plan your schedule — so homeowners and businesses can pick timing that improves both the look and function of their outdoor spaces.' },
+      { type: 'p', text: 'We cover the key topics: best seasons, installation scheduling, top plants by season, soil preparation, and visual planning tools. You’ll also find answers to common timing questions for Richardson, so you can approach your project with confidence.' },
+
+      { type: 'h2', text: 'Key Takeaways' },
+      { type: 'ul', items: [
+        'The best time to start landscaping in Richardson, TX is during spring and fall, for optimal plant growth.',
+        'Richardson’s humid subtropical climate influences planting schedules — hot summers and mild winters.',
+        'Fall planting helps establish roots before summer heat, reducing plant stress and disease risk.',
+        'Spring planting benefits from longer daylight and warmer temperatures that accelerate plant development.',
+        'Planning a project means understanding local climate, creating timelines, and keeping communication clear.',
+        'Native and drought-resistant plants like Texas sage and agave thrive in Richardson’s climate.',
+        'Proper soil prep includes testing and amending in spring, and aerating with compost in fall.',
+        'Visual tools such as planting calendars and climate-zone maps improve scheduling accuracy and clarity.',
+        'Commercial timing should factor in business operations to minimize disruption and optimize establishment.',
+      ]},
+
+      { type: 'h2', text: 'When Is the Ideal Season to Begin Landscaping Projects in Richardson, TX?' },
+      { type: 'p', text: 'The right season depends on your project goals and the plants you choose. In Richardson, spring and fall are generally best because the weather supports strong establishment. Spring suits new plantings; fall helps roots develop in cooler, gentler conditions.' },
+
+      { type: 'h3', text: 'How Does Richardson’s Humid Subtropical Climate Affect Landscaping Timing?' },
+      { type: 'p', text: 'Richardson has hot summers and mild winters. High humidity can drive rapid growth in warm months, so spring is often ideal for planting. Intense summer heat can stress young plants, making fall a better choice for some installations. Use these patterns when scheduling work.' },
+
+      { type: 'h3', text: 'What Are the Benefits of Starting Projects in Fall Versus Spring?' },
+      { type: 'p', text: 'Fall planting helps roots establish ahead of summer heat, which often leads to healthier plants and lower disease risk. [Spring planting](/blog/spring-planting-north-texas) benefits from longer daylight and warmer temperatures that speed growth. Choose the season that fits the plants and the project’s goals.' },
+
+      { type: 'h2', text: 'How to Plan Your Landscape Installation Schedule for Richardson, TX' },
+      { type: 'p', text: 'Map out seasons, tasks, and resource needs before you begin. Understanding local climate patterns lets you schedule installs for better plant survival and smoother work phases.' },
+
+      { type: 'h3', text: 'What Are the Key Steps in Scheduling Residential Landscaping Projects?' },
+      { type: 'ul', items: [
+        '**Initial consultation** — start with a conversation about your goals and preferences.',
+        '**Timeline creation** — lay out the phases of the project: design, installation, and maintenance.',
+        '**Ongoing communication** — stay in touch through the process so the work matches your needs.',
+      ]},
+
+      { type: 'h3', text: 'How Does Commercial Landscaping Project Timing Differ in Richardson, TX?' },
+      { type: 'p', text: 'Commercial projects need extra timing considerations. Account for business hours, peak seasons, and client availability. Scheduling work during off-peak times can reduce disruption and help plants establish more quickly.' },
+
+      { type: 'h2', text: 'Which Plants Are Best to Plant During Each Season in Richardson, TX?' },
+      { type: 'p', text: 'Picking season-appropriate plants is the key to a resilient landscape. In Richardson, some species perform better in spring while others prefer the cooler fall months.' },
+      { type: 'img', src: '../../assets/blog-front-yard-native-plants.jpg', alt: 'Native Texas plants — black-eyed Susans, salvia, and lantana — thriving in a Richardson, TX landscape bed' },
+
+      { type: 'h3', text: 'What Native and Drought-Resistant Plants Thrive in Richardson, TX?' },
+      { type: 'p', text: 'Native species like [Texas sage, black-eyed Susan, and bluebonnet](/blog/drought-tolerant-plants-richardson-tx) fit Richardson’s climate and usually need less water and upkeep. Drought-tolerant choices such as agave and lantana are smart for sustainable designs. For help matching plants to your yard, our [landscaping services](/services) can guide the selection.' },
+
+      { type: 'h3', text: 'How to Choose Plants for Spring and Fall Planting Seasons?' },
+      { type: 'p', text: 'For spring, select fast-establishing bloomers like petunias and marigolds. For fall, choose perennials such as coneflowers and ornamental grasses that can root before winter. Avoid planting too late, which can stunt development.' },
+
+      { type: 'h2', text: 'What Soil Preparation and Maintenance Tips Optimize Seasonal Landscaping Success?' },
+      { type: 'p', text: 'Good soil work sets the stage for healthy plants. Invest in preparation so your landscape can thrive through the seasons.' },
+      { type: 'img', src: '../../assets/blog-clay-soil-amendment.jpg', alt: 'Preparing and amending soil with compost before planting in a Richardson, TX garden bed' },
+
+      { type: 'h3', text: 'How to Prepare Soil for Fall and Spring Planting in Richardson, TX?' },
+      { type: 'p', text: 'Before spring planting, test your soil and amend nutrients as needed, adding organic matter to improve structure and fertility. In fall, aerate and add compost to strengthen the soil heading into winter.' },
+
+      { type: 'h3', text: 'What Maintenance Practices Support Healthy Growth After Installation?' },
+      { type: 'p', text: 'After installation, stick to regular maintenance: consistent watering, mulch to retain moisture, and pest monitoring. Proper fertilization and pruning support longevity and keep new plantings on track.' },
+
+      { type: 'h2', text: 'How Can Visual Tools Help You Schedule Landscaping Projects Effectively?' },
+      { type: 'p', text: 'Visual tools make planning clearer. They help you track timelines, assign resources, and communicate the plan to clients and crews.' },
+
+      { type: 'h3', text: 'How to Use Planting Calendars and Climate-Zone Maps for Richardson, TX?' },
+      { type: 'p', text: 'Planting calendars identify the best windows for each species based on local conditions. Climate-zone maps show temperature ranges and seasonal shifts to guide plant selection.' },
+
+      { type: 'h3', text: 'What Role Do Project Photos and Infographics Play in Planning?' },
+      { type: 'p', text: 'Photos and infographics simplify complex details and help everyone visualize the final result. They improve communication between landscapers and clients and reduce misunderstandings.' },
+
+      { type: 'h2', text: 'Common Questions About Landscaping Project Timing in Richardson, TX' },
+      { type: 'p', text: 'A few answers to the timing questions homeowners ask most.' },
+
+      { type: 'h3', text: 'When Is the Best Time to Plant Trees and Shrubs in Richardson, TX?' },
+      { type: 'p', text: 'Plant [trees and shrubs](/blog/caring-for-mature-texas-oaks) in fall or early spring so roots can establish before summer heat. This timing supports healthier, longer-lasting growth.' },
+
+      { type: 'h3', text: 'How Does Seasonal Timing Affect Commercial Landscaping Outcomes?' },
+      { type: 'p', text: 'Seasonal timing strongly affects commercial results. Cooler-season planting usually leads to better establishment and lower maintenance costs, while summer installs may need more intensive care because of heat stress.' },
+
+      { type: 'table',
+        headers: ['Plant Type', 'Best Season', 'Benefits'],
+        rows: [
+          ['Native Plants', 'Spring / Fall', 'Low maintenance, drought-resistant.'],
+          ['Drought-Resistant Plants', 'Spring / Fall', 'Needs less water, adapts well to the local climate.'],
+          ['Perennials', 'Fall', 'Roots establish before winter, then bloom in spring.'],
+        ],
+      },
+      { type: 'p', text: 'The table shows preferred planting seasons for common plant types and how timing supports a successful landscape.' },
+
+      { type: 'h2', text: 'Frequently Asked Questions' },
+
+      { type: 'h4', text: 'What are the signs that it’s time to start a landscaping project?' },
+      { type: 'p', text: 'Look for dead plants, bare patches, or overgrown areas. If the space no longer meets your needs for appearance, function, or upkeep, it’s time to act. Seasonal cues help too — spring for refreshes, fall for winter prep.' },
+
+      { type: 'h4', text: 'How can I keep my landscaping project within budget?' },
+      { type: 'p', text: 'Set a clear budget covering materials, labor, and maintenance. Prioritize the key elements, compare options, and be transparent with your landscaper about your limits so they can suggest cost-effective choices. Our [landscaping cost guide](/blog/landscaping-cost-richardson-tx) breaks down what to expect.' },
+
+      { type: 'h4', text: 'What maintenance should I expect after my project is completed?' },
+      { type: 'p', text: 'Expect ongoing care: watering, weeding, mulching, and fertilization as needed. Monitor for pests and prune away dead or damaged growth. Seasonal tasks like fall aeration and winter prep also help, and a maintenance schedule keeps everything on track.' },
+
+      { type: 'h4', text: 'Can I landscape my yard myself, or should I hire a professional?' },
+      { type: 'p', text: 'DIY works for smaller, simpler projects if you have the time and basic skills. For larger or complex designs, a professional saves time and secures better results — with expertise in plant selection, design, and installation for a more durable landscape.' },
+
+      { type: 'h4', text: 'What are the best practices for watering new plants after installation?' },
+      { type: 'p', text: 'Water new plants deeply at installation to settle soil around the roots. Keep the soil consistently moist — not waterlogged — for the first few weeks, typically watering deeply once or twice a week and adjusting for weather and soil type. As roots establish, water less often but more deeply, and always check soil moisture first.' },
+
+      { type: 'h4', text: 'How can I build sustainable practices into my landscaping project?' },
+      { type: 'p', text: 'Choose native and drought-tolerant plants to lower water needs. Use rain gardens or permeable paving to manage runoff, prefer organic fertilizers and non-chemical pest controls, and mulch and compost to build soil health. These steps reduce maintenance and support the local ecosystem.' },
+
+      { type: 'h2', text: 'Conclusion' },
+      { type: 'p', text: 'Pacing your landscaping project correctly in Richardson, TX boosts plant health and curb appeal. Understand the local climate and pick the right planting windows to support growth and sustainability. When you want a hand planning and executing, explore our [expert landscaping services](/services) — and start creating a vibrant landscape today.' },
+    ],
+  },
+  {
     slug: 'landscaping-home-resale-value-richardson-tx',
     title:
       'Can Professional Landscaping in Richardson, TX Increase Your Home’s Resale Value?',
