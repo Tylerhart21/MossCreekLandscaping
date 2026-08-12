@@ -15,7 +15,7 @@ const BLOG_POSTS = [
     excerpt:
       'When to break ground in Richardson — why spring and fall win, how to schedule an installation, the right plants by season, and soil prep timed to Texas’s humid subtropical climate.',
     image: '../../assets/modern-backyard.webp',
-    date: 'July 2026',
+    date: 'August 2026',
     category: 'Seasonal Care',
     readTime: '8 min read',
     body: [
@@ -136,7 +136,7 @@ const BLOG_POSTS = [
     excerpt:
       'How professional landscaping in Richardson, TX raises resale value — the highest-ROI features, why curb appeal matters, costs, and maintenance. Free estimates from Moss Creek Landscaping.',
     image: '../../assets/pool-patio-outdoor-living-dfw.jpg',
-    date: 'July 2026',
+    date: 'August 2026',
     category: 'Homeowner Guides',
     readTime: '8 min read',
     body: [
