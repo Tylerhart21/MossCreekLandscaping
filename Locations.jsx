@@ -83,6 +83,46 @@ const CITY_DATA = [
       { q: 'Do you offer free estimates in McKinney?', a: 'We do. We’ll walk the property, talk through your goals, and provide a detailed estimate — usually within one business day of your call.' },
     ],
   },
+  {
+    slug: 'addison',
+    city: 'Addison',
+    metaTitle: 'Landscaping in Addison, TX | Moss Creek Landscaping',
+    metaDescription:
+      'Landscape design, hardscaping, irrigation, and tree care for Addison, TX. Moss Creek brings craft to courtyards, townhome yards, and gardens. Free estimates.',
+    heroSub: 'Thoughtful landscaping for Addison’s courtyards, townhomes, and tucked-away yards.',
+    h2: 'Landscaping that fits Addison’s scale.',
+    intro: [
+      'Addison packs a lot into a small footprint — walkable districts like Addison Circle and Vitruvian Park, townhomes and patio homes, and pockets of established single-family streets. That often means compact, high-visibility spaces where every square foot counts: a courtyard, a side yard, an entry that sets the tone. Done well, a small Addison landscape can feel like an extension of the home rather than an afterthought.',
+      'Moss Creek Landscaping designs for that scale. We build intimate stone patios and courtyards, choose low-maintenance plantings that stay sharp with little fuss, and keep everything efficiently watered. It’s three generations of North Texas craftsmanship, applied at the detail level Addison spaces reward.',
+    ],
+    localNote: 'From Addison Circle and Vitruvian Park to the established streets around Les Lacs — we tailor every Addison space to its setting.',
+    neighborhoods: ['Addison Circle', 'Vitruvian Park', 'Les Lacs', 'Oaks North', 'The Fairways of Bent Tree', 'Bella Villaggio', 'Azure', 'Beltwood'],
+    faqs: [
+      { q: 'Do you work with smaller Addison lots and courtyards?', a: 'Absolutely — it’s a lot of what we do in Addison. Compact courtyards, side yards, and entries reward careful design. We make small spaces feel intentional and finished rather than cramped.' },
+      { q: 'Can you handle townhome or HOA landscaping in Addison?', a: 'Yes. Many Addison homes are townhomes or patio homes with HOA standards. We design within those guidelines and focus on low-maintenance plantings that look great year-round with minimal upkeep.' },
+      { q: 'Do you offer free estimates in Addison?', a: 'We do. We’ll walk your property, talk through your goals, and give you an honest, detailed estimate — usually within one business day of your first call.' },
+    ],
+  },
+  {
+    slug: 'dallas',
+    city: 'Dallas',
+    metaTitle: 'Landscaping in Dallas, TX | Moss Creek Landscaping',
+    metaDescription:
+      'Custom landscape design, hardscaping, irrigation, and tree care for Dallas, TX homes — Lakewood to Preston Hollow. Three generations in DFW. Free estimates.',
+    heroSub: 'Custom gardens, hardscape, and tree care for Dallas homes — Lakewood to Preston Hollow.',
+    h2: 'Landscaping with Dallas character.',
+    intro: [
+      'Dallas neighborhoods each have a personality — the Tudors and mature canopy of Lakewood and the M Streets, the estate lots of Preston Hollow and Bluffview, the hills of Kessler Park, the family streets of Lake Highlands. What ties them together is character worth protecting: heritage trees, established structure, and homes that deserve a landscape as considered as the architecture.',
+      'Moss Creek Landscaping brings three generations of North Texas craftsmanship to Dallas homes. We design gardens suited to your street and soil, build stonework that feels original to the property, and care for the mature trees that make these neighborhoods what they are. Fewer projects, more attention — so your yard is done right.',
+    ],
+    localNote: 'From Lakewood and the M Streets to Preston Hollow, Kessler Park, and Lake Highlands — we tailor every Dallas landscape to its neighborhood.',
+    neighborhoods: ['Lakewood', 'Preston Hollow', 'Lake Highlands', 'M Streets', 'Kessler Park', 'White Rock', 'Bluffview', 'Devonshire'],
+    faqs: [
+      { q: 'Can you care for the mature trees in older Dallas neighborhoods?', a: 'Yes — the heritage trees in areas like Lakewood, Preston Hollow, and Kessler Park are a big part of what we protect. We prune in the right seasonal windows, guard the root zone, and can excavate a buried root flare to add years of life.' },
+      { q: 'Do you work across different Dallas neighborhoods?', a: 'We do. Dallas ranges from historic Tudors to estate lots to hillside homes, and we tailor each design to its street, soil, and architecture rather than applying a one-size template.' },
+      { q: 'Do you offer free estimates in Dallas?', a: 'We do. We’ll walk the property, talk through your goals, and provide a detailed estimate — usually within one business day of your call.' },
+    ],
+  },
 ];
 
 const LOCATION_BY_SLUG = CITY_DATA.reduce((acc, c) => { acc[c.slug] = c; return acc; }, {});

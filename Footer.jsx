@@ -37,6 +37,8 @@ const Footer = ({ setPage }) => (
             { city: 'Frisco', slug: 'frisco' },
             { city: 'Allen', slug: 'allen' },
             { city: 'McKinney', slug: 'mckinney' },
+            { city: 'Addison', slug: 'addison' },
+            { city: 'Dallas', slug: 'dallas' },
           ].map(({ city, slug }) => (
             <a
               key={slug}
