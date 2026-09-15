@@ -29,6 +29,25 @@ const ContactPage = () => {
             </div>
           ))}
 
+          {/* Google Business Profile map */}
+          <div style={{ marginTop: 8, marginBottom: 20 }}>
+            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a89878', marginBottom: 10 }}>Find Us on Google</div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2121064.100596632!2d-98.28293592198604!3d32.736161266617316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8a604a12e3b1ef15%3A0xaf265a7ffaa8b4c2!2sMoss%20Creek%20Landscaping!5e1!3m2!1sen!2sus!4v1789480434033!5m2!1sen!2sus"
+              title="Map to Moss Creek Landscaping"
+              style={{ width: '100%', height: 260, border: 0, borderRadius: 4, display: 'block' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+            <a
+              href="https://www.google.com/maps?cid=12620874511465100482"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-block', marginTop: 10, fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: '0.04em', color: '#2d5626', textDecoration: 'none', borderBottom: '2px solid #2d5626', paddingBottom: 2 }}
+            >View us on Google &rarr;</a>
+          </div>
+
           {/* Photo */}
           <img src="../../assets/modern-backyard.webp" alt="Our work" style={{ width: '100%', borderRadius: 4, marginTop: 16, objectFit: 'cover', height: 200, display: 'block' }} />
         </div>
