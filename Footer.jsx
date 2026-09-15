@@ -2,7 +2,7 @@
 const Footer = ({ setPage }) => (
   <footer style={{ background: '#1e3b1e', padding: '56px 40px 32px' }}>
     <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gap: 48, paddingBottom: 40, borderBottom: '1px solid rgba(168,196,154,0.2)' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: 40, paddingBottom: 40, borderBottom: '1px solid rgba(168,196,154,0.2)' }}>
         {/* Brand */}
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
@@ -26,6 +26,24 @@ const Footer = ({ setPage }) => (
               color: 'rgba(244,241,235,0.75)', background: 'none', border: 'none',
               cursor: 'pointer', padding: '4px 0', textAlign: 'left',
             }}>{link}</button>
+          ))}
+        </div>
+
+        {/* Service Areas */}
+        <div>
+          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Service Areas</div>
+          {[
+            { city: 'Plano', slug: 'plano' },
+            { city: 'Frisco', slug: 'frisco' },
+            { city: 'Allen', slug: 'allen' },
+            { city: 'McKinney', slug: 'mckinney' },
+          ].map(({ city, slug }) => (
+            <a
+              key={slug}
+              href={`/landscaping-${slug}-tx`}
+              onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', `/landscaping-${slug}-tx`); window.dispatchEvent(new PopStateEvent('popstate')); }}
+              style={{ display: 'block', fontFamily: "'Lora', Georgia, serif", fontSize: 14, color: 'rgba(244,241,235,0.75)', textDecoration: 'none', padding: '4px 0' }}
+            >Landscaping in {city}</a>
           ))}
         </div>
 

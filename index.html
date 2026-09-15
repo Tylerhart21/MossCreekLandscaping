@@ -315,6 +315,7 @@
   <script type="text/babel" src="Contact.jsx"></script>
   <script type="text/babel" src="Blog.jsx"></script>
   <script type="text/babel" src="Footer.jsx"></script>
+  <script type="text/babel" src="Locations.jsx"></script>
 
   <script type="text/babel">
     // ── Project Gallery Section ──────────────────────────────
@@ -512,6 +513,9 @@
       </div>
     );
 
+    // Expose reusable sections so separate script files (Locations.jsx) can render them.
+    Object.assign(window, { ProjectGallery, CTABanner, HomeContactForm });
+
     // ── Routing ──────────────────────────────────────────────
     // Path-based routing using history.pushState. Static folders like
     // /privacy-policy/ and /terms-of-service/ are served directly by Vercel
@@ -534,9 +538,14 @@
     const parseLocation = () => {
       const raw = window.location.pathname.replace(/\/+$/, '') || '/';
       if (raw.startsWith('/blog/')) {
-        return { page: 'Blog', blogSlug: raw.slice('/blog/'.length) };
+        return { page: 'Blog', blogSlug: raw.slice('/blog/'.length), citySlug: null };
       }
-      return { page: PATH_TO_PAGE[raw] || 'Home', blogSlug: null };
+      // City service-area pages: /landscaping-<slug>-tx
+      const cityMatch = raw.match(/^\/landscaping-([a-z0-9-]+)-tx$/);
+      if (cityMatch && window.LOCATION_BY_SLUG && window.LOCATION_BY_SLUG[cityMatch[1]]) {
+        return { page: 'Location', blogSlug: null, citySlug: cityMatch[1] };
+      }
+      return { page: PATH_TO_PAGE[raw] || 'Home', blogSlug: null, citySlug: null };
     };
 
     // Per-page document metadata for SEO + social previews.
@@ -553,13 +562,22 @@
                   description: 'Start a conversation about your yard. Free landscape walk-throughs and estimates across Richardson, Plano, Frisco, Allen, Highland Park, and the DFW area.' },
     };
 
-    const setDocumentMeta = (page, blogSlug) => {
-      let title, description;
+    const setDocumentMeta = (page, blogSlug, citySlug) => {
+      let title, description, path = PAGE_TO_PATH[page] || '/';
       if (page === 'Blog' && blogSlug) {
         const post = (window.BLOG_POSTS || []).find((p) => p.slug === blogSlug);
         if (post) {
           title = post.title + ' | Moss Creek Landscaping';
           description = post.excerpt;
+          path = '/blog/' + blogSlug;
+        }
+      }
+      if (page === 'Location' && citySlug) {
+        const c = (window.LOCATION_BY_SLUG || {})[citySlug];
+        if (c) {
+          title = c.metaTitle;
+          description = c.metaDescription;
+          path = '/landscaping-' + citySlug + '-tx';
         }
       }
       if (!title) {
@@ -570,6 +588,8 @@
       document.title = title;
       const descEl = document.querySelector('meta[name="description"]');
       if (descEl && description) descEl.setAttribute('content', description);
+      const canonEl = document.querySelector('link[rel="canonical"]');
+      if (canonEl) canonEl.setAttribute('href', 'https://mosscreeklandscaping.com' + path);
     };
 
     // ── App Root ─────────────────────────────────────────────
@@ -577,6 +597,7 @@
       const initial = parseLocation();
       const [page, setPage] = React.useState(initial.page);
       const [blogSlug, setBlogSlug] = React.useState(initial.blogSlug);
+      const [citySlug, setCitySlug] = React.useState(initial.citySlug);
 
       // Fade out the loading splash once the app has rendered.
       React.useEffect(() => {
@@ -593,6 +614,7 @@
           const next = parseLocation();
           setPage(next.page);
           setBlogSlug(next.blogSlug);
+          setCitySlug(next.citySlug);
         };
         window.addEventListener('popstate', onPop);
         return () => window.removeEventListener('popstate', onPop);
@@ -600,8 +622,8 @@
 
       // Sync document title + meta description whenever route changes.
       React.useEffect(() => {
-        setDocumentMeta(page, blogSlug);
-      }, [page, blogSlug]);
+        setDocumentMeta(page, blogSlug, citySlug);
+      }, [page, blogSlug, citySlug]);
 
       // Scroll to top whenever we change top-level page (post-level scroll is
       // handled inside BlogPage).
@@ -621,6 +643,7 @@
         const path = PAGE_TO_PATH[p] || '/';
         pushPath(path);
         setBlogSlug(null);
+        setCitySlug(null);
         setPage(p);
       };
 
@@ -637,6 +660,7 @@
           {page === 'About'    && <AboutPage    setPage={changePage} />}
           {page === 'Blog'     && <BlogPage     setPage={changePage} activeSlug={blogSlug} setActiveSlug={changeBlogSlug} />}
           {page === 'Contact'  && <ContactPageFull setPage={changePage} />}
+          {page === 'Location' && window.LocationPage && <LocationPage citySlug={citySlug} setPage={changePage} />}
         </div>
       );
     };
