@@ -127,7 +127,7 @@ const CITY_DATA = [
 
 const LOCATION_BY_SLUG = CITY_DATA.reduce((acc, c) => { acc[c.slug] = c; return acc; }, {});
 
-const eyebrowStyle = { fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 };
+const eyebrowStyle = { fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 };
 
 const LocationPage = ({ citySlug, setPage }) => {
   const c = LOCATION_BY_SLUG[citySlug] || CITY_DATA[0];
@@ -136,23 +136,23 @@ const LocationPage = ({ citySlug, setPage }) => {
   return (
     <div style={{ paddingTop: 72 }}>
       {/* Hero band */}
-      <div style={{ background: '#1e3b1e', padding: '72px 40px 64px' }}>
+      <div style={{ background: '#2a2724', padding: '72px 40px 64px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={eyebrowStyle}>Service Area &middot; {c.city}, TX</div>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(38px,5vw,62px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.08, letterSpacing: '-0.01em', marginBottom: 20 }}>
+          <h1 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(38px,5vw,62px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.08, letterSpacing: '-0.01em', marginBottom: 20 }}>
             Landscaping in {c.city}, TX
           </h1>
-          <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 17, fontStyle: 'italic', color: 'rgba(244,241,235,0.8)', lineHeight: 1.7, maxWidth: 680, marginBottom: 32 }}>
+          <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 17, fontStyle: 'italic', color: 'rgba(244,241,235,0.8)', lineHeight: 1.7, maxWidth: 680, marginBottom: 32 }}>
             {c.heroSub}
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
             <button onClick={scrollToForm} style={{
-              fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase',
+              fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase',
               background: '#2d5626', color: '#f4f1eb', border: '2px solid #2d5626', borderRadius: 4, padding: '14px 30px', cursor: 'pointer',
               boxShadow: '0 4px 16px rgba(0,0,0,0.22)',
-            }}>Get a Free Estimate</button>
+            }}>Schedule a Consultation</button>
             <a href="tel:+19728000155" style={{
-              fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase',
+              fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase',
               background: 'transparent', color: '#f4f1eb', border: '2px solid rgba(244,241,235,0.4)', borderRadius: 4, padding: '14px 30px',
               textDecoration: 'none', display: 'inline-flex', alignItems: 'center',
             }}>Call (972) 800-0155</a>
@@ -164,13 +164,13 @@ const LocationPage = ({ citySlug, setPage }) => {
       <section style={{ background: '#f4f1eb', padding: '72px 40px 56px' }}>
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
           <div style={eyebrowStyle}>{c.city} Landscaping</div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(28px,3.4vw,42px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 24 }}>
+          <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(28px,3.4vw,42px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 24 }}>
             {c.h2}
           </h2>
           {c.intro.map((para, i) => (
-            <p key={i} style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 16, color: i === 0 ? '#3d2b1f' : '#6b4f35', lineHeight: 1.85, marginBottom: 18 }}>{para}</p>
+            <p key={i} style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 16, color: i === 0 ? '#3d2b1f' : '#6b4f35', lineHeight: 1.85, marginBottom: 18 }}>{para}</p>
           ))}
-          <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 15, fontStyle: 'italic', color: '#2d5626', lineHeight: 1.7, marginTop: 8, paddingLeft: 18, borderLeft: '3px solid #6b8c5a' }}>
+          <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 15, fontStyle: 'italic', color: '#2d5626', lineHeight: 1.7, marginTop: 8, paddingLeft: 18, borderLeft: '3px solid #6b8c5a' }}>
             {c.localNote}
           </p>
         </div>
@@ -180,16 +180,16 @@ const LocationPage = ({ citySlug, setPage }) => {
       <section style={{ background: '#ede8dc', padding: '56px 40px', borderTop: '1px solid #e0d9c8', borderBottom: '1px solid #e0d9c8' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <div style={eyebrowStyle}>Areas We Serve</div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(24px,2.8vw,34px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, marginBottom: 24 }}>
+          <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(24px,2.8vw,34px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, marginBottom: 24 }}>
             {c.city} neighborhoods we serve
           </h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
             {c.neighborhoods.map(n => (
-              <span key={n} style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: '0.03em', color: '#1e3b1e', background: '#f4f1eb', border: '1px solid #c4b99a', borderRadius: 999, padding: '8px 16px' }}>{n}</span>
+              <span key={n} style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: '0.03em', color: '#1e3b1e', background: '#f4f1eb', border: '1px solid #c4b99a', borderRadius: 999, padding: '8px 16px' }}>{n}</span>
             ))}
           </div>
-          <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 14, color: '#6b4f35', lineHeight: 1.7, marginTop: 20 }}>
-            Don’t see your neighborhood? We serve all of {c.city} and the surrounding DFW area &mdash; <button onClick={() => setPage('Contact')} style={{ background: 'none', border: 'none', padding: 0, color: '#2d5626', fontFamily: "'Lora', Georgia, serif", fontSize: 14, cursor: 'pointer', textDecoration: 'underline' }}>just reach out</button>.
+          <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 14, color: '#6b4f35', lineHeight: 1.7, marginTop: 20 }}>
+            Don’t see your neighborhood? We serve all of {c.city} and the surrounding DFW area &mdash; <button onClick={() => setPage('Contact')} style={{ background: 'none', border: 'none', padding: 0, color: '#2d5626', fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 14, cursor: 'pointer', textDecoration: 'underline' }}>just reach out</button>.
           </p>
         </div>
       </section>
@@ -204,13 +204,13 @@ const LocationPage = ({ citySlug, setPage }) => {
       <section style={{ background: '#f4f1eb', padding: '72px 40px' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <div style={eyebrowStyle}>{c.city} Landscaping FAQ</div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(26px,3vw,38px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, marginBottom: 32 }}>
+          <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(26px,3vw,38px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, marginBottom: 32 }}>
             Questions from {c.city} homeowners
           </h2>
           {c.faqs.map((f, i) => (
             <div key={i} style={{ marginBottom: 28, paddingBottom: 28, borderBottom: i === c.faqs.length - 1 ? 'none' : '1px solid #e0d9c8' }}>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 22, fontWeight: 600, color: '#1e3b1e', marginBottom: 10 }}>{f.q}</h3>
-              <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 16, color: '#3d2b1f', lineHeight: 1.8 }}>{f.a}</p>
+              <h3 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 22, fontWeight: 600, color: '#1e3b1e', marginBottom: 10 }}>{f.q}</h3>
+              <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 16, color: '#3d2b1f', lineHeight: 1.8 }}>{f.a}</p>
             </div>
           ))}
         </div>

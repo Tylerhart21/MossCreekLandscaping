@@ -26,15 +26,15 @@ const Nav = ({ page, setPage }) => {
       }}>
         <img src="../../assets/MCL-logo-optimized.webp" alt="Moss Creek Landscaping" style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover' }} />
         <div style={{ textAlign: 'left' }}>
-          <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 18, fontWeight: 600, color: '#1e3b1e', letterSpacing: '0.01em' }}>Moss Creek Landscaping</div>
-          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 8, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b4f35', marginTop: 1 }}>Richardson, TX &amp; DFW</div>
+          <div style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 18, fontWeight: 600, color: '#1e3b1e', letterSpacing: '0.01em' }}>Moss Creek Landscaping</div>
+          <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 8, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b4f35', marginTop: 1 }}>Richardson, TX &amp; DFW</div>
         </div>
       </button>
 
       <div style={{ display: 'flex', gap: 28, alignItems: 'center' }}>
         {links.map(link => (
           <button key={link} onClick={() => setPage(link)} style={{
-            fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600,
+            fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, fontWeight: 600,
             letterSpacing: '0.08em', textTransform: 'uppercase',
             color: page === link ? '#2d5626' : '#3d2b1f',
             background: 'none', border: 'none', cursor: 'pointer',
@@ -47,7 +47,7 @@ const Nav = ({ page, setPage }) => {
           </button>
         ))}
         <button onClick={() => { setPage('Contact'); setTimeout(() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120); }} style={{
-          fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600,
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, fontWeight: 600,
           letterSpacing: '0.08em', textTransform: 'uppercase',
           background: '#2d5626', color: '#f4f1eb',
           border: '2px solid #2d5626', borderRadius: 4,
@@ -56,7 +56,7 @@ const Nav = ({ page, setPage }) => {
         }}
           onMouseEnter={e => e.target.style.background = '#1e3b1e'}
           onMouseLeave={e => e.target.style.background = '#2d5626'}
-        >Free Estimate</button>
+        >Schedule a Consultation</button>
       </div>
     </nav>
   );

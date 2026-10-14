@@ -6,6 +6,10 @@
     { "source": "/blog", "destination": "/index.html" },
     { "source": "/blog/:slug*", "destination": "/index.html" },
     { "source": "/contact", "destination": "/index.html" },
-    { "source": "/landscaping-:slug", "destination": "/landscaping-:slug.html" }
+    { "source": "/landscaping-:slug", "destination": "/landscaping-:slug.html" },
+    { "source": "/landscape-design", "destination": "/landscape-design.html" },
+    { "source": "/hardscaping", "destination": "/hardscaping.html" },
+    { "source": "/tree-care", "destination": "/tree-care.html" },
+    { "source": "/irrigation-drainage", "destination": "/irrigation-drainage.html" }
   ]
 }

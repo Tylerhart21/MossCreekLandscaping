@@ -1,37 +1,55 @@
 // Footer.jsx — Moss Creek Footer
 const Footer = ({ setPage }) => (
-  <footer style={{ background: '#1e3b1e', padding: '56px 40px 32px' }}>
+  <footer style={{ background: '#2a2724', padding: '56px 40px 32px' }}>
     <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: 40, paddingBottom: 40, borderBottom: '1px solid rgba(168,196,154,0.2)' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1.6fr 1fr 1fr 1fr 1fr', gap: 36, paddingBottom: 40, borderBottom: '1px solid rgba(168,196,154,0.2)' }}>
         {/* Brand */}
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
             <img src="../../assets/MCL-logo-optimized.webp" alt="MCL" style={{ width: 48, height: 48, borderRadius: '50%' }} />
             <div>
-              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 20, fontWeight: 600, color: '#f4f1eb' }}>Moss Creek Landscaping</div>
-              <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 8, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginTop: 2 }}>Richardson, TX &amp; DFW</div>
+              <div style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 20, fontWeight: 600, color: '#f4f1eb' }}>Moss Creek Landscaping</div>
+              <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 8, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginTop: 2 }}>Richardson, TX &amp; DFW</div>
             </div>
           </div>
-          <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 14, fontStyle: 'italic', color: 'rgba(244,241,235,0.65)', lineHeight: 1.7, maxWidth: 320 }}>
+          <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 14, fontStyle: 'italic', color: 'rgba(244,241,235,0.65)', lineHeight: 1.7, maxWidth: 320 }}>
             Rooted in Nature. Crafted for Living.
           </p>
         </div>
 
         {/* Nav */}
         <div>
-          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Navigation</div>
+          <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Navigation</div>
           {['Home', 'About', 'Services', 'Blog', 'Contact'].map(link => (
             <button key={link} onClick={() => setPage(link)} style={{
-              display: 'block', fontFamily: "'Lora', Georgia, serif", fontSize: 14,
+              display: 'block', fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 14,
               color: 'rgba(244,241,235,0.75)', background: 'none', border: 'none',
               cursor: 'pointer', padding: '4px 0', textAlign: 'left',
             }}>{link}</button>
           ))}
         </div>
 
+        {/* Services */}
+        <div>
+          <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Services</div>
+          {[
+            { name: 'Landscape Design', slug: 'landscape-design' },
+            { name: 'Hardscaping', slug: 'hardscaping' },
+            { name: 'Tree Care', slug: 'tree-care' },
+            { name: 'Irrigation & Drainage', slug: 'irrigation-drainage' },
+          ].map(({ name, slug }) => (
+            <a
+              key={slug}
+              href={`/${slug}`}
+              onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', `/${slug}`); window.dispatchEvent(new PopStateEvent('popstate')); }}
+              style={{ display: 'block', fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 14, color: 'rgba(244,241,235,0.75)', textDecoration: 'none', padding: '4px 0' }}
+            >{name}</a>
+          ))}
+        </div>
+
         {/* Service Areas */}
         <div>
-          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Service Areas</div>
+          <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Service Areas</div>
           {[
             { city: 'Plano', slug: 'plano' },
             { city: 'Frisco', slug: 'frisco' },
@@ -44,25 +62,25 @@ const Footer = ({ setPage }) => (
               key={slug}
               href={`/landscaping-${slug}-tx`}
               onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', `/landscaping-${slug}-tx`); window.dispatchEvent(new PopStateEvent('popstate')); }}
-              style={{ display: 'block', fontFamily: "'Lora', Georgia, serif", fontSize: 14, color: 'rgba(244,241,235,0.75)', textDecoration: 'none', padding: '4px 0' }}
+              style={{ display: 'block', fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 14, color: 'rgba(244,241,235,0.75)', textDecoration: 'none', padding: '4px 0' }}
             >Landscaping in {city}</a>
           ))}
         </div>
 
         {/* Contact */}
         <div>
-          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Contact</div>
+          <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Contact</div>
           {['(972) 800-0155', 'info@mosscreeklandscaping.com', 'Richardson, TX & DFW'].map(t => (
-            <div key={t} style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 13, color: 'rgba(244,241,235,0.65)', padding: '4px 0', lineHeight: 1.5 }}>{t}</div>
+            <div key={t} style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 13, color: 'rgba(244,241,235,0.65)', padding: '4px 0', lineHeight: 1.5 }}>{t}</div>
           ))}
         </div>
       </div>
 
       <div style={{ paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
-        <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, color: 'rgba(244,241,235,0.35)', letterSpacing: '0.04em' }}>
+        <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, color: 'rgba(244,241,235,0.35)', letterSpacing: '0.04em' }}>
           © 2026 Moss Creek Landscaping. All rights reserved.
         </div>
-        <div style={{ display: 'flex', gap: 18, alignItems: 'center', fontFamily: "'Montserrat', sans-serif", fontSize: 10, letterSpacing: '0.04em' }}>
+        <div style={{ display: 'flex', gap: 18, alignItems: 'center', fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, letterSpacing: '0.04em' }}>
           <a href="/privacy-policy" style={{ color: 'rgba(244,241,235,0.55)', textDecoration: 'none' }}>Privacy Policy</a>
           <span style={{ color: 'rgba(244,241,235,0.25)' }}>·</span>
           <a href="/terms-of-service" style={{ color: 'rgba(244,241,235,0.55)', textDecoration: 'none' }}>Terms of Service</a>

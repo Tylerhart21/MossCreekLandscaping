@@ -9,7 +9,7 @@ const Hero = ({ setPage }) => {
         style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
       />
       {/* Green-tinted overlay */}
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(160deg, rgba(20,45,20,0.62) 0%, rgba(30,59,30,0.45) 60%, rgba(30,59,30,0.28) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(160deg, rgba(28,25,22,0.72) 0%, rgba(30,32,28,0.5) 55%, rgba(42,39,36,0.32) 100%)' }} />
 
       {/* Content */}
       <div style={{
@@ -17,11 +17,11 @@ const Hero = ({ setPage }) => {
         display: 'flex', flexDirection: 'column', justifyContent: 'center',
         padding: '0 60px', maxWidth: 900,
       }}>
-        <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#a8c49a', marginBottom: 20 }}>
+        <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#a8c49a', marginBottom: 20 }}>
           Richardson, TX · DFW Area
         </div>
         <h1 style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontFamily: "'Source Serif 4', Georgia, serif",
           fontSize: 'clamp(38px, 5vw, 66px)',
           fontWeight: 300, lineHeight: 1.12, letterSpacing: '-0.02em',
           color: '#f4f1eb', marginBottom: 12,
@@ -29,21 +29,21 @@ const Hero = ({ setPage }) => {
           Premier Landscaping &amp; Hardscaping in Richardson, TX
         </h1>
         <div style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontFamily: "'Source Serif 4', Georgia, serif",
           fontSize: 'clamp(20px, 2.4vw, 30px)', fontStyle: 'italic',
           fontWeight: 300, color: 'rgba(244,241,235,0.9)', marginBottom: 22,
         }}>
           Rooted in Nature. Crafted for Living.
         </div>
         <p style={{
-          fontFamily: "'Lora', Georgia, serif", fontSize: 18, fontStyle: 'italic',
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 18, fontStyle: 'italic',
           color: 'rgba(244,241,235,0.88)', lineHeight: 1.7, maxWidth: 520, marginBottom: 40,
         }}>
           Third-generation craftsmanship, applied to your backyard. Custom Landscaping, Stonework, Turf, Lighting, Fence and Design — built to last.
         </p>
         <div style={{ display: 'flex', gap: 16 }}>
           <button onClick={() => { setPage('Contact'); setTimeout(() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120); }} style={{
-            fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600,
+            fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 600,
             letterSpacing: '0.08em', textTransform: 'uppercase',
             background: '#2d5626', color: '#f4f1eb',
             border: '2px solid #2d5626', borderRadius: 4, padding: '14px 32px', cursor: 'pointer',
@@ -51,9 +51,9 @@ const Hero = ({ setPage }) => {
           }}
             onMouseEnter={e => e.currentTarget.style.background = '#1e3b1e'}
             onMouseLeave={e => e.currentTarget.style.background = '#2d5626'}
-          >Get a Free Estimate</button>
+          >Schedule a Consultation</button>
           <button onClick={() => setPage('Services')} style={{
-            fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600,
+            fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 600,
             letterSpacing: '0.08em', textTransform: 'uppercase',
             background: 'transparent', color: '#f4f1eb',
             border: '2px solid rgba(244,241,235,0.6)', borderRadius: 4, padding: '14px 32px', cursor: 'pointer',
@@ -70,7 +70,7 @@ const Hero = ({ setPage }) => {
         position: 'absolute', bottom: 36, left: '50%', transform: 'translateX(-50%)',
         display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8,
       }}>
-        <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(244,241,235,0.5)' }}>Scroll</div>
+        <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 9, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(244,241,235,0.5)' }}>Scroll</div>
         <div style={{ width: 1, height: 36, background: 'rgba(244,241,235,0.3)' }} />
       </div>
     </section>

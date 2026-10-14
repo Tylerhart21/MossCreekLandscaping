@@ -1523,35 +1523,35 @@ const BlogListItem = ({ post, onClick, isLast }) => (
         flexWrap: 'wrap',
       }}>
         <span style={{
-          fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600,
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, fontWeight: 600,
           letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a',
         }}>{post.category}</span>
         <span style={{ color: '#c4b99a' }}>·</span>
         <span style={{
-          fontFamily: "'Montserrat', sans-serif", fontSize: 12, color: '#6b4f35',
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, color: '#6b4f35',
           letterSpacing: '0.04em',
         }}>{post.date}</span>
         <span style={{ color: '#c4b99a' }}>·</span>
         <span style={{
-          fontFamily: "'Montserrat', sans-serif", fontSize: 12, color: '#6b4f35',
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, color: '#6b4f35',
           letterSpacing: '0.04em',
         }}>By Moss Creek Team</span>
       </div>
 
       <h2 style={{
-        fontFamily: "'Cormorant Garamond', Georgia, serif",
+        fontFamily: "'Source Serif 4', Georgia, serif",
         fontSize: 'clamp(30px,3.8vw,46px)', fontWeight: 500, color: '#1e3b1e',
         lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 22,
       }}>{post.title}</h2>
 
       <p style={{
-        fontFamily: "'Lora', Georgia, serif", fontSize: 17,
+        fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 17,
         color: '#3d2b1f', lineHeight: 1.75, marginBottom: 26, maxWidth: 720,
       }}>{post.excerpt}</p>
 
       <span style={{
         display: 'inline-block',
-        fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 700,
+        fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 700,
         letterSpacing: '0.1em', textTransform: 'uppercase', color: '#2d5626',
         borderBottom: '2px solid #2d5626', paddingBottom: 4,
       }}>Read More &rarr;</span>
@@ -1615,24 +1615,24 @@ const renderInline = (text) => {
 
 const headingStyles = {
   h2: {
-    fontFamily: "'Cormorant Garamond', Georgia, serif",
+    fontFamily: "'Source Serif 4', Georgia, serif",
     fontSize: 'clamp(26px,3vw,36px)', fontWeight: 500, color: '#1e3b1e',
     lineHeight: 1.2, marginTop: 56, marginBottom: 18, letterSpacing: '-0.02em',
   },
   h3: {
-    fontFamily: "'Cormorant Garamond', Georgia, serif",
+    fontFamily: "'Source Serif 4', Georgia, serif",
     fontSize: 'clamp(22px,2.4vw,28px)', fontWeight: 500, color: '#1e3b1e',
     lineHeight: 1.3, marginTop: 40, marginBottom: 14, letterSpacing: '-0.01em',
   },
   h4: {
-    fontFamily: "'Montserrat', sans-serif",
+    fontFamily: "'Source Sans 3', system-ui, sans-serif",
     fontSize: 'clamp(15px,1.5vw,17px)', fontWeight: 700, color: '#1e3b1e',
     lineHeight: 1.4, marginTop: 30, marginBottom: 10, letterSpacing: '0.01em',
   },
 };
 
 const paragraphStyle = {
-  fontFamily: "'Lora', Georgia, serif", fontSize: 16,
+  fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 16,
   color: '#3d2b1f', lineHeight: 1.85, marginBottom: 18,
 };
 
@@ -1661,7 +1661,7 @@ const renderBodyParagraph = (block, i) => {
       return (
         <ul key={i} style={{
           margin: '0 0 22px 0', paddingLeft: 22,
-          fontFamily: "'Lora', Georgia, serif", fontSize: 16,
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 16,
           color: '#3d2b1f', lineHeight: 1.85,
         }}>
           {block.items.map((item, j) => (
@@ -1682,7 +1682,7 @@ const renderBodyParagraph = (block, i) => {
           />
           {block.caption && (
             <figcaption style={{
-              fontFamily: "'Lora', Georgia, serif", fontSize: 13, fontStyle: 'italic',
+              fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 13, fontStyle: 'italic',
               color: '#6b4f35', textAlign: 'center', marginTop: 10,
             }}>{block.caption}</figcaption>
           )}
@@ -1693,7 +1693,7 @@ const renderBodyParagraph = (block, i) => {
         <div key={i} style={{ overflowX: 'auto', margin: '28px 0 30px 0' }}>
           <table style={{
             width: '100%', borderCollapse: 'collapse',
-            fontFamily: "'Lora', Georgia, serif", fontSize: 15,
+            fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 15,
             color: '#3d2b1f', border: '1px solid #d9cfb8',
           }}>
             {block.headers && (
@@ -1702,8 +1702,8 @@ const renderBodyParagraph = (block, i) => {
                   {block.headers.map((h, k) => (
                     <th key={k} style={{
                       textAlign: 'left', padding: '12px 14px',
-                      background: '#1e3b1e', color: '#f4f1eb',
-                      fontFamily: "'Montserrat', sans-serif", fontSize: 12,
+                      background: '#2a2724', color: '#f4f1eb',
+                      fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12,
                       fontWeight: 600, letterSpacing: '0.04em',
                       textTransform: 'uppercase',
                       borderRight: k < block.headers.length - 1 ? '1px solid #2f5630' : 'none',
@@ -1740,7 +1740,7 @@ const BlogPost = ({ post, setPost, setPage }) => (
   <section style={{ background: '#f4f1eb', padding: '64px 40px 100px' }}>
     <div style={{ maxWidth: 760, margin: '0 auto' }}>
       <button onClick={() => setPost(null)} style={{
-        fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600,
+        fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, fontWeight: 600,
         letterSpacing: '0.08em', textTransform: 'uppercase',
         background: 'none', border: 'none', color: '#2d5626',
         cursor: 'pointer', padding: 0, marginBottom: 32,
@@ -1748,17 +1748,17 @@ const BlogPost = ({ post, setPost, setPage }) => (
 
       <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginBottom: 16 }}>
         <span style={{
-          fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600,
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600,
           letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a',
         }}>{post.category}</span>
         <span style={{ color: '#c4b99a' }}>·</span>
-        <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 11, color: '#6b4f35' }}>{post.date}</span>
+        <span style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, color: '#6b4f35' }}>{post.date}</span>
         <span style={{ color: '#c4b99a' }}>·</span>
-        <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 11, color: '#6b4f35' }}>{post.readTime}</span>
+        <span style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, color: '#6b4f35' }}>{post.readTime}</span>
       </div>
 
       <h1 style={{
-        fontFamily: "'Cormorant Garamond', Georgia, serif",
+        fontFamily: "'Source Serif 4', Georgia, serif",
         fontSize: 'clamp(34px,4.5vw,52px)', fontWeight: 400, color: '#1e3b1e',
         lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 28,
       }}>{post.title}</h1>
@@ -1783,22 +1783,22 @@ const BlogPost = ({ post, setPost, setPage }) => (
         textAlign: 'center',
       }}>
         <div style={{
-          fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600,
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600,
           letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 12,
         }}>Ready to talk about your yard?</div>
         <h3 style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontFamily: "'Source Serif 4', Georgia, serif",
           fontSize: 'clamp(22px,2.6vw,30px)', fontWeight: 400, color: '#1e3b1e',
           lineHeight: 1.25, marginBottom: 20,
         }}>Free walk-throughs across the DFW area.</h3>
         <button onClick={() => { setPage('Contact'); setTimeout(() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120); }} style={{
-          fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600,
+          fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 600,
           letterSpacing: '0.08em', textTransform: 'uppercase',
           background: '#2d5626', color: '#f4f1eb',
           border: '2px solid #2d5626', borderRadius: 4,
           padding: '14px 32px', cursor: 'pointer',
           boxShadow: '0 4px 16px rgba(30,59,30,0.22)',
-        }}>Get a Free Estimate</button>
+        }}>Schedule a Consultation</button>
       </div>
     </div>
   </section>
@@ -1818,21 +1818,21 @@ const BlogPage = ({ setPage, activeSlug = null, setActiveSlug }) => {
   return (
     <div style={{ paddingTop: 72 }}>
       {activePost ? (
-        <div style={{ background: '#1e3b1e', padding: '40px 40px 32px' }}>
+        <div style={{ background: '#2a2724', padding: '40px 40px 32px' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a' }}>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a' }}>
               The Moss Creek Journal
             </div>
           </div>
         </div>
       ) : (
-        <div style={{ background: '#1e3b1e', padding: '88px 40px 80px', textAlign: 'center' }}>
+        <div style={{ background: '#2a2724', padding: '88px 40px 80px', textAlign: 'center' }}>
           <div style={{ maxWidth: 860, margin: '0 auto' }}>
-            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 18 }}>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 18 }}>
               The Moss Creek Journal
             </div>
             <h1 style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontFamily: "'Source Serif 4', Georgia, serif",
               fontSize: 'clamp(38px,5vw,62px)', fontWeight: 400,
               color: '#f4f1eb', lineHeight: 1.1, letterSpacing: '-0.02em',
               marginBottom: 22,
@@ -1840,7 +1840,7 @@ const BlogPage = ({ setPage, activeSlug = null, setActiveSlug }) => {
               Expert Landscaping Tips from <em>Three Generations</em> in DFW
             </h1>
             <p style={{
-              fontFamily: "'Lora', Georgia, serif", fontSize: 17, fontStyle: 'italic',
+              fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 17, fontStyle: 'italic',
               color: 'rgba(244,241,235,0.78)', lineHeight: 1.7, maxWidth: 680, margin: '0 auto',
             }}>
               Practical guidance from the field — seasonal planting advice for North Texas yards,

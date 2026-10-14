@@ -10,7 +10,6 @@
 
   gtag('config', 'G-F3EFM6TM5F');
 </script>
-  <script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="08d66d13-8b2b-4ae1-bac6-413614e30b85" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gIjA4ZDY2ZDEzLThiMmItNGFlMS1iYWM2LTQxMzYxNGUzMGI4NSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="></script>
   <meta charset="UTF-8" />
   <!-- All relative URLs resolve from site root so /blog/<slug> and other rewritten paths still load /Nav.jsx etc. -->
   <base href="/" />
@@ -116,7 +115,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <!-- Preload above-the-fold imagery so it's ready the moment React mounts -->
   <link rel="preload" as="image" href="assets/rose-arch-garden.webp" fetchpriority="high" />
   <link rel="preload" as="image" href="assets/MCL-logo-optimized.webp" />
@@ -251,7 +250,7 @@
       Static fallback content. Visible to search engines, accessibility tools, and any
       visitor without JavaScript. React replaces this on mount with the interactive app.
     -->
-    <div style="max-width: 1100px; margin: 0 auto; padding: 40px 24px; font-family: Georgia, 'Cormorant Garamond', serif; color: #1e3b1e; background: #f4f1eb;">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 40px 24px; font-family: Georgia, 'Source Serif 4', serif; color: #1e3b1e; background: #f4f1eb;">
       <header style="margin-bottom: 36px; padding-bottom: 24px; border-bottom: 1px solid #c4b99a;">
         <h1 style="font-size: 2.4rem; margin-bottom: 8px; font-weight: 500;">Landscaping in Allen, TX</h1>
         <p style="font-size: 1.05rem; color: #6b4f35; margin-bottom: 14px; font-style: italic;">Moss Creek Landscaping — Custom gardens, hardscape, and outdoor living for Allen families — Twin Creeks to Star Creek.</p>
@@ -292,7 +291,7 @@
       </section>
 
       <section style="margin-bottom: 32px;">
-        <h2 style="font-size: 1.55rem; margin-bottom: 12px; font-weight: 500;">Request a Free Estimate</h2>
+        <h2 style="font-size: 1.55rem; margin-bottom: 12px; font-weight: 500;">Schedule a Consultation</h2>
         <p style="line-height: 1.75; color: #3d2b1f; font-family: Georgia, serif;">
           Call <a href="tel:+19728000155" style="color: #2d5626; font-weight: 600;">(972) 800-0155</a>
           or email <a href="mailto:info@mosscreeklandscaping.com" style="color: #2d5626;">info@mosscreeklandscaping.com</a>
@@ -318,31 +317,32 @@
   <script type="text/babel" src="Blog.jsx"></script>
   <script type="text/babel" src="Footer.jsx"></script>
   <script type="text/babel" src="Locations.jsx"></script>
+  <script type="text/babel" src="ServicePages.jsx"></script>
 
   <script type="text/babel">
     // ── Project Gallery Section ──────────────────────────────
     const ProjectGallery = ({ setPage }) => {
       const projects = [
-        { img: '../../assets/pool-hardscape.webp', label: 'Pool Deck & Pavers', loc: 'University Park' },
-        { img: '../../assets/rose-arch-garden.webp', label: 'Rose Arch Garden', loc: 'Highland Park' },
-        { img: '../../assets/modern-backyard.webp', label: 'Modern Backyard', loc: 'Plano' },
-        { img: '../../assets/retaining-wall.webp', label: 'Retaining Wall', loc: 'Richardson' },
-        { img: '../../assets/outdoor-kitchen.webp', label: 'Outdoor Kitchen', loc: 'Allen' },
-        { img: '../../assets/espalier-wall.webp', label: 'Espalier Feature Wall', loc: 'Frisco' },
+        { img: '../../assets/front-yard-landscape.webp', label: 'Front Yard Landscape', loc: 'Richardson' },
+        { img: '../../assets/bluestone-patio-steps.webp', label: 'Bluestone Patio & Steps', loc: 'Plano' },
+        { img: '../../assets/modern-walkway-beds.webp', label: 'Modern Walkway & Beds', loc: 'Allen' },
+        { img: '../../assets/seasonal-color-beds.webp', label: 'Seasonal Color & Beds', loc: 'McKinney' },
+        { img: '../../assets/retaining-wall.webp', label: 'Retaining Wall', loc: 'Highland Park' },
+        { img: '../../assets/landscape-lighting.webp', label: 'Landscape Lighting', loc: 'Frisco' },
       ];
 
       return (
-        <section style={{ background: '#1e3b1e', padding: '80px 40px' }}>
+        <section style={{ background: '#2a2724', padding: '80px 40px' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 40 }}>
               <div>
-                <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 12 }}>Recent Work</div>
-                <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(30px,3.5vw,44px)', fontWeight: 400, color: '#f4f1eb', lineHeight: 1.15 }}>
+                <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 12 }}>Recent Work</div>
+                <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(30px,3.5vw,44px)', fontWeight: 400, color: '#f4f1eb', lineHeight: 1.15 }}>
                   Built across DFW.
                 </h2>
               </div>
               <button onClick={() => setPage('Services')} style={{
-                fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600,
+                fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, fontWeight: 600,
                 letterSpacing: '0.08em', textTransform: 'uppercase',
                 background: 'transparent', color: '#f4f1eb',
                 border: '2px solid rgba(244,241,235,0.4)', borderRadius: 4,
@@ -357,8 +357,8 @@
                 >
                   <img src={img} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 500ms ease' }} />
                   <div className="overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(20,45,20,0.6)', opacity: 0, transition: 'opacity 300ms ease', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: 20 }}>
-                    <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 18, fontWeight: 500, color: '#f4f1eb' }}>{label}</div>
-                    <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 9, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a8c49a', marginTop: 4 }}>{loc}</div>
+                    <div style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 18, fontWeight: 500, color: '#f4f1eb' }}>{label}</div>
+                    <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 9, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a8c49a', marginTop: 4 }}>{loc}</div>
                   </div>
                 </div>
               ))}
@@ -372,20 +372,20 @@
     const CTABanner = ({ setPage }) => (
       <section style={{ background: '#ede8dc', padding: '72px 40px', textAlign: 'center', borderTop: '1px solid #c4b99a' }}>
         <div style={{ maxWidth: 600, margin: '0 auto' }}>
-          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Ready to Start?</div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(28px,4vw,44px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, marginBottom: 16 }}>
+          <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Ready to Start?</div>
+          <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(28px,4vw,44px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.2, marginBottom: 16 }}>
             Your outdoor space is waiting.
           </h2>
-          <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 15, fontStyle: 'italic', color: '#6b4f35', lineHeight: 1.7, marginBottom: 32 }}>
+          <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 15, fontStyle: 'italic', color: '#6b4f35', lineHeight: 1.7, marginBottom: 32 }}>
             Free estimates. No pressure. Just a conversation about what your space could become.
           </p>
           <button onClick={() => { setPage('Contact'); setTimeout(() => document.getElementById('estimate-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120); }} style={{
-            fontFamily: "'Montserrat', sans-serif", fontSize: 12, fontWeight: 600,
+            fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 600,
             letterSpacing: '0.08em', textTransform: 'uppercase',
             background: '#2d5626', color: '#f4f1eb',
             border: '2px solid #2d5626', borderRadius: 4,
             padding: '14px 40px', cursor: 'pointer', boxShadow: '0 4px 16px rgba(30,59,30,0.22)',
-          }}>Get a Free Estimate</button>
+          }}>Schedule a Consultation</button>
         </div>
       </section>
     );
@@ -393,10 +393,10 @@
     // ── Services Page ────────────────────────────────────────
     const ServicesPage = ({ setPage }) => (
       <div style={{ paddingTop: 72 }}>
-        <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
+        <div style={{ background: '#2a2724', padding: '64px 40px 56px' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Our Services</div>
-            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Our Services</div>
+            <h1 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
               What we build.<br /><em>How we work.</em>
             </h1>
           </div>
@@ -411,10 +411,10 @@
     // ── About Page ───────────────────────────────────────────
     const AboutPage = ({ setPage }) => (
       <div style={{ paddingTop: 72 }}>
-        <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
+        <div style={{ background: '#2a2724', padding: '64px 40px 56px' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>About Us</div>
-            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>About Us</div>
+            <h1 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
               Family-rooted.<br /><em>Craft-forward.</em>
             </h1>
           </div>
@@ -428,10 +428,10 @@
     // ── Contact Page ─────────────────────────────────────────
     const ContactPageFull = ({ setPage }) => (
       <div style={{ paddingTop: 72 }}>
-        <div style={{ background: '#1e3b1e', padding: '64px 40px 56px' }}>
+        <div style={{ background: '#2a2724', padding: '64px 40px 56px' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Contact</div>
-            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Contact</div>
+            <h1 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(40px,5vw,64px)', fontWeight: 300, color: '#f4f1eb', lineHeight: 1.1 }}>
               Start a conversation.
             </h1>
           </div>
@@ -446,15 +446,15 @@
       <section id="home-estimate-form" style={{ background: '#f4f1eb', padding: '80px 40px', borderTop: '1px solid #e0d9c8' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'start' }}>
           <div>
-            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Request a Free Estimate</div>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(30px,4vw,46px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 20 }}>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Schedule a Consultation</div>
+            <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(30px,4vw,46px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 20 }}>
               Tell us about<br />your project.
             </h2>
-            <p style={{ fontFamily: "'Lora', Georgia, serif", fontSize: 15, color: '#6b4f35', lineHeight: 1.75, marginBottom: 28 }}>
+            <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 15, color: '#6b4f35', lineHeight: 1.75, marginBottom: 28 }}>
               Share a few details and we'll be in touch within one business day to schedule a walk-through and provide a detailed estimate.
             </p>
-            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#3d2b1f', marginBottom: 8 }}>Or call us directly</div>
-            <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 24, color: '#2d5626', marginBottom: 32 }}>(972) 800-0155</div>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#3d2b1f', marginBottom: 8 }}>Or call us directly</div>
+            <div style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 24, color: '#2d5626', marginBottom: 32 }}>(972) 800-0155</div>
             <img
               src="../../assets/home-feature.jpg"
               alt="Landscaped rose and pansy bed with stone edging beneath a mature oak — recent Moss Creek project"
@@ -470,11 +470,11 @@
           </div>
           <div>
             <div style={{
-              fontFamily: "'Lora', Georgia, serif", fontSize: 12.5,
+              fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12.5,
               color: '#6b4f35', lineHeight: 1.55, marginBottom: 14,
               padding: '14px 16px', background: '#ede8dc', border: '1px solid #c4b99a', borderRadius: 4,
             }}>
-              <strong style={{ display: 'block', fontFamily: "'Montserrat', sans-serif", fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#3d2b1f', marginBottom: 6 }}>SMS Consent</strong>
+              <strong style={{ display: 'block', fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#3d2b1f', marginBottom: 6 }}>SMS Consent</strong>
               <span style={{ fontStyle: 'italic' }}>
                 Check the consent box in the form below to receive SMS messages from Moss Creek Landscaping, LLC about your inquiry, appointments, and quotes. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to purchase services. See our <a href="/privacy-policy" style={{ color: '#2d5626', textDecoration: 'underline' }}>Privacy Policy</a> and <a href="/terms-of-service" style={{ color: '#2d5626', textDecoration: 'underline' }}>Terms of Service</a>.
               </span>
@@ -519,8 +519,8 @@
         <section style={{ background: '#f4f1eb', padding: '80px 40px', borderTop: '1px solid #e0d9c8' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: 40 }}>
-              <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Google Reviews</div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(30px,3.5vw,44px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em' }}>
+              <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Google Reviews</div>
+              <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(30px,3.5vw,44px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em' }}>
                 Trusted by DFW homeowners.
               </h2>
             </div>
@@ -537,14 +537,66 @@
       );
     };
 
+    // ── Trust bar ────────────────────────────────────────────
+    const TrustBar = () => {
+      const items = ['3 Generations', 'Family-Owned & Insured', '4.9★ on Google', 'Richardson & the DFW Area'];
+      return (
+        <div style={{ background: '#2a2724', padding: '18px 40px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '10px 28px' }}>
+            {items.map((t, i) => (
+              <React.Fragment key={t}>
+                {i > 0 && <span style={{ color: '#b4894e', fontSize: 10 }} aria-hidden="true">◆</span>}
+                <span style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12.5, fontWeight: 500, letterSpacing: '0.04em', color: '#f4f1eb' }}>{t}</span>
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+      );
+    };
+
+    // ── Meet Regan + intro video (video is a placeholder until provided) ──
+    const MeetReganSection = ({ setPage }) => (
+      <section style={{ background: '#f4f1eb', padding: '84px 40px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'center' }}>
+          {/* Video placeholder — replace with a click-to-play embed (Vimeo/YouTube) */}
+          <div data-video-placeholder="owner-intro" style={{ position: 'relative', aspectRatio: '16/9', background: '#2a2724', borderRadius: 8, overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 14 }}>
+            <div style={{ width: 68, height: 68, borderRadius: '50%', background: 'rgba(244,241,235,0.12)', border: '2px solid rgba(244,241,235,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ width: 0, height: 0, borderTop: '11px solid transparent', borderBottom: '11px solid transparent', borderLeft: '18px solid #f4f1eb', marginLeft: 5 }} />
+            </div>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(244,241,235,0.6)' }}>Owner intro video — coming soon</div>
+          </div>
+          <div>
+            <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 14 }}>Meet Moss Creek</div>
+            <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 400, color: '#1e3b1e', lineHeight: 1.15, letterSpacing: '-0.02em', marginBottom: 18 }}>
+              Put a face to the company.
+            </h2>
+            <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 16, color: '#3d2b1f', lineHeight: 1.8, marginBottom: 16 }}>
+              Moss Creek was founded by Regan Keane, a third-generation landscaper who grew up around the trade and learned early that the work is really about people — doing right by them, and building outdoor spaces we're proud to put our name on.
+            </p>
+            <p style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 16, color: '#6b4f35', lineHeight: 1.8, marginBottom: 28 }}>
+              When you hire Moss Creek, you know exactly who's standing behind the work — a local, family-owned team, not a faceless crew.
+            </p>
+            <button onClick={() => setPage('About')} style={{
+              fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 12, fontWeight: 600,
+              letterSpacing: '0.08em', textTransform: 'uppercase',
+              background: 'transparent', color: '#2d5626',
+              border: '2px solid #2d5626', borderRadius: 4, padding: '12px 28px', cursor: 'pointer',
+            }}>Read Our Story</button>
+          </div>
+        </div>
+      </section>
+    );
+
+    // Home order: Hero → Trust bar → Meet Regan/video → Consultation form
+    //           → Project photos → Services → Google reviews → CTA → Footer
     const HomePage = ({ setPage }) => (
       <div>
         <Hero setPage={setPage} />
-        <AboutSection full={false} setPage={setPage} />
+        <TrustBar />
+        <HomeContactForm />
         <ProjectGallery setPage={setPage} />
         <ServicesSection full={false} setPage={setPage} />
         <ReviewsSection />
-        <HomeContactForm />
         <CTABanner setPage={setPage} />
         <Footer setPage={setPage} />
       </div>
@@ -575,14 +627,19 @@
     const parseLocation = () => {
       const raw = window.location.pathname.replace(/\/+$/, '') || '/';
       if (raw.startsWith('/blog/')) {
-        return { page: 'Blog', blogSlug: raw.slice('/blog/'.length), citySlug: null };
+        return { page: 'Blog', blogSlug: raw.slice('/blog/'.length), citySlug: null, serviceSlug: null };
       }
       // City service-area pages: /landscaping-<slug>-tx
       const cityMatch = raw.match(/^\/landscaping-([a-z0-9-]+)-tx$/);
       if (cityMatch && window.LOCATION_BY_SLUG && window.LOCATION_BY_SLUG[cityMatch[1]]) {
-        return { page: 'Location', blogSlug: null, citySlug: cityMatch[1] };
+        return { page: 'Location', blogSlug: null, citySlug: cityMatch[1], serviceSlug: null };
       }
-      return { page: PATH_TO_PAGE[raw] || 'Home', blogSlug: null, citySlug: null };
+      // Service pages: /landscape-design, /hardscaping, /tree-care, /irrigation-drainage
+      const svc = raw.replace(/^\//, '');
+      if (window.SERVICE_BY_SLUG && window.SERVICE_BY_SLUG[svc]) {
+        return { page: 'Service', blogSlug: null, citySlug: null, serviceSlug: svc };
+      }
+      return { page: PATH_TO_PAGE[raw] || 'Home', blogSlug: null, citySlug: null, serviceSlug: null };
     };
 
     // Per-page document metadata for SEO + social previews.
@@ -599,7 +656,7 @@
                   description: 'Start a conversation about your yard. Free landscape walk-throughs and estimates across Richardson, Plano, Frisco, Allen, Highland Park, and the DFW area.' },
     };
 
-    const setDocumentMeta = (page, blogSlug, citySlug) => {
+    const setDocumentMeta = (page, blogSlug, citySlug, serviceSlug) => {
       let title, description, path = PAGE_TO_PATH[page] || '/';
       if (page === 'Blog' && blogSlug) {
         const post = (window.BLOG_POSTS || []).find((p) => p.slug === blogSlug);
@@ -615,6 +672,14 @@
           title = c.metaTitle;
           description = c.metaDescription;
           path = '/landscaping-' + citySlug + '-tx';
+        }
+      }
+      if (page === 'Service' && serviceSlug) {
+        const sv = (window.SERVICE_BY_SLUG || {})[serviceSlug];
+        if (sv) {
+          title = sv.metaTitle;
+          description = sv.metaDescription;
+          path = '/' + serviceSlug;
         }
       }
       if (!title) {
@@ -642,6 +707,7 @@
       const [page, setPage] = React.useState(initial.page);
       const [blogSlug, setBlogSlug] = React.useState(initial.blogSlug);
       const [citySlug, setCitySlug] = React.useState(initial.citySlug);
+      const [serviceSlug, setServiceSlug] = React.useState(initial.serviceSlug);
 
       // Fade out the loading splash once the app has rendered.
       React.useEffect(() => {
@@ -659,6 +725,7 @@
           setPage(next.page);
           setBlogSlug(next.blogSlug);
           setCitySlug(next.citySlug);
+          setServiceSlug(next.serviceSlug);
         };
         window.addEventListener('popstate', onPop);
         return () => window.removeEventListener('popstate', onPop);
@@ -666,8 +733,8 @@
 
       // Sync document title + meta description whenever route changes.
       React.useEffect(() => {
-        setDocumentMeta(page, blogSlug, citySlug);
-      }, [page, blogSlug, citySlug]);
+        setDocumentMeta(page, blogSlug, citySlug, serviceSlug);
+      }, [page, blogSlug, citySlug, serviceSlug]);
 
       // Scroll to top whenever we change top-level page (post-level scroll is
       // handled inside BlogPage).
@@ -688,6 +755,7 @@
         pushPath(path);
         setBlogSlug(null);
         setCitySlug(null);
+        setServiceSlug(null);
         setPage(p);
       };
 
@@ -705,6 +773,7 @@
           {page === 'Blog'     && <BlogPage     setPage={changePage} activeSlug={blogSlug} setActiveSlug={changeBlogSlug} />}
           {page === 'Contact'  && <ContactPageFull setPage={changePage} />}
           {page === 'Location' && window.LocationPage && <LocationPage citySlug={citySlug} setPage={changePage} />}
+          {page === 'Service'  && window.ServicePage  && <ServicePage serviceSlug={serviceSlug} setPage={changePage} />}
         </div>
       );
     };
