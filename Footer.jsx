@@ -70,8 +70,20 @@ const Footer = ({ setPage }) => (
         {/* Contact */}
         <div>
           <div style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6b8c5a', marginBottom: 16 }}>Contact</div>
-          {['(972) 800-0155', 'info@mosscreeklandscaping.com', 'Richardson, TX & DFW'].map(t => (
-            <div key={t} style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 13, color: 'rgba(244,241,235,0.65)', padding: '4px 0', lineHeight: 1.5 }}>{t}</div>
+          {[
+            { t: '(972) 800-0155', href: 'tel:+19728000155' },
+            { t: 'info@mosscreeklandscaping.com', href: 'mailto:info@mosscreeklandscaping.com' },
+            { t: 'Richardson, TX & DFW', href: null },
+          ].map(({ t, href }) => (
+            href ? (
+              <a key={t} href={href}
+                style={{ display: 'block', fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 13, color: 'rgba(244,241,235,0.65)', textDecoration: 'none', padding: '4px 0', lineHeight: 1.5 }}
+                onMouseEnter={e => e.currentTarget.style.color = '#f4f1eb'}
+                onMouseLeave={e => e.currentTarget.style.color = 'rgba(244,241,235,0.65)'}
+              >{t}</a>
+            ) : (
+              <div key={t} style={{ fontFamily: "'Source Sans 3', system-ui, sans-serif", fontSize: 13, color: 'rgba(244,241,235,0.65)', padding: '4px 0', lineHeight: 1.5 }}>{t}</div>
+            )
           ))}
         </div>
       </div>
